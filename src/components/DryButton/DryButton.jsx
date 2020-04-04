@@ -1,7 +1,7 @@
 import React from 'react'
 import "./DryButton.css"
 
- const DryButton = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+ const DryButton = ({ text,onClick,className = "standard" }) => {
+  return <div className={className}>{text}</div>
 }
 export default DryButton
