@@ -1,7 +1,7 @@
-import React from 'react'
-import "./DryButton.css"
+import React from "react";
+import "./DryButton.css";
 
- const DryButton = ({ text,onClick,className = "standard" }) => {
-  return <div className={className}>{text}</div>
-}
-export default DryButton
+const DryButton = ({ text, onClick, className = "standard" }) => {
+  return <div className={className}>{text}</div>;
+};
+export default DryButton;

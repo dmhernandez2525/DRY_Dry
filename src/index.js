@@ -1,3 +1,3 @@
-import {DryButton} from "./components"
+import {DryButton,Header1} from "./components"
 
-export {DryButton}
+export {DryButton,Header1}
