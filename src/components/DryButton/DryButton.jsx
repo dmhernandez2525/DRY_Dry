@@ -6,11 +6,17 @@ const DryButton = ({
   onClick,
   className = "btn btn-animated",
   color = "white",
-  variant="",
+  variant = "",
   ref
 }) => {
   return (
-    <a ref={ref} variant={variant} href="#" className={`${className} btn-${color}`} onClick={onClick}>
+    <a
+      ref={ref}
+      variant={variant}
+      href="#"
+      className={`${className} btn-${color}`}
+      onClick={onClick}
+    >
       {text}
     </a>
   );

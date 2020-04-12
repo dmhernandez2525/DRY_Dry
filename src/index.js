@@ -1,3 +1,15 @@
-import {DryButton,Header1} from "./components"
+import {DryButton,Header1,Switch,
+    Checkbox,
+    Radio,
+    Password,
+    Select,
+    Input,
+    Label} from "./components"
 
-export {DryButton,Header1}
+export {DryButton,Header1,Switch,
+    Checkbox,
+    Radio,
+    Password,
+    Select,
+    Input,
+    Label}
