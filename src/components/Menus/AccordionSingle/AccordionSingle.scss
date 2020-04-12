@@ -1,0 +1,30 @@
+.panel {
+  width: 100%;
+
+  &__header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+    font-size: larger;
+    background: black;
+    color: #fff;
+    padding: 10px;
+  }
+  &__header-icon {
+    font-size: xx-large;
+    width: 43px;
+    cursor: pointer;
+    text-align: center;
+  }
+  &__children-wrapper {
+    padding: 10px;
+    background: #fff;
+  }
+  &__part {
+    display: none;
+  }
+  &__part--active {
+    display: block;
+  }
+}

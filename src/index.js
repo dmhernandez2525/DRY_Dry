@@ -4,7 +4,9 @@ import {DryButton,Header1,Switch,
     Password,
     Select,
     Input,
-    Label} from "./components"
+    Label,    
+    AccordionSingle,
+    Accordion} from "./components"
 
 export {DryButton,Header1,Switch,
     Checkbox,
@@ -12,4 +14,6 @@ export {DryButton,Header1,Switch,
     Password,
     Select,
     Input,
-    Label}
+    Label,    
+    AccordionSingle,
+    Accordion}
