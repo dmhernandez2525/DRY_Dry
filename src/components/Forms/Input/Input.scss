@@ -8,8 +8,11 @@ $color5: rgba(38, 44, 151, 1);
   &__label {
     position: relative;
     left: 1px;
-    top: 33px;
-    padding: 0px 10px;
+    top: 36px;
+    padding: 10px 10px;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-right: 20px;
     background: #fff;
     font-size: larger;
     color: black;

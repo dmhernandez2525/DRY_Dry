@@ -23,9 +23,16 @@ const Input = ({
   max
 }) => {
   const [inputFocus, setInputFocus] = useState(false);
+  const [placeholderFocus, setPlaceholderFocus] = useState(false);
   const handleFocus = () => {
     setInputFocus(true);
+    setPlaceholderFocus(true);
   };
+
+  let displayPlaceholder = "";
+  if (placeholderFocus) {
+    displayPlaceholder = placeholder;
+  }
 
   return (
     <div className={`input ${className}`}>
@@ -51,7 +58,7 @@ const Input = ({
         disabled={disable}
         {...styles}
         {...passProps}
-        placeholder={placeholder}
+        placeholder={displayPlaceholder}
         min={min}
         max={max}
       />
