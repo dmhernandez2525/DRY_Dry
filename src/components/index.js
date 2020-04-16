@@ -1,6 +1,6 @@
-import DryButton from "./DryButton/DryButton"
-import Header1 from "./Header1/Header1"
+import DryButton from "./Buttons/DryButton/DryButton"
 
+import Header1 from "./Features/Header1/Header1"
 
 import Switch from "./Forms/Switch/Switch"
 import Checkbox from "./Forms/Checkbox/Checkbox"

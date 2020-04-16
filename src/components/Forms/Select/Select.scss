@@ -8,6 +8,7 @@ $color5: rgba(38, 44, 151, 1);
 .select {
   width: calc(100% - 20px);
   padding: 10px;
+  width: 100% !important;
 
   &__input-wrapper {
     position: relative;
