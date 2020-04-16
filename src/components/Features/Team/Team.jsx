@@ -80,30 +80,40 @@ const Team = ({ members }) => {
       "https://68ef2f69c7787d4078ac-7864ae55ba174c40683f10ab811d9167.ssl.cf1.rackcdn.com/reddit-icon_32x32.png",
     pr: ""
   };
-  let display = Object.values(members).map(member => {
-    let socialLinks = Object.keys(member.socialLinks).map((social, i) => {
-      let socialData = member.socialLinks[social];
+
+  let display = (
+    <div>
+      <span>Valid props where not pased</span>
+    </div>
+  );
+
+  if (members) {
+    display = Object.values(members).map(member => {
+      let socialLinks = Object.keys(member.socialLinks).map((social, i) => {
+        let socialData = member.socialLinks[social];
+        return (
+          <li key={`${member.name}:${i}`}>
+            <button
+              className={"social-links"}
+              onClick={e => socialOpen(socialData.url)}
+              style={{ backgroundImage: `url(${links[social]})` }}
+            ></button>
+          </li>
+        );
+      });
       return (
-        <li key={`${member.name}:${i}`}>
-          <button
-            className={"social-links"}
-            onClick={e => socialOpen(socialData.url)}
-            style={{ backgroundImage: `url(${links[social]})` }}
-          ></button>
-        </li>
+        <div key={member.name}>
+          <img src={member.pic} />
+          <div>
+            <h1>{member.name}</h1>
+            <p>{member.about}</p>
+          </div>
+          <ul>{socialLinks}</ul>
+        </div>
       );
     });
-    return (
-      <div key={member.name}>
-        <img src={member.pic} />
-        <div>
-          <h1>{member.name}</h1>
-          <p>{member.about}</p>
-        </div>
-        <ul>{socialLinks}</ul>
-      </div>
-    );
-  });
+  }
+
   return <div>{display}</div>;
 };
 

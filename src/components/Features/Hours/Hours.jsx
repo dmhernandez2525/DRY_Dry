@@ -13,10 +13,18 @@ const Hours = ({ days }) => {
   //      Saturday:{from:"10am",to:"10pm"},
   //      Sunday:{from:"10am",to:"10pm"}
   //   }
-  let display = Object.keys(days).map(day => {
-    let currentDay = this.data[day];
-    return <li key={day}>{`${day}:${currentDay.from}-${currentDay.to}`}</li>;
-  });
+  let display = (
+    <div>
+      <span>Valid props where not pased</span>
+    </div>
+  );
+
+  if (days) {
+    display = Object.keys(days).map(day => {
+      let currentDay = days[day];
+      return <li key={day}>{`${day}:${currentDay.from}-${currentDay.to}`}</li>;
+    });
+  }
   return <div>{display}</div>;
 };
 

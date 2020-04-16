@@ -22,14 +22,22 @@ const ImageCarousel = ({ slides }) => {
   //     }
   // }
 
-  let display = Object.values(slides).map((slide, i) => {
-    return (
-      <div key={`${slide.title}${i}`}>
-        <span>{slide.title}</span>
-        <span>{slide.detail}</span>
-      </div>
-    );
-  });
+  let display = (
+    <div>
+      <span>Valid props where not pased</span>
+    </div>
+  );
+
+  if (slides) {
+    display = Object.values(slides).map((slide, i) => {
+      return (
+        <div key={`${slide.title}${i}`}>
+          <span>{slide.title}</span>
+          <span>{slide.detail}</span>
+        </div>
+      );
+    });
+  }
   return <div>{display}</div>;
 };
 

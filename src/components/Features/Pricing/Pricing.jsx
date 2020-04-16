@@ -1,4 +1,4 @@
-import Reaact from "react";
+import React from "react";
 
 import "./Pricing.scss";
 
@@ -45,21 +45,29 @@ const Pricing = rows => {
   //     }
   // }
 
-  const display = Object.values(rows).map(plan => {
-    plan = Object.values(plan)[0];
-    let rowDetails = plan.details.map(detail => {
-      return <li key={`${plan.name}:${detail}`}>{detail}</li>;
-    });
-    return (
-      <div key={plan.name}>
-        <div>
-          <span>{plan.name}</span>
-          <span>{plan.price}</span>
+  let display = (
+    <div>
+      <span>Valid props where not pased</span>
+    </div>
+  );
+
+  if (rows) {
+    display = Object.values(rows).map(plan => {
+      plan = Object.values(plan)[0];
+      let rowDetails = plan.details.map(detail => {
+        return <li key={`${plan.name}:${detail}`}>{detail}</li>;
+      });
+      return (
+        <div key={plan.name}>
+          <div>
+            <span>{plan.name}</span>
+            <span>{plan.price}</span>
+          </div>
+          <ul>{rowDetails}</ul>
         </div>
-        <ul>{rowDetails}</ul>
-      </div>
-    );
-  });
+      );
+    });
+  }
   return <div>{display}</div>;
 };
 
