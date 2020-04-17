@@ -20,25 +20,6 @@ const SpotlightGallery = ({ images }) => {
   //     }
   // }
 
-  const [active, setActive] = useState(0);
-  const panels = Object.values(images).length;
-  let buttons;
-
-  const handleSlide = (slide, direction) => {
-    if (direction === "left") {
-      if (slide === 0) {
-        setActive(panels - 1);
-      } else {
-        setActive(slide - 1);
-      }
-    } else {
-      if (slide === panels - 1) {
-        setActive(0);
-      } else {
-        setActive(slide + 1);
-      }
-    }
-  };
   let display = (
     <div>
       <span>Valid props where not pased</span>
@@ -46,63 +27,16 @@ const SpotlightGallery = ({ images }) => {
   );
 
   if (images) {
-    buttons = [];
-
-    const imagePanels = [];
-    Object.values(images).forEach((photo, i) => {
-      buttons.push(
-        <div
-          key={`button${i}`}
-          onClick={() => setActive(i)}
-          className={classnames({
-            "gallery__bottom-nav": true,
-            "gallery__bottom-nav--active": active === i
-          })}
-        ></div>
-      );
-
-      imagePanels.push(
-        <div
-          className={classnames({
-            gallery__panel: true,
-            "gallery__panel--active": active === i
-          })}
-          key={`panel${i}`}
-          id={i}
-        >
-          <div
-            onClick={() => handleSlide(i, "left")}
-            className={classnames({
-              "gallery__left-icon": true,
-              "gallery__left-icon--active": active === i
-            })}
-          >
-            {`<=`}
-          </div>
-          <div
-            onClick={() => handleSlide(i, "right")}
-            className={classnames({
-              "gallery__right-icon": true,
-              "gallery__right-icon--active": active === i
-            })}
-          >
-            =>
-          </div>
-          <img className="gallery__image" src={photo.picUrl} />
-          <p className="gallery__text">{photo.comment}</p>
+    display = Object.values(images).map((images, i) => {
+      return (
+        <div key={`${images.title}${i}`}>
+          <span>{images.title}</span>
+          <span>{images.detail}</span>
         </div>
       );
     });
-
-    display = (
-      <div className="gallery__wrapper">
-        {imagePanels}
-        <div className="gallery__button-wrapper">{buttons}</div>
-      </div>
-    );
   }
-
-  return <div className="gallery">{display}</div>;
+  return <div>{display}</div>;
 };
 
 export default SpotlightGallery;
