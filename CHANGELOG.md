@@ -27,15 +27,30 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Removed
 - 
 
+### Deprecated
+-
+
+### Fixed
+-
+
+
+
 ## [0.2.0] 
 ### Added
 - Menus folder to the components folder
 - AccordionSingle: component to the Menus folder
 - Accordion: component to the Menus folder
 - index.js: AccordionSingle and Accordion components to be exported 
+- Select: styled select component
 
 ### Changed
 - packedge.json: version to [0.1.2]
 
 ### Removed
 - 
+
+### Deprecated
+-
+
+### Fixed
+-

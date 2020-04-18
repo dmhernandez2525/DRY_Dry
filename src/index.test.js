@@ -1,7 +1,7 @@
-import { DryButton } from '.'
+import { DryButton } from ".";
 
-describe('DryButton', () => {
-  it('is truthy', () => {
-    expect(DryButton).toBeTruthy()
-  })
-})
+describe("DryButton", () => {
+  it("is truthy", () => {
+    expect(DryButton).toBeTruthy();
+  });
+});
