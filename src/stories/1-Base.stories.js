@@ -1,12 +1,9 @@
 import React from "react";
-import { action } from "@storybook/addon-actions";
-import { Button } from "@storybook/react/demo";
+import { Card } from "./components";
 
 export default {
   title: "Base"
   // component: Base
 };
 
-export const Text = () => (
-  <Button onClick={action("clicked")}>Hello Button</Button>
-);
+export { Card };

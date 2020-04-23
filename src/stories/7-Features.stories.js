@@ -1,12 +1,25 @@
 import React from "react";
-import { action } from "@storybook/addon-actions";
-import { Button } from "@storybook/react/demo";
+import {
+  About,
+  ImageCarousel,
+  Team,
+  Header1,
+  Pricing,
+  Hours,
+  SpotlightGallery
+} from "./components";
 
 export default {
   title: "Features"
   // component: Features
 };
 
-export const Text = () => (
-  <Button onClick={action("clicked")}>Hello Button</Button>
-);
+export {
+  About,
+  ImageCarousel,
+  Team,
+  Header1,
+  Pricing,
+  Hours,
+  SpotlightGallery
+};

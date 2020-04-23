@@ -1,12 +1,14 @@
 import React from "react";
-import { action } from "@storybook/addon-actions";
-import { Button } from "@storybook/react/demo";
+import {
+  Divider,
+  SingleLineList,
+  ThreeLineList,
+  TwoLineList
+} from "./components";
 
 export default {
   title: "Lists"
   // component: Lists
 };
 
-export const Text = () => (
-  <Button onClick={action("clicked")}>Hello Button</Button>
-);
+export { Divider, SingleLineList, ThreeLineList, TwoLineList };
