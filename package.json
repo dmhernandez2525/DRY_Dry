@@ -26,8 +26,8 @@
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build",
-    "storybook": "start-storybook -p 9009",
-    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
     "pretty": "prettier --write \"./**/*.{jsx,scss,js}\""
   },
   "peerDependencies": {
