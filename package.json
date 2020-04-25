@@ -63,5 +63,7 @@
   "files": [
     "dist"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "@storybook/addon-knobs": "^5.3.18"
+  }
 }
