@@ -32,6 +32,6 @@ export default create({
   // inputBorderRadius: 4,
 
   brandTitle: "DRY Docs",
-  brandUrl: "https://example.com",
+  brandUrl: "http://localhost:9009",
   brandImage: "/ComfortOrderLogo.png"
 });

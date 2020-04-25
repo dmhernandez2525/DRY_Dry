@@ -1,14 +1,15 @@
-import React from 'react';
-import { linkTo } from '@storybook/addon-links';
-import { Welcome } from '@storybook/react/demo';
+import React from "react";
+import { linkTo } from "@storybook/addon-links";
+import { Welcome } from "@storybook/react/demo";
+import DryDocs from "./components/DryDocs/DryDocs";
 
 export default {
-  title: 'Welcome',
-  component: Welcome,
+  title: "Welcome",
+  component: DryDocs
 };
 
-export const ToStorybook = () => <Welcome showApp={linkTo('Button')} />;
+export const Dry = () => <DryDocs showApp={linkTo("Button")} />;
 
-ToStorybook.story = {
-  name: 'to Storybook',
+Dry.story = {
+  name: "to DRY"
 };
