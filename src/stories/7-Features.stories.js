@@ -7,7 +7,7 @@ import {
   Pricing,
   Hours,
   SpotlightGallery
-} from "./components";
+} from "../stories";
 
 export default {
   title: "Features"

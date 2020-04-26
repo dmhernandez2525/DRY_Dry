@@ -11,7 +11,7 @@ import {
   TopBar,
   BottomNavigation,
   NavigationRail
-} from "./components";
+} from "../stories";
 
 export default {
   title: "Menus"

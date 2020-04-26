@@ -6,7 +6,7 @@ import {
   OutlinedButton,
   ContainedButton,
   TextButton
-} from "./components";
+} from "../stories";
 
 export default {
   title: "Buttons"

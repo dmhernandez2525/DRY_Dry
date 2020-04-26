@@ -3,7 +3,21 @@ import classnames from "classnames";
 
 import "./SpotlightGallery.scss";
 
-const SpotlightGallery = ({ images }) => {
+const SpotlightGallery = ({
+  id,
+  name,
+  userTip,
+  onClick,
+  onChange,
+  onBlur,
+  onFocus,
+  disable,
+  className,
+  errorMes,
+  styles,
+  passProps,
+  images
+}) => {
   // EXAMPLE INPUT
   //   images:{
   //     img1: {
@@ -36,7 +50,28 @@ const SpotlightGallery = ({ images }) => {
       );
     });
   }
-  return <div>{display}</div>;
+  return (
+    <div
+      onClick={() => onClick("DrySpotlightGallery")}
+      className="dry-spotlightGallery"
+    >
+      {display}
+    </div>
+  );
+};
+
+SpotlightGallery.defaultProps = {
+  id: "",
+  name: "",
+  userTip: "",
+  onClick: null,
+  onChange: null,
+  onBlur: null,
+  disable: false,
+  className: "",
+  errorMes: "",
+  styles: null,
+  passProps: null
 };
 
 export default SpotlightGallery;

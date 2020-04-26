@@ -1,5 +1,5 @@
 import React from "react";
-import { CircularIndicator, LinearIndicator } from "./components";
+import { CircularIndicator, LinearIndicator } from "../stories";
 
 export default {
   title: "ProgressIndicators"

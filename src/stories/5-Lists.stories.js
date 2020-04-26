@@ -4,7 +4,7 @@ import {
   SingleLineList,
   ThreeLineList,
   TwoLineList
-} from "./components";
+} from "../stories";
 
 export default {
   title: "Lists"

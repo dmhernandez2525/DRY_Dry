@@ -4,7 +4,7 @@ import {
   ModalBox,
   ConfirmationDialog,
   SimpleDialog
-} from "./components";
+} from "../stories";
 export default {
   title: "Modals"
   // component: Modals

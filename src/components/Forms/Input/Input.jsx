@@ -35,33 +35,35 @@ const Input = ({
   }
 
   return (
-    <div className={`input ${className}`}>
-      <div className="input__label-wrapper">
-        <label
-          className={classnames({
-            input__label: true,
-            "input__label--active": inputFocus
-          })}
-        >
-          {label}
-        </label>
+    <div onClick={() => onClick("DryInput")} className="dry-input">
+      <div className={`input ${className}`}>
+        <div className="input__label-wrapper">
+          <label
+            className={classnames({
+              input__label: true,
+              "input__label--active": inputFocus
+            })}
+          >
+            {label}
+          </label>
+        </div>
+        <input
+          className="input__html-input"
+          id={id}
+          name={name}
+          type={type}
+          onClick={onClick}
+          onChange={onChange}
+          onBlur={onBlur}
+          onFocus={handleFocus}
+          disabled={disable}
+          {...styles}
+          {...passProps}
+          placeholder={displayPlaceholder}
+          min={min}
+          max={max}
+        />
       </div>
-      <input
-        className="input__html-input"
-        id={id}
-        name={name}
-        type={type}
-        onClick={onClick}
-        onChange={onChange}
-        onBlur={onBlur}
-        onFocus={handleFocus}
-        disabled={disable}
-        {...styles}
-        {...passProps}
-        placeholder={displayPlaceholder}
-        min={min}
-        max={max}
-      />
     </div>
   );
 };

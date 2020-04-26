@@ -2,7 +2,21 @@ import React from "react";
 
 import "./Hours.scss";
 
-const Hours = ({ days }) => {
+const Hours = ({
+  id,
+  name,
+  userTip,
+  onClick,
+  onChange,
+  onBlur,
+  onFocus,
+  disable,
+  className,
+  errorMes,
+  styles,
+  passProps,
+  days
+}) => {
   // EXAMPLE INPUT
   //   days:{
   //      Monday:{from:"10am",to:"10pm"},
@@ -25,7 +39,25 @@ const Hours = ({ days }) => {
       return <li key={day}>{`${day}:${currentDay.from}-${currentDay.to}`}</li>;
     });
   }
-  return <div>{display}</div>;
+  return (
+    <div onClick={() => onClick("DryHours")} className="dry-hours">
+      {display}
+    </div>
+  );
+};
+
+Hours.defaultProps = {
+  id: "",
+  name: "",
+  userTip: "",
+  onClick: null,
+  onChange: null,
+  onBlur: null,
+  disable: false,
+  className: "",
+  errorMes: "",
+  styles: null,
+  passProps: null
 };
 
 export default Hours;

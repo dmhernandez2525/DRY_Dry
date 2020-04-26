@@ -3,7 +3,7 @@ import {
   QuiltedImageList,
   StandardImageList,
   WovenImageList
-} from "./components";
+} from "../stories";
 
 export default {
   title: "ImageLists"

@@ -80,45 +80,47 @@ const Select = ({
   });
 
   return (
-    <div onMouseLeave={handleBlur} className="select">
-      <div
-        onChange={onChange}
-        className="select__input-wrapper"
-        name={name}
-        id={id}
-      >
-        <label
-          className={classnames({
-            select__label: true,
-            "select__label--active": labelfocus
-          })}
-        >
-          {label}
-        </label>
+    <div onClick={() => onClick("DrySelect")} className="dry-select">
+      <div onMouseLeave={handleBlur} className="select">
         <div
-          onClick={handleFocus}
-          className={classnames({
-            select__input: true,
-            "select__input--focus": focus
-          })}
+          onChange={onChange}
+          className="select__input-wrapper"
+          name={name}
+          id={id}
         >
-          <div className="select__activeOption">{activeOption}</div>
-          <div
+          <label
             className={classnames({
-              "select__dropdown-icon": true,
-              "select__dropdown-icon--active": showChildren
+              select__label: true,
+              "select__label--active": labelfocus
             })}
           >
-            +
+            {label}
+          </label>
+          <div
+            onClick={handleFocus}
+            className={classnames({
+              select__input: true,
+              "select__input--focus": focus
+            })}
+          >
+            <div className="select__activeOption">{activeOption}</div>
+            <div
+              className={classnames({
+                "select__dropdown-icon": true,
+                "select__dropdown-icon--active": showChildren
+              })}
+            >
+              +
+            </div>
           </div>
-        </div>
-        <div
-          className={classnames({
-            "select__children-wrapper": true,
-            "select__children-wrapper--active": showChildren
-          })}
-        >
-          {displaySelectChildren}
+          <div
+            className={classnames({
+              "select__children-wrapper": true,
+              "select__children-wrapper--active": showChildren
+            })}
+          >
+            {displaySelectChildren}
+          </div>
         </div>
       </div>
     </div>

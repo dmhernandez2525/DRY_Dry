@@ -11,7 +11,7 @@ import {
   Switch,
   Input,
   Select
-} from "./components";
+} from "../stories";
 
 export default {
   title: "Forms"

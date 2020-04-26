@@ -3,7 +3,21 @@ import classnames from "classnames";
 
 import "./ImageCarousel.scss";
 
-const ImageCarousel = ({ slides }) => {
+const ImageCarousel = ({
+  id,
+  name,
+  userTip,
+  onClick,
+  onChange,
+  onBlur,
+  onFocus,
+  disable,
+  className,
+  errorMes,
+  styles,
+  passProps,
+  slides
+}) => {
   // EXAMPLE INPUT
   //   slides:{
   //     slide1: {
@@ -106,8 +120,28 @@ const ImageCarousel = ({ slides }) => {
       </div>
     );
   }
+  return (
+    <div
+      onClick={() => onClick("DryImageCarousel")}
+      className="dry-imageCarousel"
+    >
+      <div className="gallery">{display}</div>
+    </div>
+  );
+};
 
-  return <div className="gallery">{display}</div>;
+ImageCarousel.defaultProps = {
+  id: "",
+  name: "",
+  userTip: "",
+  onClick: null,
+  onChange: null,
+  onBlur: null,
+  disable: false,
+  className: "",
+  errorMes: "",
+  styles: null,
+  passProps: null
 };
 
 export default ImageCarousel;
