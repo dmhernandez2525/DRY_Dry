@@ -1,17 +1,8 @@
-// src/components/Task.stories.js
-
 import React from "react";
 import { action } from "@storybook/addon-actions";
 import { withKnobs, object } from "@storybook/addon-knobs/react";
 
 import Task from "./Task";
-
-// export default {
-//   component: Task,
-//   title: "Task",
-//   // Our exports that end in "Data" are not stories.
-//   excludeStories: /.*Data$/,
-// };
 
 export default {
   component: Task,
@@ -21,23 +12,23 @@ export default {
     assets: [
       "path/to/your/asset.png",
       "path/to/another/asset.png",
-      "path/to/yet/another/asset.png",
-    ],
+      "path/to/yet/another/asset.png"
+    ]
   },
   // Our exports that end in "Data" are not stories.
-  excludeStories: /.*Data$/,
+  excludeStories: /.*Data$/
 };
 
 export const taskData = {
   id: "1",
   title: "Test Task",
   state: "TASK_INBOX",
-  updatedAt: new Date(2018, 0, 1, 9, 0),
+  updatedAt: new Date(2018, 0, 1, 9, 0)
 };
 
 export const actionsData = {
   onPinTask: action("onPinTask"),
-  onArchiveTask: action("onArchiveTask"),
+  onArchiveTask: action("onArchiveTask")
 };
 
 // export const Default = () => <Task task={{ ...taskData }} {...actionsData} />;
