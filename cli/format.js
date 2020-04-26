@@ -12,7 +12,7 @@ const format = path => {
           }
           resolve(
             stdout
-              ? `${stdout} All Component files are Prettifyed!!! `
+              ? `All Component files are Prettifyed!!! `
               : `${stderr} make sure that prettier is installed globally: npm install -g prettier`
           );
         }

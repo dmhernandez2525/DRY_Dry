@@ -8,7 +8,6 @@ import styles from "./styles.mjs";
 
 const handleError = err => {
   if (err) throw err;
-  console.log("Saved!");
 };
 
 const capitalizeWord = word => {
@@ -20,12 +19,67 @@ const capitalizeWord = word => {
 
 const makeDirectory = async (name, component, test, story, styles, index) => {
   const path = `../src/components/${name}`;
-  fs.mkdirSync(path, { recursive: true });
-  fs.appendFile(`${path}/${name}.jsx`, `${component}`, handleError);
-  fs.appendFile(`${path}/${name}.test.js`, `${test}`, handleError);
-  fs.appendFile(`${path}/${name}.stories.js`, `${story}`, handleError);
-  fs.appendFile(`${path}/${name}.scss`, `${styles}`, handleError);
-  fs.appendFile(`${path}/index.js`, `${index}`, handleError);
+
+  await new Promise((resolve, reject) => {
+    try {
+      fs.mkdirSync(path, { recursive: true });
+    } catch (error) {
+      resolve(error);
+    }
+    console.log("Component Directiory Created");
+    resolve("Saved");
+  });
+
+  await new Promise((resolve, reject) => {
+    try {
+      fs.appendFile(`${path}/${name}.jsx`, `${component}`, handleError);
+    } catch (error) {
+      resolve(error);
+    }
+    console.log(`${name}.jsx Created`);
+    resolve("Saved");
+  });
+
+  await new Promise((resolve, reject) => {
+    try {
+      fs.appendFile(`${path}/${name}.test.js`, `${test}`, handleError);
+    } catch (error) {
+      resolve(error);
+    }
+    console.log(`${name}.test.js Created`);
+    resolve("Saved");
+  });
+
+  await new Promise((resolve, reject) => {
+    try {
+      fs.appendFile(`${path}/${name}.stories.js`, `${story}`, handleError);
+    } catch (error) {
+      resolve(error);
+    }
+    console.log(`${name}.stories.js Created`);
+    resolve("Saved");
+  });
+
+  await new Promise((resolve, reject) => {
+    try {
+      fs.appendFile(`${path}/${name}.scss`, `${styles}`, handleError);
+    } catch (error) {
+      resolve(error);
+    }
+    console.log(`${name}.scss Created`);
+    resolve("Saved");
+  });
+
+  await new Promise((resolve, reject) => {
+    try {
+      fs.appendFile(`${path}/index.js`, `${index}`, handleError);
+    } catch (error) {
+      resolve(error);
+    }
+    console.log("index.js Created");
+    resolve("Saved");
+  });
+
   let mess = await format(path);
   console.log(mess);
 };
