@@ -1,7 +1,7 @@
 import fs from "fs";
 import component from "./component.mjs";
-import componentTest from "./componentTest.js.mjs";
-import componentStory from "./componentStory.js.mjs";
+import componentTest from "./componentTest.mjs";
+import componentStory from "./componentStory.mjs";
 import styles from "./styles.mjs";
 // run node cliBuild.mjs  testing2
 
@@ -37,7 +37,7 @@ export default ${input};
 const displayComponent = component(input);
 const displayComponentTest = componentTest(input);
 const displayComponentStory = componentStory(input);
-const displayStyles = styles();
+const displayStyles = styles(input);
 
 makeDirectory(
   input,

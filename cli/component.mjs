@@ -19,13 +19,14 @@ const component = input => {
       passProps
     }) => {
     return (
-        <div >
+        <div className="dry-${input}">
           Dry${input}
+
         </div>
     );
     };
     
-    const ${input}DefaultProps = {
+    ${input}.defaultProps = {
         id: "",
         name: "",
         userTip: "",

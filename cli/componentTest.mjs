@@ -2,11 +2,11 @@ const testComponent = input => {
   const displayTestComponent = `
     import React from "react";
     import ReactDOM from "react-dom";
-    import { WithPinnedTasks } from "./TaskList.stories";
+    import { Default } from "./${input}.stories";
     
     it("renders a div with ${input}", () => {
       const div = document.createElement("div");
-      ReactDOM.render(<WithPinnedTasks />, div);
+      ReactDOM.render(<Default />, div);
     
       // We expect to display the base component with the name inside a div
       const dry${input} = div.querySelector(
