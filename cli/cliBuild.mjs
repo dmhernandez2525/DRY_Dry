@@ -1,4 +1,5 @@
 import fs from "fs";
+import format from "./format.js";
 import component from "./component.mjs";
 import componentTest from "./componentTest.mjs";
 import componentStory from "./componentStory.mjs";
@@ -17,14 +18,16 @@ const capitalizeWord = word => {
   return newWord.join("");
 };
 
-const makeDirectory = (name, component, test, story, styles, index) => {
-  const path = `./${name}`;
+const makeDirectory = async (name, component, test, story, styles, index) => {
+  const path = `../src/components/${name}`;
   fs.mkdirSync(path, { recursive: true });
   fs.appendFile(`${path}/${name}.jsx`, `${component}`, handleError);
   fs.appendFile(`${path}/${name}.test.js`, `${test}`, handleError);
   fs.appendFile(`${path}/${name}.stories.js`, `${story}`, handleError);
   fs.appendFile(`${path}/${name}.scss`, `${styles}`, handleError);
   fs.appendFile(`${path}/index.js`, `${index}`, handleError);
+  let mess = await format(path);
+  console.log(mess);
 };
 
 const cli = process.argv[2];
