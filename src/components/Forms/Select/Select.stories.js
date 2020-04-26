@@ -12,7 +12,7 @@ import {
   date,
   select,
   files,
-  button,
+  button
 } from "@storybook/addon-knobs/react";
 
 import Select from "./Select";
@@ -22,26 +22,29 @@ export default {
   title: "Select",
   decorators: [withKnobs],
   // Our exports that end in "Data" are not stories.
-  excludeStories: /.*Data$/,
+  excludeStories: /.*Data$/
 };
 
 export const actionsData = {
   onClick: action("onClick"),
   onChange: action("onChange"),
-  onBlur: action("onBlur"),
+  onBlur: action("onBlur")
 };
 
 export const Default = () => {
   return (
     <Select
+      label={text("label", "Demo")}
       id={text("id", "")}
       name={text("name", "")}
+      maxWidth={text("maxWidth", "")}
       userTip={text("userTip", "")}
       disable={boolean("disable", false)}
       className={text("className", "")}
       errorMes={text("errorMes", "")}
-      styles={object("styles", {})}
+      inputStyles={object("inputStyles", {})}
       passProps={object("passProps", {})}
+      children={object("children", { default: "default" })}
       {...actionsData}
     />
   );

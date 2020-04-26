@@ -8,6 +8,7 @@ const Select = ({
   id,
   name,
   defaultValue,
+  maxWidth,
   userTip,
   onClick,
   onChange,
@@ -16,7 +17,7 @@ const Select = ({
   disable,
   className,
   errorMes,
-  styles,
+  inputStyles,
   passProps,
   placeholder,
   children,
@@ -26,6 +27,11 @@ const Select = ({
   const [showChildren, setShowChildren] = useState(false);
   const [focus, setFocus] = useState(false);
   const [labelfocus, setLabelFocus] = useState(false);
+
+  const styles = {};
+  if (maxWidth !== "") {
+    styles = { ...styles, maxWidth };
+  }
 
   const handleFocus = () => {
     setFocus(true);
@@ -46,6 +52,7 @@ const Select = ({
       label: "",
       id: "",
       name: "",
+      maxWidth: "",
       defaultValue: "",
       userTip: "",
       onClick: null,
@@ -55,7 +62,7 @@ const Select = ({
       disable: false,
       className: "",
       errorMes: "",
-      styles: null,
+      inputStyles: null,
       passProps: null,
       placeholder: "",
       children: { default: "default" },
@@ -80,7 +87,11 @@ const Select = ({
   });
 
   return (
-    <div onClick={() => onClick("DrySelect")} className="dry-select">
+    <div
+      style={styles}
+      onClick={() => onClick("DrySelect")}
+      className="dry-select"
+    >
       <div onMouseLeave={handleBlur} className="select">
         <div
           onChange={onChange}
@@ -131,6 +142,7 @@ Select.defaultProps = {
   label: "",
   id: "",
   name: "",
+  maxWidth: "",
   defaultValue: "",
   userTip: "",
   onClick: null,
@@ -140,7 +152,7 @@ Select.defaultProps = {
   disable: false,
   className: "",
   errorMes: "",
-  styles: null,
+  inputStyles: null,
   passProps: null,
   placeholder: "",
   children: { default: "default" },
