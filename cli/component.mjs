@@ -19,7 +19,8 @@ const component = (input, lowerCaseInput) => {
       passProps
     }) => {
     return (
-        <div className="dry-${lowerCaseInput}">
+        <div onClick={() => onClick("Dry${input}")}
+          className="dry-${lowerCaseInput}">
           Dry${input}
 
         </div>
