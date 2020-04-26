@@ -17,6 +17,13 @@ const capitalizeWord = word => {
   return newWord.join("");
 };
 
+const lowerCaseWord = word => {
+  const newWord = word.split("");
+  const firstLetter = newWord[0].toLowerCase();
+  newWord.splice(0, 1, firstLetter);
+  return newWord.join("");
+};
+
 const makeDirectory = async (name, component, test, story, styles, index) => {
   const path = `../src/components/${name}`;
 
@@ -86,15 +93,16 @@ const makeDirectory = async (name, component, test, story, styles, index) => {
 
 const cli = process.argv[2];
 const input = capitalizeWord(cli);
+const lowerCaseInput = lowerCaseWord(cli);
 
 const displayIndex = `
 import  ${input} from "./${input}";
 export default ${input};
 `;
-const displayComponent = component(input);
-const displayComponentTest = componentTest(input);
-const displayComponentStory = componentStory(input);
-const displayStyles = styles(input);
+const displayComponent = component(input, lowerCaseInput);
+const displayComponentTest = componentTest(input, lowerCaseInput);
+const displayComponentStory = componentStory(input, lowerCaseInput);
+const displayStyles = styles(lowerCaseInput);
 
 makeDirectory(
   input,

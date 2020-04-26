@@ -1,4 +1,4 @@
-const component = input => {
+const component = (input, lowerCaseInput) => {
   const displayComponent = `
     import React from "react";
     
@@ -19,7 +19,7 @@ const component = input => {
       passProps
     }) => {
     return (
-        <div className="dry-${input}">
+        <div className="dry-${lowerCaseInput}">
           Dry${input}
 
         </div>

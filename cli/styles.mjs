@@ -1,6 +1,6 @@
-const styles = input => {
+const styles = lowerCaseInput => {
   return `
-  .dry-${input}{
+  .dry-${lowerCaseInput}{
 
   }
   `;
