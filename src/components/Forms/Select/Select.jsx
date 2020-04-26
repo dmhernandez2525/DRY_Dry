@@ -8,6 +8,7 @@ const Select = ({
   id,
   name,
   defaultValue,
+  maxWidth,
   userTip,
   onClick,
   onChange,
@@ -16,7 +17,7 @@ const Select = ({
   disable,
   className,
   errorMes,
-  styles,
+  inputStyles,
   passProps,
   placeholder,
   children,
@@ -26,6 +27,11 @@ const Select = ({
   const [showChildren, setShowChildren] = useState(false);
   const [focus, setFocus] = useState(false);
   const [labelfocus, setLabelFocus] = useState(false);
+
+  const styles = {};
+  if (maxWidth !== "") {
+    styles = { ...styles, maxWidth };
+  }
 
   const handleFocus = () => {
     setFocus(true);
@@ -46,6 +52,7 @@ const Select = ({
       label: "",
       id: "",
       name: "",
+      maxWidth: "",
       defaultValue: "",
       userTip: "",
       onClick: null,
@@ -55,7 +62,7 @@ const Select = ({
       disable: false,
       className: "",
       errorMes: "",
-      styles: null,
+      inputStyles: null,
       passProps: null,
       placeholder: "",
       children: { default: "default" },
@@ -80,45 +87,51 @@ const Select = ({
   });
 
   return (
-    <div onMouseLeave={handleBlur} className="select">
-      <div
-        onChange={onChange}
-        className="select__input-wrapper"
-        name={name}
-        id={id}
-      >
-        <label
-          className={classnames({
-            select__label: true,
-            "select__label--active": labelfocus
-          })}
-        >
-          {label}
-        </label>
+    <div
+      style={styles}
+      onClick={() => onClick("DrySelect")}
+      className="dry-select"
+    >
+      <div onMouseLeave={handleBlur} className="select">
         <div
-          onClick={handleFocus}
-          className={classnames({
-            select__input: true,
-            "select__input--focus": focus
-          })}
+          onChange={onChange}
+          className="select__input-wrapper"
+          name={name}
+          id={id}
         >
-          <div className="select__activeOption">{activeOption}</div>
-          <div
+          <label
             className={classnames({
-              "select__dropdown-icon": true,
-              "select__dropdown-icon--active": showChildren
+              select__label: true,
+              "select__label--active": labelfocus
             })}
           >
-            +
+            {label}
+          </label>
+          <div
+            onClick={handleFocus}
+            className={classnames({
+              select__input: true,
+              "select__input--focus": focus
+            })}
+          >
+            <div className="select__activeOption">{activeOption}</div>
+            <div
+              className={classnames({
+                "select__dropdown-icon": true,
+                "select__dropdown-icon--active": showChildren
+              })}
+            >
+              +
+            </div>
           </div>
-        </div>
-        <div
-          className={classnames({
-            "select__children-wrapper": true,
-            "select__children-wrapper--active": showChildren
-          })}
-        >
-          {displaySelectChildren}
+          <div
+            className={classnames({
+              "select__children-wrapper": true,
+              "select__children-wrapper--active": showChildren
+            })}
+          >
+            {displaySelectChildren}
+          </div>
         </div>
       </div>
     </div>
@@ -129,6 +142,7 @@ Select.defaultProps = {
   label: "",
   id: "",
   name: "",
+  maxWidth: "",
   defaultValue: "",
   userTip: "",
   onClick: null,
@@ -138,7 +152,7 @@ Select.defaultProps = {
   disable: false,
   className: "",
   errorMes: "",
-  styles: null,
+  inputStyles: null,
   passProps: null,
   placeholder: "",
   children: { default: "default" },

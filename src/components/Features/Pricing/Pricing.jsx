@@ -2,7 +2,21 @@ import React from "react";
 
 import "./Pricing.scss";
 
-const Pricing = rows => {
+const Pricing = ({
+  id,
+  name,
+  userTip,
+  onClick,
+  onChange,
+  onBlur,
+  onFocus,
+  disable,
+  className,
+  errorMes,
+  styles,
+  passProps,
+  rows
+}) => {
   // EXAMPLE INPUT
   //   rows:{
   //     row1: {
@@ -68,7 +82,25 @@ const Pricing = rows => {
       );
     });
   }
-  return <div>{display}</div>;
+  return (
+    <div onClick={() => onClick("DryPricing")} className="dry-pricing">
+      {display}
+    </div>
+  );
+};
+
+Pricing.defaultProps = {
+  id: "",
+  name: "",
+  userTip: "",
+  onClick: null,
+  onChange: null,
+  onBlur: null,
+  disable: false,
+  className: "",
+  errorMes: "",
+  styles: null,
+  passProps: null
 };
 
 export default Pricing;

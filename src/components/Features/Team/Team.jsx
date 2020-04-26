@@ -2,7 +2,21 @@ import React from "react";
 
 import "./Team.scss";
 
-const Team = ({ members }) => {
+const Team = ({
+  id,
+  name,
+  userTip,
+  onClick,
+  onChange,
+  onBlur,
+  onFocus,
+  disable,
+  className,
+  errorMes,
+  styles,
+  passProps,
+  members
+}) => {
   // EXAMPLE INPUT
   //   members:{
   //     member1: {
@@ -114,7 +128,25 @@ const Team = ({ members }) => {
     });
   }
 
-  return <div>{display}</div>;
+  return (
+    <div onClick={() => onClick("DryTeam")} className="dry-team">
+      {display}
+    </div>
+  );
+};
+
+Team.defaultProps = {
+  id: "",
+  name: "",
+  userTip: "",
+  onClick: null,
+  onChange: null,
+  onBlur: null,
+  disable: false,
+  className: "",
+  errorMes: "",
+  styles: null,
+  passProps: null
 };
 
 export default Team;

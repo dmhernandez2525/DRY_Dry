@@ -1,9 +1,40 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./Switch.scss";
 
-const Switch = () => {
-  return <div></div>;
+const Switch = ({
+  id,
+  name,
+  userTip,
+  onClick,
+  onChange,
+  onBlur,
+  onFocus,
+  disable,
+  className,
+  errorMes,
+  styles,
+  passProps,
+}) => {
+  return (
+    <div onClick={() => onClick("DrySwitch")} className="dry-switch">
+      DrySwitch
+    </div>
+  );
+};
+
+Switch.defaultProps = {
+  id: "",
+  name: "",
+  userTip: "",
+  onClick: null,
+  onChange: null,
+  onBlur: null,
+  disable: false,
+  className: "",
+  errorMes: "",
+  styles: null,
+  passProps: null,
 };
 
 export default Switch;
