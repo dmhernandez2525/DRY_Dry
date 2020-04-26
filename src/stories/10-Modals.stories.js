@@ -10,4 +10,9 @@ export default {
   // component: Modals
 };
 
-export { AlertDialog, ModalBox, ConfirmationDialog, SimpleDialog };
+const DryAlertDialog = AlertDialog.Default;
+const DryModalBox = ModalBox.Default;
+const DryConfirmationDialog = ConfirmationDialog.Default;
+const DrySimpleDialog = SimpleDialog.Default;
+
+export { DryAlertDialog, DryModalBox, DryConfirmationDialog, DrySimpleDialog };

@@ -5,4 +5,8 @@ export default {
   // component: UserHelpers
 };
 
-export { Banner, Snackbar, Tooltip };
+const DryBanner = Banner.Default;
+const DrySnackbar = Snackbar.Default;
+const DryTooltip = Tooltip.Default;
+
+export { DryBanner, DrySnackbar, DryTooltip };

@@ -6,4 +6,7 @@ export default {
   // component: ProgressIndicators
 };
 
-export { CircularIndicator, LinearIndicator };
+const Circular = CircularIndicator.Default;
+const Linear = LinearIndicator.Default;
+
+export { Circular, Linear };

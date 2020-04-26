@@ -1,9 +1,9 @@
 import React from "react";
-import { Card } from "../stories";
+import { Card } from "./index";
 
 export default {
   title: "Base"
   // component: Base
 };
-
-export { Card };
+let card = Card.Default;
+export { card };

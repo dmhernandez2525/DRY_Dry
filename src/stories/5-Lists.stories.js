@@ -11,4 +11,9 @@ export default {
   // component: Lists
 };
 
-export { Divider, SingleLineList, ThreeLineList, TwoLineList };
+const Divid = Divider.Default;
+const SingleLine = SingleLineList.Default;
+const ThreeLine = ThreeLineList.Default;
+const TwoLineL = TwoLineList.Default;
+
+export { Divid, SingleLine, ThreeLine, TwoLineL };

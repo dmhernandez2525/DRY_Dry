@@ -10,4 +10,7 @@ export default {
   // component: ImageLists
 };
 
-export { QuiltedImageList, StandardImageList, WovenImageList };
+const QuiltedImage = QuiltedImageList.Default;
+const StandardImage = StandardImageList.Default;
+const WovenImage = WovenImageList.Default;
+export { QuiltedImage, StandardImage, WovenImage };
