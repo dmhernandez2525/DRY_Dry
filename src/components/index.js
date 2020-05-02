@@ -1,6 +1,5 @@
 // Base
 import Card from "./Base/Card";
-import Card from "./Base/Card";
 // ImageLists
 import QuiltedImageList from "./ImageLists/QuiltedImageList";
 import StandardImageList from "./ImageLists/StandardImageList";
