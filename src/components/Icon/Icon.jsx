@@ -10,11 +10,11 @@ const Icon = ({ className, width, height, title, viewBox, icon }) => {
           viewBox={viewBox}
           width={width}
           height={height}
-          className="dry-icon-home"
+          className={`dry-icon-${icon}`}
         >
-          <use href="#dry-icon-home"></use>
+          <use href={`#dry-icon-${icon}`}></use>
         </svg>
-        <span className="">dry-icon-home</span>
+        <span className="">{`dry-icon-${icon}`}</span>
       </div>
     </div>
   );
@@ -25,7 +25,7 @@ Icon.defaultProps = {
   width: "50",
   height: "50",
   viewBox: "0 0 100 100",
-  icon: ""
+  icon: "home"
 };
 export default Icon;
 

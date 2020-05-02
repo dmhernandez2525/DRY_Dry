@@ -31,26 +31,6 @@ export const actionsData = {
   onBlur: action("onBlur")
 };
 
-export const AllIcons = () => {
-  return (
-    <Icon
-      id={text("id", "")}
-      name={text("name", "")}
-      width={text("width", "50")}
-      height={text("height", "50")}
-      viewBox={text("viewBox", "0 0 100 100")}
-      icon={text("icon", "")}
-      userTip={text("userTip", "")}
-      disable={boolean("disable", false)}
-      className={text("className", "")}
-      errorMes={text("errorMes", "")}
-      styles={object("styles", {})}
-      passProps={object("passProps", {})}
-      {...actionsData}
-    />
-  );
-};
-
 export const Default = () => {
   return (
     <Icon
@@ -620,3 +600,8 @@ const allIconNames = [
   "codepen",
   "svg"
 ];
+
+export const AllIcons = () => {
+  const allIcons = allIconNames.map(iconName => <Icon icon={iconName} />);
+  return <div>{allIcons}</div>;
+};
