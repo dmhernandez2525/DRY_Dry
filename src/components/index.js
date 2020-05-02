@@ -62,6 +62,9 @@ import ModalBox from "./Modals/ModalBox";
 import ConfirmationDialog from "./Modals/ConfirmationDialog";
 import SimpleDialog from "./Modals/SimpleDialog";
 
+// Icons
+import Icon from "./Icon";
+
 export {
   Card,
   QuiltedImageList,
@@ -114,5 +117,6 @@ export {
   AlertDialog,
   ModalBox,
   ConfirmationDialog,
-  SimpleDialog
+  SimpleDialog,
+  Icon
 };
