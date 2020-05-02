@@ -3,7 +3,6 @@ import React from "react";
 import "./Icon.scss";
 const Icons = () => {
   return (
-    // <svg>
     <svg className="icon__wrapper">
       <defs>
         <symbol id="dry-icon-home" viewBox="0 0 32 32">
