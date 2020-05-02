@@ -61,6 +61,8 @@ import * as AlertDialog from "../components/Modals/AlertDialog/AlertDialog.stori
 import * as ModalBox from "../components/Modals/ModalBox/ModalBox.stories.js";
 import * as ConfirmationDialog from "../components/Modals/ConfirmationDialog/ConfirmationDialog.stories.js";
 import * as SimpleDialog from "../components/Modals/SimpleDialog/SimpleDialog.stories.js";
+// Icons
+import * as Icon from "../components/Icon/Icon.stories.js";
 
 export {
   Card,
@@ -114,5 +116,6 @@ export {
   AlertDialog,
   ModalBox,
   ConfirmationDialog,
-  SimpleDialog
+  SimpleDialog,
+  Icon
 };

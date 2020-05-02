@@ -1,7 +1,7 @@
 import React from "react";
 import Icons from "./Icons";
 
-const Icon = ({ classNameName, width, height, title, viewBox, icon }) => {
+const Icon = ({ className, width, height, title, viewBox, icon }) => {
   return (
     <div className="">
       <Icons />
@@ -14,14 +14,14 @@ const Icon = ({ classNameName, width, height, title, viewBox, icon }) => {
         >
           <use href="#dry-icon-home"></use>
         </svg>
-        <span className=""> dry-icon-home</span>
+        <span className="">dry-icon-home</span>
       </div>
     </div>
   );
 };
 
 Icon.defaultProps = {
-  classNameName: "",
+  className: "",
   width: "50",
   height: "50",
   viewBox: "0 0 100 100",
