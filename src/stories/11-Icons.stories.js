@@ -5,5 +5,5 @@ export default {
   title: "Icons"
   // component: Icons
 };
-const icon = () => <Icon />;
+const icon = () => <Icon icon="check-box" />;
 export { icon };
