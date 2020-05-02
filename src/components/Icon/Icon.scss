@@ -11,4 +11,18 @@
     width: fit-content;
     align-items: center;
   }
+  &__main-wrapper {
+    margin: 10px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.all-icons__wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }

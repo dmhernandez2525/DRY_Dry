@@ -9,5 +9,5 @@ export default {
 // export { icon };
 
 let defaultIcon = Icon.Default;
-let allIcon = Icon.AllIcons;
-export { defaultIcon, allIcon };
+let AllIcons = Icon.AllIcons;
+export { defaultIcon, AllIcons };

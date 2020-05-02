@@ -16,6 +16,7 @@ import {
 } from "@storybook/addon-knobs/react";
 
 import Icon from "./Icon";
+import "./Icon.scss";
 
 export default {
   component: Icon,
@@ -603,5 +604,5 @@ const allIconNames = [
 
 export const AllIcons = () => {
   const allIcons = allIconNames.map(iconName => <Icon icon={iconName} />);
-  return <div>{allIcons}</div>;
+  return <div className="all-icons__wrapper">{allIcons}</div>;
 };
