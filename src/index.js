@@ -15,7 +15,8 @@ import {
   Input,
   Label,
   AccordionSingle,
-  Accordion
+  Accordion,
+  Icon
 } from "./components";
 
 export {
@@ -35,5 +36,6 @@ export {
   Input,
   Label,
   AccordionSingle,
-  Accordion
+  Accordion,
+  Icon
 };
