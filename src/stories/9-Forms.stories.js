@@ -28,7 +28,7 @@ const DryDatePicker = DatePicker.Default;
 const DryRadio = Radio.Default;
 const DrySwitch = Switch.Default;
 const DryInput = Input.Default;
-const DrySelect = Select.Default;
+const DrySelect = Select.UserTip;
 
 export {
   DryCheckbox,
