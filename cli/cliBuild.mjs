@@ -125,14 +125,27 @@ const makeDirectory = async (
 const cli = process.argv[2];
 const input = capitalizeWord(cli);
 const lowerCaseInput = lowerCaseWord(cli);
+const componentProps = {
+  properties: {
+    id: "",
+    name: "",
+    userTip: "",
+    disable: false,
+    className: "",
+    errorMes: "",
+    styles: null,
+    passProps: null
+  },
+  events: { onClick: null, onChange: null, onBlur: null }
+};
 
 const displayIndex = `
 import  ${input} from "./${input}";
 export default ${input};
 `;
 const displayComponent = component(input, lowerCaseInput);
-const displayComponentPropTable = componentPropTable(input, lowerCaseInput);
-const displayComponentReadme = componentReadme(input, lowerCaseInput);
+const displayComponentPropTable = componentPropTable(input, componentProps);
+const displayComponentReadme = componentReadme(input, componentProps);
 const displayComponentTest = componentTest(input, lowerCaseInput);
 const displayComponentStory = componentStory(input, lowerCaseInput);
 const displayStyles = styles(lowerCaseInput);

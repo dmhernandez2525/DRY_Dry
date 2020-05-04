@@ -5,7 +5,7 @@ const format = path => {
   if (fs.existsSync(path)) {
     return new Promise((resolve, reject) => {
       exec(
-        `prettier --write \"${path}/*.{jsx,scss,js}\" `,
+        `prettier --write \"${path}/*.{jsx,scss,js,md}\" `,
         (error, stdout, stderr) => {
           if (error) {
             console.warn(error);
