@@ -2,6 +2,7 @@ import fs from "fs";
 import format from "./format.js";
 import component from "./component.mjs";
 import componentPropTable from "./componentPropTable.mjs";
+import componentReadme from "./componentReadme.mjs";
 import componentTest from "./componentTest.mjs";
 import componentStory from "./componentStory.mjs";
 import styles from "./styles.mjs";
@@ -29,6 +30,7 @@ const makeDirectory = async (
   name,
   component,
   propTable,
+  readme,
   test,
   story,
   styles,
@@ -58,11 +60,21 @@ const makeDirectory = async (
 
   await new Promise((resolve, reject) => {
     try {
-      fs.appendFile(`${path}/${name}.md`, `${propTable}`, handleError);
+      fs.appendFile(`${path}/${name}PropTable.md`, `${propTable}`, handleError);
     } catch (error) {
       resolve(error);
     }
     console.log(`${name}.md Created`);
+    resolve("Saved");
+  });
+
+  await new Promise((resolve, reject) => {
+    try {
+      fs.appendFile(`${path}/README.md`, `${readme}`, handleError);
+    } catch (error) {
+      resolve(error);
+    }
+    console.log(`README.md Created`);
     resolve("Saved");
   });
 
@@ -120,6 +132,7 @@ export default ${input};
 `;
 const displayComponent = component(input, lowerCaseInput);
 const displayComponentPropTable = componentPropTable(input, lowerCaseInput);
+const displayComponentReadme = componentReadme(input, lowerCaseInput);
 const displayComponentTest = componentTest(input, lowerCaseInput);
 const displayComponentStory = componentStory(input, lowerCaseInput);
 const displayStyles = styles(lowerCaseInput);
@@ -128,6 +141,7 @@ makeDirectory(
   input,
   displayComponent,
   displayComponentPropTable,
+  displayComponentReadme,
   displayComponentTest,
   displayComponentStory,
   displayStyles,
