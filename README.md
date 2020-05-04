@@ -35,6 +35,14 @@ proprietary © [dmhernandez2525](https://github.com/dmhernandez2525)
 
   - dark mode
 
+- Templates
+
+  - Single page (Architecture )
+    - themes (stylistic )
+      - Restaurant
+      - Flower shop
+  - eCommerce
+
 - Base
 
   - Card
@@ -118,4 +126,5 @@ proprietary © [dmhernandez2525](https://github.com/dmhernandez2525)
   - SimpleDialog
 
 - Icons
+
   - Icon
