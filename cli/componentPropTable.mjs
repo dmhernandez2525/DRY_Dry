@@ -1,4 +1,14 @@
 const componentPropTable = (name, props) => {
+  const componentProperties = Object.keys(props.properties).map(
+    propertyName => {
+      return `| \`${propertyName} \` | \`true\` | Some Text | \`type\` | \`${props.properties[propertyName]}\` |`;
+    }
+  );
+
+  const componentEvents = Object.values(props.events).map(eventName => {
+    return `| \`${eventName}\` | \`true\` | Some Text   | \`CustomEvent\`    |`;
+  });
+
   const displayComponentTable = `
 # ${name} Prop Table
 
@@ -8,20 +18,13 @@ const componentPropTable = (name, props) => {
 
 | Property                 | Required | Description | Type      | Default        |
 | ------------------------ | -------- | ----------- | --------- | -------------- |
-| \`autoUpdateContent \`   | \`true\`   | Some Text   | \`boolean\` | \`true\`         |
-| \`durationBeforeCallback\` | \`true\`   | Some Text   | \`number\`  | \`0\`            |
-| \`mode\`                   | \`true\`   | Some Text   | \`string\`  | \`"javascript"\` |
-| \`options\`                | \`true\`   | Some Text   | \`any\`     | \`{}\`           |
-| \`readOnly\`               | \`true\`   | Some Text   | \`boolean\` | \`false\`        |
-| \`text\`                   | \`true\`   | Some Text   | \`string\`  | \`""\`           |
-| \`theme\`                  | \`true\`   | Some Text   | \`string\`  | \`"ambiance"\`   |
-| \`timeoutSaving\`          | \`true\`   | Some Text   | \`number\`  | \`0\`            |
+${componentProperties.join("\n")}
 
 ## Events
 
-| Event        | Description | Type               |
-| ------------ | ----------- | ------------------ |
-| \`textChange\` | Some Text   | \`CustomEvent<any>\` |
+| Event          | Required | Description | Type               |
+| -------------- | -------- | ----------- | ------------------ |
+${componentEvents.join("\n")}
 
 _Built with [DryCli](link to dry cli)_
 `;
