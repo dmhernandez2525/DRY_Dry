@@ -1,6 +1,7 @@
 import fs from "fs";
 import format from "./format.js";
 import component from "./component.mjs";
+import componentPropTable from "./componentPropTable.mjs";
 import componentTest from "./componentTest.mjs";
 import componentStory from "./componentStory.mjs";
 import styles from "./styles.mjs";
@@ -24,7 +25,15 @@ const lowerCaseWord = word => {
   return newWord.join("");
 };
 
-const makeDirectory = async (name, component, test, story, styles, index) => {
+const makeDirectory = async (
+  name,
+  component,
+  propTable,
+  test,
+  story,
+  styles,
+  index
+) => {
   const path = `../src/components/${name}`;
 
   await new Promise((resolve, reject) => {
@@ -44,6 +53,16 @@ const makeDirectory = async (name, component, test, story, styles, index) => {
       resolve(error);
     }
     console.log(`${name}.jsx Created`);
+    resolve("Saved");
+  });
+
+  await new Promise((resolve, reject) => {
+    try {
+      fs.appendFile(`${path}/${name}.md`, `${propTable}`, handleError);
+    } catch (error) {
+      resolve(error);
+    }
+    console.log(`${name}.md Created`);
     resolve("Saved");
   });
 
@@ -100,6 +119,7 @@ import  ${input} from "./${input}";
 export default ${input};
 `;
 const displayComponent = component(input, lowerCaseInput);
+const displayComponentPropTable = componentPropTable(input, lowerCaseInput);
 const displayComponentTest = componentTest(input, lowerCaseInput);
 const displayComponentStory = componentStory(input, lowerCaseInput);
 const displayStyles = styles(lowerCaseInput);
@@ -107,6 +127,7 @@ const displayStyles = styles(lowerCaseInput);
 makeDirectory(
   input,
   displayComponent,
+  displayComponentPropTable,
   displayComponentTest,
   displayComponentStory,
   displayStyles,
