@@ -14,7 +14,7 @@ const QuiltedImageList = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div
@@ -37,7 +37,7 @@ QuiltedImageList.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default QuiltedImageList;

@@ -14,7 +14,7 @@ const Divider = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryDivider")} className="dry-divider">
@@ -34,7 +34,7 @@ Divider.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default Divider;

@@ -14,7 +14,7 @@ const Accordion = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryAccordion")} className="dry-accordion">
@@ -34,7 +34,7 @@ Accordion.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default Accordion;

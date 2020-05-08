@@ -14,7 +14,7 @@ const TwoLineList = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryTwoLineList")} className="dry-twoLineList">
@@ -34,7 +34,7 @@ TwoLineList.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default TwoLineList;

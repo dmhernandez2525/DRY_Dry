@@ -14,7 +14,7 @@ const LinearIndicator = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div
@@ -37,7 +37,7 @@ LinearIndicator.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default LinearIndicator;

@@ -14,7 +14,7 @@ const TopBar = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryTopBar")} className="dry-topBar">
@@ -34,7 +34,7 @@ TopBar.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default TopBar;
