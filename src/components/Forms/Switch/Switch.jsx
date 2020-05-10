@@ -14,7 +14,7 @@ const Switch = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DrySwitch")} className="dry-switch">
@@ -34,7 +34,7 @@ Switch.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default Switch;

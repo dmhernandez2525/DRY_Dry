@@ -14,7 +14,7 @@ const Banner = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryBanner")} className="dry-banner">
@@ -34,7 +34,7 @@ Banner.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default Banner;

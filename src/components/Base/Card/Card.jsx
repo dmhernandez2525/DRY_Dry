@@ -14,7 +14,7 @@ const Card = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryCard")} className="dry-card">
@@ -34,7 +34,7 @@ Card.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default Card;

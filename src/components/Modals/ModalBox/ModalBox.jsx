@@ -14,7 +14,7 @@ const ModalBox = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryModalBox")} className="dry-modalBox">
@@ -34,7 +34,7 @@ ModalBox.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default ModalBox;

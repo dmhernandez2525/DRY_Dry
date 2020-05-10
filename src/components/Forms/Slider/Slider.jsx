@@ -14,7 +14,7 @@ const Slider = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DrySlider")} className="dry-slider">
@@ -34,7 +34,7 @@ Slider.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default Slider;

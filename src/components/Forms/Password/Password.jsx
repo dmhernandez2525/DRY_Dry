@@ -14,7 +14,7 @@ const Password = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryPassword")} className="dry-password">
@@ -34,7 +34,7 @@ Password.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default Password;

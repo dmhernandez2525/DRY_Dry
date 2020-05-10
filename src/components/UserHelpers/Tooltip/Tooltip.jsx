@@ -14,7 +14,7 @@ const Tooltip = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryTooltip")} className="dry-tooltip">
@@ -34,7 +34,7 @@ Tooltip.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default Tooltip;

@@ -14,7 +14,7 @@ const Checkbox = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryCheckbox")} className="dry-checkbox">
@@ -34,7 +34,7 @@ Checkbox.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default Checkbox;

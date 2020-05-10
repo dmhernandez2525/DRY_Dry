@@ -14,7 +14,7 @@ const SideSheet = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DrySideSheet")} className="dry-sideSheet">
@@ -34,7 +34,7 @@ SideSheet.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default SideSheet;
