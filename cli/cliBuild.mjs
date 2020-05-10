@@ -1,6 +1,8 @@
 import fs from "fs";
 import format from "./format.js";
 import component from "./component.mjs";
+import componentPropTable from "./componentPropTable.mjs";
+import componentReadme from "./componentReadme.mjs";
 import componentTest from "./componentTest.mjs";
 import componentStory from "./componentStory.mjs";
 import styles from "./styles.mjs";
@@ -24,7 +26,16 @@ const lowerCaseWord = word => {
   return newWord.join("");
 };
 
-const makeDirectory = async (name, component, test, story, styles, index) => {
+const makeDirectory = async (
+  name,
+  component,
+  propTable,
+  readme,
+  test,
+  story,
+  styles,
+  index
+) => {
   const path = `../src/components/${name}`;
 
   await new Promise((resolve, reject) => {
@@ -44,6 +55,26 @@ const makeDirectory = async (name, component, test, story, styles, index) => {
       resolve(error);
     }
     console.log(`${name}.jsx Created`);
+    resolve("Saved");
+  });
+
+  await new Promise((resolve, reject) => {
+    try {
+      fs.appendFile(`${path}/${name}PropTable.md`, `${propTable}`, handleError);
+    } catch (error) {
+      resolve(error);
+    }
+    console.log(`${name}.md Created`);
+    resolve("Saved");
+  });
+
+  await new Promise((resolve, reject) => {
+    try {
+      fs.appendFile(`${path}/README.md`, `${readme}`, handleError);
+    } catch (error) {
+      resolve(error);
+    }
+    console.log(`README.md Created`);
     resolve("Saved");
   });
 
@@ -94,12 +125,27 @@ const makeDirectory = async (name, component, test, story, styles, index) => {
 const cli = process.argv[2];
 const input = capitalizeWord(cli);
 const lowerCaseInput = lowerCaseWord(cli);
+const componentProps = {
+  properties: {
+    id: "",
+    name: "",
+    userTip: "",
+    disable: false,
+    className: "",
+    errorMes: "",
+    styles: null,
+    passProps: null
+  },
+  events: { onClick: null, onChange: null, onBlur: null }
+};
 
 const displayIndex = `
 import  ${input} from "./${input}";
 export default ${input};
 `;
 const displayComponent = component(input, lowerCaseInput);
+const displayComponentPropTable = componentPropTable(input, componentProps);
+const displayComponentReadme = componentReadme(input, componentProps);
 const displayComponentTest = componentTest(input, lowerCaseInput);
 const displayComponentStory = componentStory(input, lowerCaseInput);
 const displayStyles = styles(lowerCaseInput);
@@ -107,6 +153,8 @@ const displayStyles = styles(lowerCaseInput);
 makeDirectory(
   input,
   displayComponent,
+  displayComponentPropTable,
+  displayComponentReadme,
   displayComponentTest,
   displayComponentStory,
   displayStyles,

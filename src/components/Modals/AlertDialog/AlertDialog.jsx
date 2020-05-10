@@ -14,7 +14,7 @@ const AlertDialog = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryAlertDialog")} className="dry-alertDialog">
@@ -34,7 +34,7 @@ AlertDialog.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default AlertDialog;

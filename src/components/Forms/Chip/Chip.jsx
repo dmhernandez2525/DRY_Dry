@@ -14,7 +14,7 @@ const Chip = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryChip")} className="dry-chip">
@@ -34,7 +34,7 @@ Chip.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default Chip;

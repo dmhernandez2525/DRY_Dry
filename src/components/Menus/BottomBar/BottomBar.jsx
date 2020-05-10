@@ -14,7 +14,7 @@ const BottomBar = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryBottomBar")} className="dry-bottomBar">
@@ -34,7 +34,7 @@ BottomBar.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default BottomBar;

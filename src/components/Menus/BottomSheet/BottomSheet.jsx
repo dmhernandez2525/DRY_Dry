@@ -14,7 +14,7 @@ const BottomSheet = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryBottomSheet")} className="dry-bottomSheet">
@@ -34,7 +34,7 @@ BottomSheet.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default BottomSheet;

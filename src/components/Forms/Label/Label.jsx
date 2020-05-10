@@ -14,7 +14,7 @@ const Label = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryLabel")} className="dry-label">
@@ -34,7 +34,7 @@ Label.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default Label;

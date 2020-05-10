@@ -14,7 +14,7 @@ const Tab = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryTab")} className="dry-tab">
@@ -34,7 +34,7 @@ Tab.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default Tab;

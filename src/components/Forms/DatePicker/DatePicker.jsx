@@ -14,7 +14,7 @@ const DatePicker = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryDatePicker")} className="dry-datePicker">
@@ -34,7 +34,7 @@ DatePicker.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default DatePicker;

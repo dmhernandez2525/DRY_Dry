@@ -12,7 +12,7 @@ import {
   date,
   select,
   files,
-  button,
+  button
 } from "@storybook/addon-knobs/react";
 
 import Accordion from "./Accordion";
@@ -22,13 +22,13 @@ export default {
   title: "Accordion",
   decorators: [withKnobs],
   // Our exports that end in "Data" are not stories.
-  excludeStories: /.*Data$/,
+  excludeStories: /.*Data$/
 };
 
 export const actionsData = {
   onClick: action("onClick"),
   onChange: action("onChange"),
-  onBlur: action("onBlur"),
+  onBlur: action("onBlur")
 };
 
 export const Default = () => {

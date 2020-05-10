@@ -4,20 +4,20 @@ import { useParameter, useStorybookState } from "@storybook/api";
 import { addons, types } from "@storybook/addons";
 import { styled } from "@storybook/theming";
 
-const getUrl = (input) => {
+const getUrl = input => {
   return typeof input === "string" ? input : input.url;
 };
 
 const Iframe = styled.iframe({
   width: "100%",
   height: "100%",
-  border: "0 none",
+  border: "0 none"
 });
 const Img = styled.img({
   width: "100%",
   height: "100%",
   border: "0 none",
-  objectFit: "contain",
+  objectFit: "contain"
 });
 
 const Asset = ({ url }) => {
@@ -58,6 +58,6 @@ addons.register("my/design-addon", () => {
       <AddonPanel active={active} key={key}>
         <Content />
       </AddonPanel>
-    ),
+    )
   });
 });

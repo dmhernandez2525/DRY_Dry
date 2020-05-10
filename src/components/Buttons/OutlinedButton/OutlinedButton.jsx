@@ -14,7 +14,7 @@ const OutlinedButton = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div
@@ -37,7 +37,7 @@ OutlinedButton.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default OutlinedButton;

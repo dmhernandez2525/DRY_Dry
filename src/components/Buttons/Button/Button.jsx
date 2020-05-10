@@ -14,7 +14,7 @@ const Button = ({
   className,
   errorMes,
   styles,
-  passProps,
+  passProps
 }) => {
   return (
     <div onClick={() => onClick("DryButton")} className="dry-button">
@@ -34,7 +34,7 @@ Button.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null,
+  passProps: null
 };
 
 export default Button;
