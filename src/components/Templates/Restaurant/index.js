@@ -48,7 +48,6 @@ class Index extends React.Component {
 
   formatFeatures() {
     let fe = {};
-    debugger;
     Object.keys(this.props.features).map(feature => {
       let key = Object.keys(this.props.features[feature]);
       let value = Object.values(this.props.features[feature]);
