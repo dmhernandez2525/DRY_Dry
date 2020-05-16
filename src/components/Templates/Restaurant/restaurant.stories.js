@@ -66,19 +66,6 @@ export const Default = () => {
         slogan: "Demo Site slogan",
         __typename: "BusinessType"
       }}
-      // id={text("id", "")}
-      // name={text("name", "")}
-      // width={text("width", "50")}
-      // height={text("height", "50")}
-      // viewBox={text("viewBox", "0 0 100 100")}
-      // icon={text("icon", "")}
-      // userTip={text("userTip", "")}
-      // disable={boolean("disable", false)}
-      // className={text("className", "")}
-      // errorMes={text("errorMes", "")}
-      // styles={object("styles", {})}
-      // passProps={object("passProps", {})}
-      // {...actionsData}
     />
   );
 };

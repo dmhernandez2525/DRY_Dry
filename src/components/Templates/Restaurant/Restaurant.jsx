@@ -185,4 +185,3 @@ class Restaurant extends React.Component {
 }
 
 export default Restaurant;
-//  rfq remove map from backend
