@@ -4,6 +4,8 @@ import * as Card from "../components/Base/Card/Card.stories.js";
 import * as QuiltedImageList from "../components/ImageLists/QuiltedImageList/QuiltedImageList.stories.js";
 import * as StandardImageList from "../components/ImageLists/StandardImageList/StandardImageList.stories.js";
 import * as WovenImageList from "../components/ImageLists/WovenImageList/WovenImageList.stories.js";
+// Templates
+import * as Restaurant from "../components/Templates/Restaurant/restaurant.stories";
 // ProgressIndicators
 import * as CircularIndicator from "../components/ProgressIndicators/CircularIndicator/CircularIndicator.stories.js";
 import * as LinearIndicator from "../components/ProgressIndicators/LinearIndicator/LinearIndicator.stories.js";
@@ -69,6 +71,7 @@ export {
   QuiltedImageList,
   StandardImageList,
   WovenImageList,
+  Restaurant,
   CircularIndicator,
   LinearIndicator,
   ActionButton,
