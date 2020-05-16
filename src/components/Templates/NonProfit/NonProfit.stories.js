@@ -50,8 +50,8 @@ export const Default = () => {
       template="NonProfit"
       businessData={{
         template: "NonProfit",
-        name: "Demo Site name",
-        url: "Demo Site url",
+        name: "Demo Non Profit Name",
+        url: "Demo Non Profit url",
         features: [
           {
             data: [
