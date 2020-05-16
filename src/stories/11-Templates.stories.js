@@ -1,10 +1,11 @@
 import React from "react";
-import { Restaurant } from "./index";
+import { Restaurant, NonProfit } from "./index";
 
 export default {
   title: "Templates"
   // component: Templates
 };
 
-let defaultRestaurant = Restaurant.Default;
-export { defaultRestaurant };
+let restaurant = Restaurant.Default;
+let nonprofit = NonProfit.Default;
+export { restaurant, nonprofit };

@@ -6,6 +6,7 @@ import * as StandardImageList from "../components/ImageLists/StandardImageList/S
 import * as WovenImageList from "../components/ImageLists/WovenImageList/WovenImageList.stories.js";
 // Templates
 import * as Restaurant from "../components/Templates/Restaurant/restaurant.stories";
+import * as NonProfit from "../components/Templates/NonProfit/NonProfit.stories";
 // ProgressIndicators
 import * as CircularIndicator from "../components/ProgressIndicators/CircularIndicator/CircularIndicator.stories.js";
 import * as LinearIndicator from "../components/ProgressIndicators/LinearIndicator/LinearIndicator.stories.js";
@@ -72,6 +73,7 @@ export {
   StandardImageList,
   WovenImageList,
   Restaurant,
+  NonProfit,
   CircularIndicator,
   LinearIndicator,
   ActionButton,

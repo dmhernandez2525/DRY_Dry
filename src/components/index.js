@@ -9,6 +9,7 @@ import CircularIndicator from "./ProgressIndicators/CircularIndicator";
 import LinearIndicator from "./ProgressIndicators/LinearIndicator";
 // Templates
 import Restaurant from "./Templates/Restaurant";
+import NonProfit from "./Templates/NonProfit";
 // Buttons
 import ActionButton from "./Buttons/ActionButton";
 import DryButton from "./Buttons/DryButton";
@@ -75,6 +76,7 @@ export {
   CircularIndicator,
   LinearIndicator,
   Restaurant,
+  NonProfit,
   ActionButton,
   DryButton,
   ToggleButton,
