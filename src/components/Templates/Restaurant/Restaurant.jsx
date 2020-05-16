@@ -2,8 +2,8 @@ import React from "react";
 // import { Link } from "react-router-dom";
 import Footer from "./footer";
 import placeholder from "./placeholder.jpg";
-import favicon from "./favicon.ico";
-import companyLogo from "./ComfortOrderLogo.png";
+// import favicon from "./favicon.ico";
+// import companyLogo from "./ComfortOrderLogo.png";
 
 const token = process.env.REACT_APP_TOKEN;
 

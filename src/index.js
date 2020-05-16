@@ -16,7 +16,8 @@ import {
   Label,
   AccordionSingle,
   Accordion,
-  Icon
+  Icon,
+  Restaurant
 } from "./components";
 
 export {
@@ -37,5 +38,6 @@ export {
   Label,
   AccordionSingle,
   Accordion,
-  Icon
+  Icon,
+  Restaurant
 };
