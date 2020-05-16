@@ -1,12 +1,23 @@
 import React from "react";
 
-class Footer extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+import "./Footer.scss";
 
-  render() {
-    return (
+const Footer = ({
+  id,
+  name,
+  userTip,
+  onClick,
+  onChange,
+  onBlur,
+  onFocus,
+  disable,
+  className,
+  errorMes,
+  styles,
+  passProps
+}) => {
+  return (
+    <div onClick={() => onClick("DryFooter")} className="dry-footer">
       <div className="container">
         <div className="footer-area">
           <div className="footer-links">
@@ -36,8 +47,22 @@ class Footer extends React.Component {
           </div>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+Footer.defaultProps = {
+  id: "",
+  name: "",
+  userTip: "",
+  onClick: null,
+  onChange: null,
+  onBlur: null,
+  disable: false,
+  className: "",
+  errorMes: "",
+  styles: null,
+  passProps: null
+};
 
 export default Footer;

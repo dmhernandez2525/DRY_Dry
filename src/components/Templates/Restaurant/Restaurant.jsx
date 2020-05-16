@@ -1,6 +1,6 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import Footer from "./footer";
+import Footer from "../../Base/Footer";
 import placeholder from "./placeholder.jpg";
 // import favicon from "./favicon.ico";
 // import companyLogo from "./ComfortOrderLogo.png";

@@ -1,5 +1,6 @@
 // Base
 import Card from "./Base/Card";
+import Footer from "./Base/Footer";
 // ImageLists
 import QuiltedImageList from "./ImageLists/QuiltedImageList";
 import StandardImageList from "./ImageLists/StandardImageList";
@@ -70,6 +71,7 @@ import Icon from "./Icon";
 
 export {
   Card,
+  Footer,
   QuiltedImageList,
   StandardImageList,
   WovenImageList,
