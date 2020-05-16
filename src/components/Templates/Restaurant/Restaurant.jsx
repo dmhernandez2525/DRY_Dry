@@ -5,6 +5,8 @@ import placeholder from "./placeholder.jpg";
 // import favicon from "./favicon.ico";
 // import companyLogo from "./ComfortOrderLogo.png";
 
+import "./Restaurant.scss";
+
 const token = process.env.REACT_APP_TOKEN;
 
 class Restaurant extends React.Component {
