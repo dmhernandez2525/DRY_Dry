@@ -26,6 +26,8 @@ const customViewports = {
   }
 };
 
+addDecorator(withInfo);
+addDecorator(addReadme);
 addParameters({
   backgrounds: [
     { name: "none", value: "#fff", default: true },
