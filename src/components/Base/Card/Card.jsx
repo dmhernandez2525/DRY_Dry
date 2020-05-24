@@ -1,40 +1,32 @@
 import React from "react";
+import classnames from "classnames";
 
 import "./Card.scss";
 
 const Card = ({
   id,
-  name,
-  userTip,
   onClick,
-  onChange,
-  onBlur,
-  onFocus,
   disable,
   className,
-  errorMes,
-  styles,
-  passProps
+  children
 }) => {
   return (
-    <div onClick={() => onClick("DryCard")} className="dry-card">
-      DryCard
+    <div id={id} onClick={onClick} className={classnames({
+      card: true,
+      [className]: true,
+      card__disabled: disable
+    })}>
+      {children}
     </div>
   );
 };
 
 Card.defaultProps = {
   id: "",
-  name: "",
-  userTip: "",
   onClick: null,
-  onChange: null,
-  onBlur: null,
   disable: false,
   className: "",
-  errorMes: "",
-  styles: null,
-  passProps: null
+  children: null
 };
 
 export default Card;
