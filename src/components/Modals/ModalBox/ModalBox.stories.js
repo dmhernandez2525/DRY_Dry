@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { action } from "@storybook/addon-actions";
 import {
   withKnobs,
@@ -31,19 +31,37 @@ export const actionsData = {
   onBlur: action("onBlur")
 };
 
+
 export const Default = () => {
+  const [openOrClosed, setopenOrClosed] = useState(false)
+  const openModal = () => {
+    setopenOrClosed(true)
+  }
+  // onClick
   return (
-    <ModalBox
-      id={text("id", "")}
-      name={text("name", "")}
-      userTip={text("userTip", "")}
-      disable={boolean("disable", false)}
-      className={text("className", "")}
-      errorMes={text("errorMes", "")}
-      styles={object("styles", {})}
-      passProps={object("passProps", {})}
-      {...actionsData}
-    />
+    <div>
+      <button onClick={openModal}>Open Modal</button>
+      <ModalBox
+        id={text("id", "")}
+        name={text("name", "")}
+        userTip={text("userTip", "")}
+        disable={boolean("disable", false)}
+        className={text("className", "")}
+        errorMes={text("errorMes", "")}
+        styles={object("styles", {})}
+        passProps={object("passProps", {})}
+        closeModal={() => setopenOrClosed(!openOrClosed)}
+        classNameBackground={text(
+          "Class Names for Background",
+          "modal-background"
+        )}
+        classNameChild={text("Class Names for Children ", "")}
+        openOrClosedBool={openOrClosed}
+        {...actionsData}
+      >
+        <h1>Modal Children here Try adding a card component</h1>
+      </ModalBox>
+    </div>
   );
 };
 
