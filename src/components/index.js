@@ -9,6 +9,7 @@ import WovenImageList from "./ImageLists/WovenImageList";
 import CircularIndicator from "./ProgressIndicators/CircularIndicator";
 import LinearIndicator from "./ProgressIndicators/LinearIndicator";
 // Templates
+import Templates from "./Templates";
 import Restaurant from "./Templates/Restaurant";
 import NonProfit from "./Templates/NonProfit";
 // Buttons
@@ -77,6 +78,7 @@ export {
   WovenImageList,
   CircularIndicator,
   LinearIndicator,
+  Templates,
   Restaurant,
   NonProfit,
   ActionButton,

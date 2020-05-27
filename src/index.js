@@ -17,7 +17,7 @@ import {
   AccordionSingle,
   Accordion,
   Icon,
-  Restaurant
+  Templates
 } from "./components";
 
 export {
@@ -39,5 +39,5 @@ export {
   AccordionSingle,
   Accordion,
   Icon,
-  Restaurant
+  Templates
 };
