@@ -17,7 +17,8 @@ import {
   AccordionSingle,
   Accordion,
   Icon,
-  Templates
+  Templates,
+  FileUpload
 } from "./components";
 
 export {
@@ -39,5 +40,6 @@ export {
   AccordionSingle,
   Accordion,
   Icon,
-  Templates
+  Templates,
+  FileUpload
 };

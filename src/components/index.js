@@ -61,6 +61,7 @@ import Radio from "./Forms/Radio";
 import Switch from "./Forms/Switch";
 import Input from "./Forms/Input";
 import Select from "./Forms/Select";
+import FileUpload from "./Forms/FileUpload";
 // Modals
 import AlertDialog from "./Modals/AlertDialog";
 import ModalBox from "./Modals/ModalBox";
@@ -123,6 +124,7 @@ export {
   Switch,
   Input,
   Select,
+  FileUpload,
   AlertDialog,
   ModalBox,
   ConfirmationDialog,

@@ -10,7 +10,8 @@ import {
   Radio,
   Switch,
   Input,
-  Select
+  Select,
+  FileUpload
 } from "../stories";
 
 export default {
@@ -29,6 +30,7 @@ const DryRadio = Radio.Default;
 const DrySwitch = Switch.Default;
 const DryInput = Input.Default;
 const DrySelect = Select.UserTip;
+const DryFileUpload = FileUpload.Default;
 
 export {
   DryCheckbox,
@@ -41,5 +43,6 @@ export {
   DryRadio,
   DrySwitch,
   DryInput,
-  DrySelect
+  DrySelect,
+  DryFileUpload
 };

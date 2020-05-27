@@ -59,6 +59,7 @@ import * as Radio from "../components/Forms/Radio/Radio.stories.js";
 import * as Switch from "../components/Forms/Switch/Switch.stories.js";
 import * as Input from "../components/Forms/Input/Input.stories.js";
 import * as Select from "../components/Forms/Select/Select.stories.js";
+import * as FileUpload from "../components/Forms/FileUpload/FileUpload.stories.js";
 // Modals
 import * as AlertDialog from "../components/Modals/AlertDialog/AlertDialog.stories.js";
 import * as ModalBox from "../components/Modals/ModalBox/ModalBox.stories.js";
@@ -118,6 +119,7 @@ export {
   Switch,
   Input,
   Select,
+  FileUpload,
   AlertDialog,
   ModalBox,
   ConfirmationDialog,
