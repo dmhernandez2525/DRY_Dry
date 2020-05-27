@@ -76,21 +76,35 @@ const FileUpload = ({
   return (
     <div id={id} className={`dry-fileUpload  ${className}`}>
       {hasSubmitInput ? (
-        <form onSubmit={onFormSubmit}>
+        <form
+          className="dry-fileUpload__user-interaction"
+          onSubmit={onFormSubmit}
+        >
           <p className="dry-fileUpload__label">{label}</p>
-          <input type="file" name={uploadFileName} onChange={onChange} />
+          <div className="dry-fileUpload__input-wrapper">
+            <input
+              className="dry-fileUpload__input"
+              type="file"
+              name={uploadFileName}
+              onChange={onChange}
+            />
+          </div>
+
           <button className="dry-fileUpload__button" type="submit">
             {uploadButtonLabel}{" "}
           </button>
         </form>
       ) : (
-        <div>
+        <div className="dry-fileUpload__user-interaction">
           <p className="dry-fileUpload__label">{label}</p>
-          <input
-            type="file"
-            name={uploadFileName}
-            onChange={handleAutoUpload}
-          />
+          <div className="dry-fileUpload__input-wrapper">
+            <input
+              className="dry-fileUpload__input"
+              type="file"
+              name={uploadFileName}
+              onChange={handleAutoUpload}
+            />
+          </div>
         </div>
       )}
       {setImageUrl ? (
