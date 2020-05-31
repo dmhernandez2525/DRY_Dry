@@ -1,7 +1,9 @@
 import React from "react";
 
 const DryDocs = () => {
-  return <div></div>;
+  return (
+    <div>to add css put `import "@comfort-order/dry/dist/index.css";`</div>
+  );
 };
 
 export default DryDocs;

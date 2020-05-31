@@ -8,8 +8,7 @@ import {
   Hours,
   ImageCarousel,
   SpotlightGallery,
-  Team,
-  Menu
+  Team
 } from "../../index";
 // END OF ALL THE FEATURES
 
@@ -24,21 +23,20 @@ class Index extends React.Component {
   makeFeature(feature, data) {
     switch (feature) {
       case "Pricing":
-        return <div></div>; //<Pricing data={data} />;
+        return <Pricing {...data[0]} />;
       case "About":
-        return <div></div>; //<About data={data} />;
+        return <About {...data[0]} />;
       case "Hours":
-        return <div></div>; //<Hours data={data} />;
+        return <Hours {...data[0]} />;
       case "ImageCarousel":
-        return <div></div>; //<ImageCarousel data={data} />;
+        return <ImageCarousel {...data[0]} />;
       case "SpotlightGallery":
-        return <div></div>; //<SpotlightGallery data={data} />;
+        return <SpotlightGallery {...data[0]} />;
       case "Team":
-        return <div></div>; //<Team data={data} />;
-      case "Menu":
-        return <div></div>; //<Menu data={data} />;
+        return <Team {...data[0]} />;
+
       default:
-        return <div></div>; //<div></div>;
+        return <div></div>;
     }
   }
 

@@ -23,9 +23,11 @@ const About = ({
 }) => {
   return (
     <div onClick={() => onClick("DryAbout")} className="dry-about">
-      <h1>{title}</h1>
+      <div className="dry-about__title-wrapper">
+        <h2 className="dry-about__title">{title}</h2>
+        <img className="dry-about__image" src={pic} />
+      </div>
       <p>{text}</p>
-      <img src={pic} />
     </div>
   );
 };

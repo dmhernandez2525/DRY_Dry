@@ -3,6 +3,7 @@
   }
 
   &__label {
+    margin-right: 20px;
   }
 
   &__image {
@@ -16,7 +17,6 @@
 
   &__user-interaction {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: end;
   }
 }

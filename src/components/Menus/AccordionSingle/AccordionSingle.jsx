@@ -28,7 +28,7 @@ const AccordionSingle = ({
     >
       <div className="panel">
         <div className="panel__header-wrapper">
-          <span>{text}</span>
+          <span className="panel__label">{text}</span>
           <div onClick={() => setActive(previousValue => !previousValue)}>
             <span
               className={classnames({

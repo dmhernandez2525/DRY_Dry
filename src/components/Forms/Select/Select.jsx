@@ -45,6 +45,7 @@ const Select = ({
     if (activeOption === "") {
       setLabelFocus(false);
     }
+    onChange(activeOption);
   };
 
   if (info) {

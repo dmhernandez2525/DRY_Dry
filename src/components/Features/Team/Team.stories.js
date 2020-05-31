@@ -34,14 +34,67 @@ export const actionsData = {
 export const Default = () => {
   return (
     <Team
-      id={text("id", "")}
-      name={text("name", "")}
-      userTip={text("userTip", "")}
-      disable={boolean("disable", false)}
-      className={text("className", "")}
-      errorMes={text("errorMes", "")}
-      styles={object("styles", {})}
-      passProps={object("passProps", {})}
+      members={{
+        member1: {
+          pic: "https://ca.slack-edge.com/TL86V04VD-UL6LL1UJC-e8394a6f6209-48",
+          name: "Tom",
+          about:
+            "Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.",
+          socialLinks: {
+            facebook: {
+              url: "https://www.facebook.com"
+            },
+            instagram: {
+              url: "https://www.instagram.com"
+            },
+            linkedin: {
+              url: "https://www.linkedin.com"
+            }
+          }
+        },
+        member2: {
+          pic: "https://ca.slack-edge.com/TL86V04VD-UL6LL1UJC-e8394a6f6209-48",
+          name: "Bill",
+          about:
+            "Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.",
+          socialLinks: {
+            facebook: {
+              url: "https://www.facebook.com"
+            },
+            instagram: {
+              url: "https://www.instagram.com"
+            },
+            linkedin: {
+              url: "https://www.linkedin.com"
+            }
+          }
+        },
+        member3: {
+          pic: "https://ca.slack-edge.com/TL86V04VD-UL6LL1UJC-e8394a6f6209-48",
+          name: "Margret",
+          about:
+            "Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.",
+          socialLinks: {
+            facebook: {
+              url: "https://www.facebook.com"
+            },
+            instagram: {
+              url: "https://www.instagram.com"
+            },
+            linkedin: {
+              url: "https://www.linkedin.com"
+            }
+          }
+        }
+      }}
+      // id={text("id", "")}
+      // name={text("name", "")}
+      // userTip={text("userTip", "")}
+      // disable={boolean("disable", false)}
+      // className={text("className", "")}
+      // errorMes={text("errorMes", "")}
+      // styles={object("styles", {})}
+      // passProps={object("passProps", {})}
       {...actionsData}
     />
   );

@@ -20,7 +20,6 @@
     text-align: center;
   }
   &__children-wrapper {
-    padding: 10px;
     background: #fff;
   }
   &__part {
@@ -28,5 +27,9 @@
   }
   &__part--active {
     display: block;
+    box-shadow: 9px 4px 9px 8px #8888887d;
+  }
+  &__label {
+    color: white;
   }
 }

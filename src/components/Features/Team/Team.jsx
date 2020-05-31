@@ -108,7 +108,7 @@ const Team = ({
         return (
           <li key={`${member.name}:${i}`}>
             <button
-              className={"social-links"}
+              className={"social-links dry-team__ul-button"}
               onClick={e => socialOpen(socialData.url)}
               style={{ backgroundImage: `url(${links[social]})` }}
             ></button>
@@ -116,13 +116,13 @@ const Team = ({
         );
       });
       return (
-        <div key={member.name}>
-          <img src={member.pic} />
+        <div className="dry-team__wrapper" key={member.name}>
           <div>
-            <h1>{member.name}</h1>
-            <p>{member.about}</p>
+            <h1 className="dry-team__img-header">{member.name}</h1>
+            <img className="dry-team__img" src={member.pic} />
           </div>
-          <ul>{socialLinks}</ul>
+          <p className="dry-team__p">{member.about}</p>
+          <ul className="dry-team__ul">{socialLinks}</ul>
         </div>
       );
     });

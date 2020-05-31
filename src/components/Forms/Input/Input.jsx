@@ -21,6 +21,7 @@ const Input = ({
   placeholder,
   min,
   max
+  // value
 }) => {
   const [inputFocus, setInputFocus] = useState(false);
   const [placeholderFocus, setPlaceholderFocus] = useState(false);
@@ -35,7 +36,7 @@ const Input = ({
   }
 
   return (
-    <div onClick={() => onClick("DryInput")} className="dry-input">
+    <div className="dry-input">
       <div className={`input ${className}`}>
         <div className="input__label-wrapper">
           <label
@@ -50,6 +51,7 @@ const Input = ({
         <input
           className="input__html-input"
           id={id}
+          // value={value}
           name={name}
           type={type}
           onClick={onClick}
@@ -85,6 +87,7 @@ Input.defaultProps = {
   placeholder: "",
   min: "",
   max: ""
+  // value=""
 };
 
 export default Input;
