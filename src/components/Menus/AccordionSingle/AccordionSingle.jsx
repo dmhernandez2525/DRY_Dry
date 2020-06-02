@@ -22,10 +22,7 @@ const AccordionSingle = ({
   const [active, setActive] = useState(false);
 
   return (
-    <div
-      onClick={() => onClick("DryAccordionSingle")}
-      className="dry-accordionSingle"
-    >
+    <div className="dry-accordionSingle">
       <div className="panel">
         <div className="panel__header-wrapper">
           <span className="panel__label">{text}</span>

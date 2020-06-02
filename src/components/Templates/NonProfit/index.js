@@ -23,17 +23,17 @@ class Index extends React.Component {
   makeFeature(feature, data) {
     switch (feature) {
       case "Pricing":
-        return <Pricing {...data[0]} />;
+        return <Pricing rows={data[0]} />;
       case "About":
-        return <About {...data[0]} />;
+        return <About {...data[0].about} />;
       case "Hours":
-        return <Hours {...data[0]} />;
+        return <Hours days={data[0]} />;
       case "ImageCarousel":
-        return <ImageCarousel {...data[0]} />;
+        return <ImageCarousel slides={data[0]} />;
       case "SpotlightGallery":
-        return <SpotlightGallery {...data[0]} />;
+        return <SpotlightGallery images={data[0]} />;
       case "Team":
-        return <Team {...data[0]} />;
+        return <Team members={data[0]} />;
 
       default:
         return <div></div>;

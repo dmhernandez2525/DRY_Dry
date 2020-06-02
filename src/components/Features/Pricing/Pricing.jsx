@@ -67,7 +67,6 @@ const Pricing = ({
 
   if (rows) {
     display = Object.values(rows).map(plan => {
-      plan = Object.values(plan)[0];
       let rowDetails = plan.details.map(detail => {
         return <li key={`${plan.name}:${detail}`}>{detail}</li>;
       });

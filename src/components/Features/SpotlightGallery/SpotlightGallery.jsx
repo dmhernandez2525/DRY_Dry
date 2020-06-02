@@ -43,9 +43,9 @@ const SpotlightGallery = ({
   if (images) {
     display = Object.values(images).map((images, i) => {
       return (
-        <div key={`${images.title}${i}`}>
-          <span>{images.title}</span>
-          <span>{images.detail}</span>
+        <div key={`${images.comment}${i}`}>
+          <img src={images.picUrl} alt="" />
+          <span>{images.comment}</span>
         </div>
       );
     });
