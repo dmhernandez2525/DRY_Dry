@@ -1,44 +1,3 @@
-// import React from "react";
-
-// import "./NonProfit.scss";
-
-// const NonProfit = ({
-//   id,
-//   name,
-//   userTip,
-//   onClick,
-//   onChange,
-//   onBlur,
-//   onFocus,
-//   disable,
-//   className,
-//   errorMes,
-//   styles,
-//   passProps,
-// }) => {
-//   return (
-//     <div onClick={() => onClick("DryNonProfit")} className="dry-nonProfit">
-//       DryNonProfit
-//     </div>
-//   );
-// };
-
-// NonProfit.defaultProps = {
-//   id: "",
-//   name: "",
-//   userTip: "",
-//   onClick: null,
-//   onChange: null,
-//   onBlur: null,
-//   disable: false,
-//   className: "",
-//   errorMes: "",
-//   styles: null,
-//   passProps: null,
-// };
-
-// export default NonProfit;
-
 import React from "react";
 import Footer from "../../Base/Footer";
 import placeholder from "./placeholder.jpg";
@@ -155,18 +114,6 @@ class NonProfit extends React.Component {
         <header className="restaurant-nav">
           <div id="navbar" className="navbar" role="navigation">
             <div className="container">
-              <div
-                className="nav-cart"
-                onClick={() =>
-                  this.props.setModalCache(true, this.setStateModalCB)
-                }
-              >
-                {/* <Modal
-                  modal="cart"
-                  modalBool={this.props.modalBool}
-                  setParentModalBool={this.setStateModalCB}
-                /> */}
-              </div>
               <ul id="top-menu" className="navbar-nav navbar-right">
                 {nav}
               </ul>
