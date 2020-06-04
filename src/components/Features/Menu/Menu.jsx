@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import classnames from "classnames";
+import { v4 as uuidv4 } from "uuid";
 import "./Menu.scss";
 
 const Menu = ({ data }) => {
@@ -11,7 +12,10 @@ const Menu = ({ data }) => {
     const menuTypes = Object.keys(data);
     const displayTabeNames = menuTypes.map(tabName => {
       return (
-        <div className="dry-menu__name-label-wrapper">
+        <div
+          key={`tabName${tabName}${uuidv4()}`}
+          className="dry-menu__name-label-wrapper"
+        >
           <div className="dry-menu__name-label-box"></div>
           <span
             className="dry-menu__name-label"
@@ -36,7 +40,10 @@ const Menu = ({ data }) => {
         productName => {
           const productData = menuTypeData[productName];
           const displayProduct = (
-            <div className="dry-menu__product">
+            <div
+              key={`productName${productName}${uuidv4()}`}
+              className="dry-menu__product"
+            >
               <span>{productName}</span>
               <img src={productData.image} alt="" />
               <p>{productData.description}</p>
@@ -49,6 +56,7 @@ const Menu = ({ data }) => {
 
       return (
         <div
+          key={`menuTypeName${menuTypeName}${uuidv4()}`}
           className={classnames({
             "dry-menu__menu-tab-wrapper": true,
             "dry-menu__menu-tab-wrapper--active":

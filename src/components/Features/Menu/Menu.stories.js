@@ -44,19 +44,73 @@ export const Default = () => {
       passProps={object("passProps", {})}
       data={object("data", {
         category1: {
-          pizza: {
+          pizza1: {
             image:
               "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
             price: 10,
             description: "This is the tatsy items description"
           },
-          pancake: {
+          pancake1: {
             image:
               "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
             price: 10,
             description: "This is the tatsy items description"
           },
-          salsa: {
+          salsa1: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          pizza2: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          pancake2: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          salsa2: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          pizza3: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          pancake3: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          salsa3: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          pizza4: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          pancake4: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          salsa4: {
             image:
               "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
             price: 10,
@@ -77,6 +131,42 @@ export const Default = () => {
             description: "This is the tatsy items description"
           },
           salsa: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          pizza3: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          pancake3: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          salsa3: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          pizza4: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          pancake4: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          salsa4: {
             image:
               "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
             price: 10,
@@ -117,6 +207,36 @@ export const Default = () => {
             description: "This is the tatsy items description"
           },
           salsa: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          salsa1: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          pizza2: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          pancake2: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          salsa2: {
+            image:
+              "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
+            price: 10,
+            description: "This is the tatsy items description"
+          },
+          pizza3: {
             image:
               "https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg",
             price: 10,

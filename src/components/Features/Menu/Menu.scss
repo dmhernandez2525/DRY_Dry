@@ -63,6 +63,7 @@
   }
   &__product-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 0px 50px;
   }
@@ -72,5 +73,6 @@
     box-shadow: -1px 0px 5px;
     border: 1px solid;
     border-radius: 10px;
+    margin-bottom: 35px;
   }
 }
