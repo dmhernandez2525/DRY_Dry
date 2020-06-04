@@ -6,7 +6,8 @@ import {
   Header1,
   Pricing,
   Hours,
-  SpotlightGallery
+  SpotlightGallery,
+  Menu
 } from "../stories";
 
 export default {
@@ -21,6 +22,7 @@ const DryHeader1 = Header1.Default;
 const DryPricing = Pricing.Default;
 const DryHours = Hours.Default;
 const DrySpotlightGallery = SpotlightGallery.Default;
+const DryMenu = Menu.Default;
 
 export {
   DryAbout,
@@ -29,5 +31,6 @@ export {
   DryHeader1,
   DryPricing,
   DryHours,
-  DrySpotlightGallery
+  DrySpotlightGallery,
+  DryMenu
 };

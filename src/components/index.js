@@ -37,6 +37,7 @@ import Header1 from "./Features/Header1";
 import Pricing from "./Features/Pricing";
 import Hours from "./Features/Hours";
 import SpotlightGallery from "./Features/SpotlightGallery";
+import Menu from "./Features/Menu";
 // Menus
 import Accordion from "./Menus/Accordion";
 import BottomSheet from "./Menus/BottomSheet";
@@ -102,6 +103,7 @@ export {
   Pricing,
   Hours,
   SpotlightGallery,
+  Menu,
   Accordion,
   BottomSheet,
   SideSheet,

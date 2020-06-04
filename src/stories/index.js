@@ -35,6 +35,7 @@ import * as Header1 from "../components/Features/Header1/Header1.stories.js";
 import * as Pricing from "../components/Features/Pricing/Pricing.stories.js";
 import * as Hours from "../components/Features/Hours/Hours.stories.js";
 import * as SpotlightGallery from "../components/Features/SpotlightGallery/SpotlightGallery.stories.js";
+import * as Menu from "../components/Features/Menu/Menu.stories.js";
 // Menus
 import * as Accordion from "../components/Menus/Accordion/Accordion.stories.js";
 import * as BottomSheet from "../components/Menus/BottomSheet/BottomSheet.stories.js";
@@ -97,6 +98,7 @@ export {
   Pricing,
   Hours,
   SpotlightGallery,
+  Menu,
   Accordion,
   BottomSheet,
   SideSheet,
