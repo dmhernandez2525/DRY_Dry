@@ -36,7 +36,9 @@ const Hours = ({
   if (days) {
     display = Object.keys(days).map(day => {
       let currentDay = days[day];
-      return <li key={day}>{`${day}:${currentDay.from}-${currentDay.to}`}</li>;
+      return (
+        <div key={day}>{`${day}:${currentDay.from}-${currentDay.to}`}</div>
+      );
     });
   }
   return <div className="dry-hours">{display}</div>;

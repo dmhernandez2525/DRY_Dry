@@ -1,5 +1,5 @@
 import React from "react";
-import Icons from "../../Icon/Icons";
+
 import Icon from "../../Icon";
 
 import "./Pricing.scss";
@@ -93,12 +93,7 @@ const Pricing = ({
       );
     });
   }
-  return (
-    <div className="dry-pricing">
-      <Icons />
-      {display}
-    </div>
-  );
+  return <div className="dry-pricing">{display}</div>;
 };
 
 Pricing.defaultProps = {

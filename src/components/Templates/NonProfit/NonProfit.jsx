@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../../Base/Footer";
 import placeholder from "./placeholder.jpg";
+import Icons from "../../Icon/Icons";
 
 import "./NonProfit.scss";
 
@@ -111,6 +112,7 @@ class NonProfit extends React.Component {
 
     return (
       <div className="restaurant template">
+        <Icons />
         <header className="restaurant-nav">
           <div id="navbar" className="navbar" role="navigation">
             <div className="container">
@@ -120,7 +122,6 @@ class NonProfit extends React.Component {
             </div>
           </div>
         </header>
-
         <div id="teleport-Home" className="" ref={this.teleRefHome}>
           <section id="restaurant-hero-section">
             <div className="hero-photo-sizing">

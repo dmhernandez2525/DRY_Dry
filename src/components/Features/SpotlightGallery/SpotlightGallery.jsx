@@ -43,7 +43,10 @@ const SpotlightGallery = ({
   if (images) {
     display = Object.values(images).map((images, i) => {
       return (
-        <div key={`${images.comment}${i}`}>
+        <div
+          className="dry-spotlightGallery__image-wrapper"
+          key={`${images.comment}${i}`}
+        >
           <img src={images.picUrl} alt="" />
           <span>{images.comment}</span>
         </div>
