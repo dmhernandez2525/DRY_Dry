@@ -1,4 +1,6 @@
 import React from "react";
+import Icons from "../../Icon/Icons";
+import Icon from "../../Icon";
 
 import "./Pricing.scss";
 
@@ -68,21 +70,32 @@ const Pricing = ({
   if (rows) {
     display = Object.values(rows).map(plan => {
       let rowDetails = plan.details.map(detail => {
-        return <li key={`${plan.name}:${detail}`}>{detail}</li>;
+        return (
+          <div className="dry-pricing__detail" key={`${plan.name}:${detail}`}>
+            <Icon icon="checkmark4" height="20px" />
+            {detail}
+          </div>
+        );
       });
       return (
-        <div key={plan.name}>
-          <div>
-            <span>{plan.name}</span>
-            <span>{plan.price}</span>
+        <div className="dry-pricing__main-wrapper" key={plan.name}>
+          <div className="dry-pricing__header-wrapper">
+            <div className="dry-pricing__name-wrapper">
+              <span>{plan.name}</span>
+            </div>
+            <div className="dry-pricing__price-wrapper">
+              <span className="dry-pricing__price">{`$${plan.price}`}</span>
+              <span>/month</span>
+            </div>
           </div>
-          <ul>{rowDetails}</ul>
+          <div className="dry-pricing__detail-wrapper">{rowDetails}</div>
         </div>
       );
     });
   }
   return (
-    <div onClick={() => onClick("DryPricing")} className="dry-pricing">
+    <div className="dry-pricing">
+      <Icons />
       {display}
     </div>
   );

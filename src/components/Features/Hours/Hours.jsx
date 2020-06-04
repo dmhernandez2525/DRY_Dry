@@ -39,11 +39,7 @@ const Hours = ({
       return <li key={day}>{`${day}:${currentDay.from}-${currentDay.to}`}</li>;
     });
   }
-  return (
-    <div onClick={() => onClick("DryHours")} className="dry-hours">
-      {display}
-    </div>
-  );
+  return <div className="dry-hours">{display}</div>;
 };
 
 Hours.defaultProps = {

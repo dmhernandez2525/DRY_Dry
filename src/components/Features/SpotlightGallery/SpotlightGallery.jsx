@@ -50,14 +50,7 @@ const SpotlightGallery = ({
       );
     });
   }
-  return (
-    <div
-      onClick={() => onClick("DrySpotlightGallery")}
-      className="dry-spotlightGallery"
-    >
-      {display}
-    </div>
-  );
+  return <div className="dry-spotlightGallery">{display}</div>;
 };
 
 SpotlightGallery.defaultProps = {

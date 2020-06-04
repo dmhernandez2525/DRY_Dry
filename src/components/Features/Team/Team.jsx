@@ -128,11 +128,7 @@ const Team = ({
     });
   }
 
-  return (
-    <div onClick={() => onClick("DryTeam")} className="dry-team">
-      {display}
-    </div>
-  );
+  return <div className="dry-team">{display}</div>;
 };
 
 Team.defaultProps = {

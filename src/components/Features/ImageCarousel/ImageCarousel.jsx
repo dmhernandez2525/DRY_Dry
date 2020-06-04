@@ -121,10 +121,7 @@ const ImageCarousel = ({
     );
   }
   return (
-    <div
-      onClick={() => onClick("DryImageCarousel")}
-      className="dry-imageCarousel"
-    >
+    <div className="dry-imageCarousel">
       <div className="gallery">{display}</div>
     </div>
   );

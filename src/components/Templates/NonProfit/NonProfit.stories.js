@@ -97,7 +97,7 @@ export const Default = () => {
             {
               img1: {
                 picUrl:
-                  "https://ca.slack-edge.com/TL86V04VD-UL6LL1UJC-e8394a6f6209-48",
+                  "https://comfort-order-dev.s3.us-east-2.amazonaws.com/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg",
                 comment:
                   "Curabitur eu eros et risus rutrum elementum.Phasellus a quam lobortis magna viverra tempus.Sed dictum nibh porttitor aliquet pulvinar.Pellentesque vestibulum erat eu ex laoreet volutpat."
               },
@@ -121,14 +121,14 @@ export const Default = () => {
             {
               slide1: {
                 picUrl:
-                  "https://files.slack.com/files-pri/TL86V04VD-F011FMTHEAY/hero.jpg",
+                  "https://comfort-order-dev.s3.us-east-2.amazonaws.com/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg",
                 title: "Hey",
                 detail:
                   "Curabitur eu eros et risus rutrum elementum.Phasellus a quam lobortis magna viverra tempus.Sed dictum nibh porttitor aliquet pulvinar.Pellentesque vestibulum erat eu ex laoreet volutpat."
               },
               slide2: {
                 picUrl:
-                  "https://files.slack.com/files-pri/TL86V04VD-F011AGVNC2V/comfortorderlogo.png",
+                  "https://comfort-order-dev.s3.us-east-2.amazonaws.com/collage.png",
                 title: "Hey",
                 detail:
                   "Curabitur eu eros et risus rutrum elementum.Phasellus a quam lobortis magna viverra tempus.Sed dictum nibh porttitor aliquet pulvinar.Pellentesque vestibulum erat eu ex laoreet volutpat."
@@ -161,7 +161,7 @@ export const Default = () => {
             {
               member1: {
                 pic:
-                  "https://ca.slack-edge.com/TL86V04VD-UL6LL1UJC-e8394a6f6209-48",
+                  "https://comfort-order-dev.s3.us-east-2.amazonaws.com/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg",
                 name: "Tom",
                 about:
                   "Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.",
@@ -179,7 +179,7 @@ export const Default = () => {
               },
               member2: {
                 pic:
-                  "https://ca.slack-edge.com/TL86V04VD-UL6LL1UJC-e8394a6f6209-48",
+                  "https://comfort-order-dev.s3.us-east-2.amazonaws.com/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg",
                 name: "Bill",
                 about:
                   "Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.",
@@ -197,7 +197,7 @@ export const Default = () => {
               },
               member3: {
                 pic:
-                  "https://ca.slack-edge.com/TL86V04VD-UL6LL1UJC-e8394a6f6209-48",
+                  "https://comfort-order-dev.s3.us-east-2.amazonaws.com/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg",
                 name: "Margret",
                 about:
                   "Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.",

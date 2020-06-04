@@ -21,7 +21,6 @@ class Index extends React.Component {
   }
 
   makeFeature(feature, data) {
-    debugger;
     switch (feature) {
       case "Pricing":
         return <Pricing rows={data[0]} />;

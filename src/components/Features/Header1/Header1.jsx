@@ -30,7 +30,7 @@ const Header1 = ({
   };
 
   return (
-    <div onClick={() => onClick("DryHeader1")} className="dry-header1">
+    <div className="dry-header1">
       <header
         style={styles}
         className={`header1__header header1__header${cla}`}

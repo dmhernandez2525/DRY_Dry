@@ -22,7 +22,7 @@ const About = ({
   selectedFile
 }) => {
   return (
-    <div onClick={() => onClick("DryAbout")} className="dry-about">
+    <div className="dry-about">
       <div className="dry-about__title-wrapper">
         <h2 className="dry-about__title">{title}</h2>
         <img className="dry-about__image" src={pic} />

@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../../Base/Footer";
 import placeholder from "./placeholder.jpg";
 
-import "../Restaurant/Restaurant.scss";
+import "./NonProfit.scss";
 
 const token = process.env.REACT_APP_TOKEN;
 
