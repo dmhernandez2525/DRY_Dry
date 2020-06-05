@@ -7,7 +7,8 @@ import {
   Hours,
   ImageCarousel,
   SpotlightGallery,
-  Team
+  Team,
+  Menu
 } from "../../index";
 // END OF ALL THE FEATURES
 
@@ -33,6 +34,8 @@ class Index extends React.Component {
         return <SpotlightGallery images={data[0]} />;
       case "Team":
         return <Team members={data[0]} />;
+      case "Menu":
+        return <Menu data={data[0]} />;
 
       default:
         return <div></div>;

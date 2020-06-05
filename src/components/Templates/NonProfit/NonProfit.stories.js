@@ -1,4 +1,5 @@
 import React from "react";
+import faker from "faker";
 import { action } from "@storybook/addon-actions";
 import {
   withKnobs,
@@ -38,11 +39,11 @@ export const Default = () => {
         feature1: {
           About: [
             {
-              title: "sertgserg",
-              text:
-                "https://comfort-order-dev.s3.us-east-2.amazonaws.com/20200525_172756.jpg",
-              pic:
-                "https://comfort-order-dev.s3.us-east-2.amazonaws.com/20200525_172756.jpg",
+              title: faker.commerce.productName(),
+              text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo orci et ipsum faucibus vestibulum. Morbi dui diam, finibus a sem id, placerat aliquam lectus. Nunc feugiat aliquet turpis, sit amet tristique est tristique ac. Suspendisse purus justo, pulvinar non lectus vel, consectetur scelerisque augue. Sed porttitor vehicula diam. Aenean non pretium nulla. Proin mollis, justo sed blandit feugiat, elit magna ultrices libero, sed mattis nunc neque vel ipsum. Etiam molestie justo quis ipsum tincidunt, nec luctus ligula facilisis. Morbi mattis efficitur ipsum, vitae sodales sapien suscipit et. Mauris finibus nisi ac sem sollicitudin lacinia. Morbi a nunc vitae purus tempus iaculis sed ut lacus. 
+
+                Aliquam convallis pellentesque leo ac imperdiet. Ut mattis libero ut orci ultricies, eget fermentum dui congue. In tincidunt congue sapien auctor ultricies. Donec hendrerit aliquam mi et hendrerit. Donec porta nibh non tempus sollicitudin. Nam ut ligula nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in elit semper, molestie purus fringilla, mollis urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed eget pharetra massa, ac iaculis lorem. Ut condimentum metus magna, ac finibus tortor congue quis. Pellentesque feugiat molestie dolor, ut ultricies justo finibus sed. Nulla facilisi. Phasellus a elementum velit.`,
+              pic: faker.random.image(),
               description: "",
               selectedFile: null
             }
@@ -120,22 +121,49 @@ export const Default = () => {
           ImageCarousel: [
             {
               slide1: {
-                picUrl:
-                  "https://comfort-order-dev.s3.us-east-2.amazonaws.com/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg",
+                picUrl: faker.random.image(),
                 title: "Hey",
                 detail:
                   "Curabitur eu eros et risus rutrum elementum.Phasellus a quam lobortis magna viverra tempus.Sed dictum nibh porttitor aliquet pulvinar.Pellentesque vestibulum erat eu ex laoreet volutpat."
               },
               slide2: {
-                picUrl:
-                  "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+                picUrl: faker.random.image(),
                 title: "Hey",
                 detail:
                   "Curabitur eu eros et risus rutrum elementum.Phasellus a quam lobortis magna viverra tempus.Sed dictum nibh porttitor aliquet pulvinar.Pellentesque vestibulum erat eu ex laoreet volutpat."
               },
               slide3: {
-                picUrl:
-                  "https://image.shutterstock.com/z/stock-photo-a-deer-in-the-colors-of-a-foggy-morning-1508990603.jpg",
+                picUrl: faker.random.image(),
+                title: "Hey",
+                detail:
+                  "Curabitur eu eros et risus rutrum elementum.Phasellus a quam lobortis magna viverra tempus.Sed dictum nibh porttitor aliquet pulvinar.Pellentesque vestibulum erat eu ex laoreet volutpat."
+              },
+              slide4: {
+                picUrl: faker.random.image(),
+                title: "Hey",
+                detail:
+                  "Curabitur eu eros et risus rutrum elementum.Phasellus a quam lobortis magna viverra tempus.Sed dictum nibh porttitor aliquet pulvinar.Pellentesque vestibulum erat eu ex laoreet volutpat."
+              },
+              slide5: {
+                picUrl: faker.random.image(),
+                title: "Hey",
+                detail:
+                  "Curabitur eu eros et risus rutrum elementum.Phasellus a quam lobortis magna viverra tempus.Sed dictum nibh porttitor aliquet pulvinar.Pellentesque vestibulum erat eu ex laoreet volutpat."
+              },
+              slide6: {
+                picUrl: faker.random.image(),
+                title: "Hey",
+                detail:
+                  "Curabitur eu eros et risus rutrum elementum.Phasellus a quam lobortis magna viverra tempus.Sed dictum nibh porttitor aliquet pulvinar.Pellentesque vestibulum erat eu ex laoreet volutpat."
+              },
+              slide7: {
+                picUrl: faker.random.image(),
+                title: "Hey",
+                detail:
+                  "Curabitur eu eros et risus rutrum elementum.Phasellus a quam lobortis magna viverra tempus.Sed dictum nibh porttitor aliquet pulvinar.Pellentesque vestibulum erat eu ex laoreet volutpat."
+              },
+              slide8: {
+                picUrl: faker.random.image(),
                 title: "Hey",
                 detail:
                   "Curabitur eu eros et risus rutrum elementum.Phasellus a quam lobortis magna viverra tempus.Sed dictum nibh porttitor aliquet pulvinar.Pellentesque vestibulum erat eu ex laoreet volutpat."
@@ -160,8 +188,7 @@ export const Default = () => {
           Team: [
             {
               member1: {
-                pic:
-                  "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+                pic: faker.image.avatar(),
                 name: "Tom",
                 about:
                   "Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.",
@@ -178,39 +205,243 @@ export const Default = () => {
                 }
               },
               member2: {
-                pic:
-                  "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+                pic: faker.image.avatar(),
                 name: "Bill",
                 about:
                   "Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.",
                 socialLinks: {
                   facebook: {
-                    url: "https://www.facebook.com"
+                    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                   },
                   instagram: {
-                    url: "https://www.instagram.com"
+                    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                   },
                   linkedin: {
-                    url: "https://www.linkedin.com"
+                    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                   }
                 }
               },
               member3: {
-                pic:
-                  "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+                pic: faker.image.avatar(),
                 name: "Margret",
                 about:
                   "Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.",
                 socialLinks: {
                   facebook: {
-                    url: "https://www.facebook.com"
+                    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                   },
                   instagram: {
-                    url: "https://www.instagram.com"
+                    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                   },
                   linkedin: {
-                    url: "https://www.linkedin.com"
+                    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                   }
+                }
+              }
+            }
+          ]
+        },
+        feature7: {
+          Menu: [
+            {
+              Entrees: {
+                pizza1: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                pancake1: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                salsa1: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                pizza2: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                pancake2: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                salsa2: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                pizza3: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                pancake3: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                salsa3: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                pizza4: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                pancake4: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                salsa4: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                }
+              },
+              Appetizers: {
+                pizza: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                pancake: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                salsa: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                pizza3: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                pancake3: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                salsa3: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                pizza4: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                pancake4: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                salsa4: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                }
+              },
+              Desserts: {
+                pizza: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                pancake: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                salsa: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                }
+              },
+              Drinks: {
+                drink1: {
+                  image:
+                    "https://comfort-order-dev.s3.us-east-2.amazonaws.com/drink-1.png",
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                drink2: {
+                  image:
+                    "https://comfort-order-dev.s3.us-east-2.amazonaws.com/drink-2.png",
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                drink3: {
+                  image:
+                    "https://comfort-order-dev.s3.us-east-2.amazonaws.com/drink-3.png",
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                drink4: {
+                  image:
+                    "https://comfort-order-dev.s3.us-east-2.amazonaws.com/drink-4.png",
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                drink5: {
+                  image:
+                    "https://comfort-order-dev.s3.us-east-2.amazonaws.com/drink-5.png",
+                  price: 10,
+                  description: "This is the tatsy items description"
+                }
+              },
+              Specials: {
+                pizza: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                pancake: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                salsa: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                salsa1: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                pizza2: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                pancake2: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                salsa2: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
+                },
+                pizza3: {
+                  image: faker.random.image(),
+                  price: 10,
+                  description: "This is the tatsy items description"
                 }
               }
             }
@@ -230,6 +461,7 @@ export const Default = () => {
     />
   );
 };
+
 // ,feature: {
 //   Name: [
 //     {
