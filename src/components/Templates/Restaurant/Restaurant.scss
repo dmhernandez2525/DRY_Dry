@@ -325,9 +325,16 @@ button:hover {
   color: #fff;
 }
 .hero-title {
-  color: #fff;
+  color: black;
   font-size: 70px;
   line-height: 90px;
+  text-align: center;
+}
+.hero-title-1 {
+  color: white;
+  font-size: 70px;
+  line-height: 90px;
+  text-align: center;
 }
 .top-hero-content > p {
   color: #fff;
@@ -355,7 +362,6 @@ img {
   width: 100%;
   float: left;
   background-color: #fafafa;
-  border: 3px solid black;
   padding: 25px 0;
   /* padding-right: 60px; */
   /* padding-left: 60px; */
@@ -375,7 +381,7 @@ img {
   height: 500px;
 }
 .black {
-  background-color: #222;
+  // background-color: #222;
 }
 .container:before,
 .container:after {

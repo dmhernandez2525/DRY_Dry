@@ -15,8 +15,9 @@ const Team = ({
   errorMes,
   styles,
   passProps,
-  members
+  data
 }) => {
+  const members = data;
   // EXAMPLE INPUT
   //   members:{
   //     member1: {

@@ -16,8 +16,9 @@ const SpotlightGallery = ({
   errorMes,
   styles,
   passProps,
-  images
+  data
 }) => {
+  const images = data;
   // EXAMPLE INPUT
   //   images:{
   //     img1: {

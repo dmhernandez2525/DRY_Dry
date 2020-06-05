@@ -1,3 +1,7 @@
+.nav-input-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
 .dry-nonProfit {
   &__feature {
     width: 100%;
@@ -331,9 +335,16 @@ button:hover {
   color: #fff;
 }
 .hero-title {
-  color: #fff;
+  color: black;
   font-size: 70px;
   line-height: 90px;
+  text-align: center;
+}
+.hero-title-1 {
+  color: white;
+  font-size: 70px;
+  line-height: 90px;
+  text-align: center;
 }
 .top-hero-content > p {
   color: #fff;
@@ -370,7 +381,7 @@ img {
   height: fit-content;
 }
 .black {
-  background-color: #222;
+  // background-color: #222;
 }
 .container:before,
 .container:after {

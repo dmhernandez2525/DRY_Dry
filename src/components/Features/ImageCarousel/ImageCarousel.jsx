@@ -16,8 +16,9 @@ const ImageCarousel = ({
   errorMes,
   styles,
   passProps,
-  slides
+  data
 }) => {
+  const slides = data;
   // EXAMPLE INPUT
   //   slides:{
   //     slide1: {

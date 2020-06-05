@@ -17,8 +17,9 @@ const Pricing = ({
   errorMes,
   styles,
   passProps,
-  rows
+  data
 }) => {
+  const rows = data;
   // EXAMPLE INPUT
   //   rows:{
   //     row1: {

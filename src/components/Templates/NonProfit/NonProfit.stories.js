@@ -49,50 +49,6 @@ export const Default = () => {
             }
           ]
         },
-        feature2: {
-          Pricing: [
-            {
-              row1: {
-                name: "Free",
-                price: 0,
-                details: [
-                  faker.commerce.productName(),
-                  faker.commerce.productName(),
-                  faker.commerce.productName(),
-                  faker.commerce.productName()
-                ]
-              },
-              row2: {
-                name: "Plus",
-                price: 9,
-                details: [
-                  faker.commerce.productName(),
-                  faker.commerce.productName(),
-                  faker.commerce.productName(),
-                  faker.commerce.productName(),
-                  faker.commerce.productName(),
-                  faker.commerce.productName()
-                ]
-              },
-              row3: {
-                name: "Pro",
-                price: 20,
-                details: [
-                  faker.commerce.productName(),
-                  faker.commerce.productName(),
-                  faker.commerce.productName(),
-                  faker.commerce.productName(),
-                  faker.commerce.productName(),
-                  faker.commerce.productName(),
-                  faker.commerce.productName(),
-                  faker.commerce.productName(),
-                  faker.commerce.productName(),
-                  faker.commerce.productName()
-                ]
-              }
-            }
-          ]
-        },
         feature3: {
           SpotlightGallery: [
             {
@@ -171,19 +127,6 @@ export const Default = () => {
             }
           ]
         },
-        feature5: {
-          Hours: [
-            {
-              Monday: { from: "10am", to: "10pm" },
-              Tuesday: { from: "10am", to: "10pm" },
-              Wednesday: { from: "10am", to: "10pm" },
-              Thursday: { from: "10am", to: "10pm" },
-              Friday: { from: "10am", to: "10pm" },
-              Saturday: { from: "10am", to: "10pm" },
-              Sunday: { from: "10am", to: "10pm" }
-            }
-          ]
-        },
         feature6: {
           Team: [
             {
@@ -237,6 +180,50 @@ export const Default = () => {
                     url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                   }
                 }
+              }
+            }
+          ]
+        },
+        feature2: {
+          Pricing: [
+            {
+              row1: {
+                name: "Free",
+                price: 0,
+                details: [
+                  faker.commerce.productName(),
+                  faker.commerce.productName(),
+                  faker.commerce.productName(),
+                  faker.commerce.productName()
+                ]
+              },
+              row2: {
+                name: "Plus",
+                price: 9,
+                details: [
+                  faker.commerce.productName(),
+                  faker.commerce.productName(),
+                  faker.commerce.productName(),
+                  faker.commerce.productName(),
+                  faker.commerce.productName(),
+                  faker.commerce.productName()
+                ]
+              },
+              row3: {
+                name: "Pro",
+                price: 20,
+                details: [
+                  faker.commerce.productName(),
+                  faker.commerce.productName(),
+                  faker.commerce.productName(),
+                  faker.commerce.productName(),
+                  faker.commerce.productName(),
+                  faker.commerce.productName(),
+                  faker.commerce.productName(),
+                  faker.commerce.productName(),
+                  faker.commerce.productName(),
+                  faker.commerce.productName()
+                ]
               }
             }
           ]
@@ -444,6 +431,19 @@ export const Default = () => {
                   description: "This is the tatsy items description"
                 }
               }
+            }
+          ]
+        },
+        feature5: {
+          Hours: [
+            {
+              Monday: { from: "10am", to: "10pm" },
+              Tuesday: { from: "10am", to: "10pm" },
+              Wednesday: { from: "10am", to: "10pm" },
+              Thursday: { from: "10am", to: "10pm" },
+              Friday: { from: "10am", to: "10pm" },
+              Saturday: { from: "10am", to: "10pm" },
+              Sunday: { from: "10am", to: "10pm" }
             }
           ]
         }

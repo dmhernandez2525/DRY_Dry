@@ -15,8 +15,9 @@ const Hours = ({
   errorMes,
   styles,
   passProps,
-  days
+  data
 }) => {
+  const days = data;
   // EXAMPLE INPUT
   //   days:{
   //      Monday:{from:"10am",to:"10pm"},

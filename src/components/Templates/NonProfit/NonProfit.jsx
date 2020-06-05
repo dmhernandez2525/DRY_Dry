@@ -115,7 +115,7 @@ class NonProfit extends React.Component {
         <Icons />
         <header className="restaurant-nav">
           <div id="navbar" className="navbar" role="navigation">
-            <div className="container">
+            <div className="container nav-input-wrapper">
               <ul id="top-menu" className="navbar-nav navbar-right">
                 {nav}
               </ul>
@@ -129,7 +129,9 @@ class NonProfit extends React.Component {
                 <img src={placeholder} />
                 <div className="top-hero-content">
                   <span className="small-hero-title">Welcome To</span>
-                  <h2 className="hero-title">{this.props.businessData.name}</h2>
+                  <h2 className="hero-title-1">
+                    {this.props.businessData.name}
+                  </h2>
                   <p>{this.props.businessData.slogan}</p>
                 </div>
               </div>
