@@ -46,7 +46,7 @@ export const Default = () => {
         errorMes={text("errorMes", "")}
         styles={object("styles", {})}
         passProps={object("passProps", {})}
-        rows={object("Rows", {
+        data={object("data", {
           row1: {
             name: "Free",
             price: 0,

@@ -34,7 +34,15 @@ export const actionsData = {
 export const Default = () => {
   return (
     <Team
-      members={{
+      // id={text("id", "")}
+      // name={text("name", "")}
+      // userTip={text("userTip", "")}
+      // disable={boolean("disable", false)}
+      // className={text("className", "")}
+      // errorMes={text("errorMes", "")}
+      // styles={object("styles", {})}
+      // passProps={object("passProps", {})}
+      data={object("data", {
         member1: {
           pic:
             "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
@@ -89,15 +97,7 @@ export const Default = () => {
             }
           }
         }
-      }}
-      // id={text("id", "")}
-      // name={text("name", "")}
-      // userTip={text("userTip", "")}
-      // disable={boolean("disable", false)}
-      // className={text("className", "")}
-      // errorMes={text("errorMes", "")}
-      // styles={object("styles", {})}
-      // passProps={object("passProps", {})}
+      })}
       {...actionsData}
     />
   );

@@ -42,7 +42,7 @@ export const Default = () => {
       errorMes={text("errorMes", "")}
       styles={object("styles", {})}
       passProps={object("passProps", {})}
-      slides={object("slides", {
+      data={object("data", {
         slide1: {
           picUrl:
             "https://comfort-order-dev.s3.us-east-2.amazonaws.com/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg",

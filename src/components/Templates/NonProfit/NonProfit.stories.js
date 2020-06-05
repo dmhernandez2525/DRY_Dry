@@ -454,7 +454,7 @@ export const Default = () => {
         name: "Demo Non Profit Name",
         url: "Demo Non Profit url",
         phoneNumber: "Demo Site phoneNumber",
-        address: "Demo Site address",
+        address: "766 6th st charleston,il 61920",
         slogan: "Demo Site slogan",
         __typename: "BusinessType"
       }}

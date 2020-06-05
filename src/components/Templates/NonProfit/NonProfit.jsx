@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../../Base/Footer";
 import placeholder from "./placeholder.jpg";
 import Icons from "../../Icon/Icons";
-
+import Icon from "../../Icon";
 import "./NonProfit.scss";
 
 const token = process.env.REACT_APP_TOKEN;
@@ -26,7 +26,7 @@ class NonProfit extends React.Component {
     this.teleRef9 = React.createRef();
     this.teleRef10 = React.createRef();
     this.teleRefContact = React.createRef();
-    this.teleRefSocal = React.createRef();
+    // this.teleRefSocal = React.createRef();
     this.handleScroll = this.handleScroll.bind(this);
     this.setStateModalCB = this.setStateModalCB.bind(this);
   }
@@ -86,7 +86,7 @@ class NonProfit extends React.Component {
     );
     nav.push(
       <li key={`addOn3`}>
-        <a onClick={() => this.executeScroll(this.teleRefSocal)}>Socal</a>
+        {/* <a onClick={() => this.executeScroll(this.teleRefSocal)}>Socal</a> */}
       </li>
     );
     nav.push(<li key={`addOn4`}> {/* <Link to="/login">Login</Link> */}</li>);
@@ -155,14 +155,33 @@ class NonProfit extends React.Component {
           </div>
           <div className="map-wrapper">
             <iframe
+              src={`https://maps.google.com/maps?q=${this.props.businessData.address}&t=m&z=10&output=embed&iwloc=near`}
+              width="100%"
+              height="450"
+              frameborder="0"
+              // style="border:0"
+              allowfullscreen=""
+            ></iframe>
+            {/* <iframe
               id="restaurant-map"
               className="restaurant-map"
               src={`https://www.google.com/maps/embed/v1/place?key=${token}&q=${this.props.businessData.address}`}
-            ></iframe>
+            ></iframe> */}
+            <button class="" type="submit">
+              <a href="tel:217-508-4048">Call Now</a>
+            </button>
           </div>
         </div>
 
         <div id="teleport-footer" className="feature" ref={this.teleRefSocal}>
+          <div>
+            <span>Socal Links</span>
+            <Icon />
+            <Icon />
+            <Icon />
+            <Icon />
+          </div>
+
           <footer id="restaurant-footer">
             <Footer key={"mainFooter"} />
           </footer>

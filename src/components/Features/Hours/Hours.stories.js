@@ -42,7 +42,7 @@ export const Default = () => {
       errorMes={text("errorMes", "")}
       styles={object("styles", {})}
       passProps={object("passProps", {})}
-      days={object("days", {
+      data={object("data", {
         Monday: { from: "10am", to: "10pm" },
         Tuesday: { from: "10am", to: "10pm" },
         Wednesday: { from: "10am", to: "10pm" },
