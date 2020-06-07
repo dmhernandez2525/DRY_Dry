@@ -92,7 +92,235 @@ const Menu = ({ data }) => {
     </div>
   );
 };
-
+Menu.exampleData = JSON.stringify({
+  Entrees: {
+    pizza1: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    pancake1: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    salsa1: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    pizza2: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    pancake2: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    salsa2: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    pizza3: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    pancake3: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    salsa3: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    pizza4: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    pancake4: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    salsa4: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    }
+  },
+  Appetizers: {
+    pizza: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    pancake: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    salsa: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    pizza3: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    pancake3: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    salsa3: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    pizza4: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    pancake4: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    salsa4: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    }
+  },
+  Desserts: {
+    pizza: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    pancake: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    salsa: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    }
+  },
+  Drinks: {
+    drink1: {
+      image: "https://comfort-order-dev.s3.us-east-2.amazonaws.com/drink-1.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    drink2: {
+      image: "https://comfort-order-dev.s3.us-east-2.amazonaws.com/drink-2.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    drink3: {
+      image: "https://comfort-order-dev.s3.us-east-2.amazonaws.com/drink-3.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    drink4: {
+      image: "https://comfort-order-dev.s3.us-east-2.amazonaws.com/drink-4.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    drink5: {
+      image: "https://comfort-order-dev.s3.us-east-2.amazonaws.com/drink-5.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    }
+  },
+  Specials: {
+    pizza: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    pancake: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    salsa: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    salsa1: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    pizza2: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    pancake2: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    salsa2: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    },
+    pizza3: {
+      image:
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+      price: 10,
+      description: "This is the tatsy items description"
+    }
+  }
+});
 Menu.defaultProps = {
   data: {}
 };

@@ -1,6 +1,6 @@
 {
   "name": "@comfort-order/dry",
-  "version": "0.1.40",
+  "version": "0.1.45",
   "description": "Reusable react components ",
   "author": "dmhernandez2525",
   "license": "proprietary",
@@ -73,14 +73,14 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.1",
-    "react-test-renderer": "^16.13.1"
+    "react-test-renderer": "^16.13.1",
+    "faker": "^4.1.0"
   },
   "files": [
     "dist"
   ],
   "dependencies": {
     "axios": "^0.19.2",
-    "faker": "^4.1.0",
     "uuid": "^8.1.0"
   }
 }

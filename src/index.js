@@ -18,6 +18,7 @@ import {
   Accordion,
   Icon,
   Templates,
+  allFeatures,
   FileUpload
 } from "./components";
 
@@ -41,5 +42,6 @@ export {
   Accordion,
   Icon,
   Templates,
+  allFeatures,
   FileUpload
 };

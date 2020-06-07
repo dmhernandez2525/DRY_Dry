@@ -131,6 +131,62 @@ const Team = ({
 
   return <div className="dry-team">{display}</div>;
 };
+Team.exampleData = JSON.stringify({
+  member1: {
+    pic:
+      "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+    name: "Tom",
+    about:
+      "Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.",
+    socialLinks: {
+      facebook: {
+        url: "https://www.facebook.com"
+      },
+      instagram: {
+        url: "https://www.instagram.com"
+      },
+      linkedin: {
+        url: "https://www.linkedin.com"
+      }
+    }
+  },
+  member2: {
+    pic:
+      "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+    name: "Bill",
+    about:
+      "Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.",
+    socialLinks: {
+      facebook: {
+        url: "https://www.facebook.com"
+      },
+      instagram: {
+        url: "https://www.instagram.com"
+      },
+      linkedin: {
+        url: "https://www.linkedin.com"
+      }
+    }
+  },
+  member3: {
+    pic:
+      "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+    name: "Margret",
+    about:
+      "Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.",
+    socialLinks: {
+      facebook: {
+        url: "https://www.facebook.com"
+      },
+      instagram: {
+        url: "https://www.instagram.com"
+      },
+      linkedin: {
+        url: "https://www.linkedin.com"
+      }
+    }
+  }
+});
 
 Team.defaultProps = {
   id: "",

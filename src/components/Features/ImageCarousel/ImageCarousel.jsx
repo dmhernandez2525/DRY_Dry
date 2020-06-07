@@ -20,6 +20,7 @@ const ImageCarousel = ({
 }) => {
   const slides = data;
   // EXAMPLE INPUT
+
   //   slides:{
   //     slide1: {
   //         picUrl:"https://files.slack.com/files-pri/TL86V04VD-F011FMTHEAY/hero.jpg",
@@ -127,6 +128,30 @@ const ImageCarousel = ({
     </div>
   );
 };
+
+ImageCarousel.exampleData = JSON.stringify({
+  slide1: {
+    picUrl:
+      "https://comfort-order-dev.s3.us-east-2.amazonaws.com/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg",
+    title: "Hey",
+    detail:
+      "Curabitur eu eros et risus rutrum elementum.Phasellus a quam lobortis magna viverra tempus.Sed dictum nibh porttitor aliquet pulvinar.Pellentesque vestibulum erat eu ex laoreet volutpat."
+  },
+  slide2: {
+    picUrl:
+      "https://comfort-order-dev.s3.us-east-2.amazonaws.com/Screen+Shot+2020-06-03+at+8.32.50+PM.png",
+    title: "Hey",
+    detail:
+      "Curabitur eu eros et risus rutrum elementum.Phasellus a quam lobortis magna viverra tempus.Sed dictum nibh porttitor aliquet pulvinar.Pellentesque vestibulum erat eu ex laoreet volutpat."
+  },
+  slide3: {
+    picUrl:
+      "https://image.shutterstock.com/z/stock-photo-a-deer-in-the-colors-of-a-foggy-morning-1508990603.jpg",
+    title: "Hey",
+    detail:
+      "Curabitur eu eros et risus rutrum elementum.Phasellus a quam lobortis magna viverra tempus.Sed dictum nibh porttitor aliquet pulvinar.Pellentesque vestibulum erat eu ex laoreet volutpat."
+  }
+});
 
 ImageCarousel.defaultProps = {
   id: "",

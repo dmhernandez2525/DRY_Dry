@@ -32,6 +32,12 @@ const About = ({
   );
 };
 
+About.exampleData = JSON.stringify({
+  title: "asdf",
+  text: "asdfasdf",
+  pic:
+    "https://comfort-order-dev.s3.us-east-2.amazonaws.com/20200525_172756.jpg"
+});
 About.defaultProps = {
   id: "",
   name: "",

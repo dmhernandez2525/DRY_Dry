@@ -29,15 +29,6 @@ import TwoLineList from "./Lists/TwoLineList";
 import Banner from "./UserHelpers/Banner";
 import Snackbar from "./UserHelpers/Snackbar";
 import Tooltip from "./UserHelpers/Tooltip";
-// Features
-import About from "./Features/About";
-import ImageCarousel from "./Features/ImageCarousel";
-import Team from "./Features/Team";
-import Header1 from "./Features/Header1";
-import Pricing from "./Features/Pricing";
-import Hours from "./Features/Hours";
-import SpotlightGallery from "./Features/SpotlightGallery";
-import Menu from "./Features/Menu";
 // Menus
 import Accordion from "./Menus/Accordion";
 import BottomSheet from "./Menus/BottomSheet";
@@ -72,6 +63,26 @@ import SimpleDialog from "./Modals/SimpleDialog";
 // Icons
 import Icon from "./Icon";
 
+// Features
+import About from "./Features/About";
+import ImageCarousel from "./Features/ImageCarousel";
+import Team from "./Features/Team";
+import Header1 from "./Features/Header1";
+import Pricing from "./Features/Pricing";
+import Hours from "./Features/Hours";
+import SpotlightGallery from "./Features/SpotlightGallery";
+import Menu from "./Features/Menu";
+const allFeatures = {
+  About: About.exampleData,
+  ImageCarousel: ImageCarousel.exampleData,
+  Team: Team.exampleData,
+  Header1: Header1.exampleData,
+  Pricing: Pricing.exampleData,
+  Hours: Hours.exampleData,
+  SpotlightGallery: SpotlightGallery.exampleData,
+  Menu: Menu.exampleData
+};
+
 export {
   Card,
   Footer,
@@ -96,14 +107,6 @@ export {
   Banner,
   Snackbar,
   Tooltip,
-  About,
-  ImageCarousel,
-  Team,
-  Header1,
-  Pricing,
-  Hours,
-  SpotlightGallery,
-  Menu,
   Accordion,
   BottomSheet,
   SideSheet,
@@ -131,5 +134,14 @@ export {
   ModalBox,
   ConfirmationDialog,
   SimpleDialog,
-  Icon
+  Icon,
+  About,
+  ImageCarousel,
+  Team,
+  Header1,
+  Pricing,
+  Hours,
+  SpotlightGallery,
+  Menu,
+  allFeatures
 };

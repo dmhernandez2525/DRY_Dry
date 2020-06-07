@@ -42,6 +42,7 @@ export const Default = () => {
       errorMes={text("errorMes", "")}
       styles={object("styles", {})}
       passProps={object("passProps", {})}
+      check={object("check", Menu.exampleData)}
       data={object("data", {
         category1: {
           pizza1: {
