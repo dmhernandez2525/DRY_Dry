@@ -36,7 +36,13 @@ const ModalBox = ({
   passProps,
   closeModal,
   openOrClosedBool,
-  children
+  children,
+  classNameCard,
+  classNameClose,
+  card,
+  modalClose,
+  modalCloseIconBool,
+  modalCloseIcon
 }) => {
   // pass a boolean and that can control the state of open or closed for the modal
   const [component, setcomponent] = useState(null);
@@ -73,7 +79,25 @@ const ModalBox = ({
         })}
         onClick={e => e.stopPropagation()}
       >
-        {component}
+        <card
+          className={classnames({
+            [classNameCard]: true
+          })}
+        >
+          {component}
+          {modalCloseIconBool ? (
+            <modalClose
+              className={classnames({
+                [classNameClose]: true
+              })}
+              onClick={() =>
+                closeModal ? closeModal() : setopenOrClosed(!openOrClosed)
+              }
+            >
+              {modalCloseIcon}
+            </modalClose>
+          ) : null}
+        </card>
       </div>
     </div>
   ) : null;
@@ -94,7 +118,12 @@ ModalBox.defaultProps = {
   passProps: null,
   closeModal: null,
   openOrClosedBool: undefined,
-  children: null
+  children: null,
+  classNameCard: "modal-card",
+  classNameClose: "modal-close",
+  card: <div />,
+  modalCloseIconBool: true,
+  modalCloseIcon: "X"
 };
 
 export default ModalBox;

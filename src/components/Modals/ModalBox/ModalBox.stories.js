@@ -59,7 +59,7 @@ export const Default = () => {
         openOrClosedBool={openOrClosed}
         {...actionsData}
       >
-        <h1>Modal Children here Try adding a card component</h1>
+        <h1>Modal Children here</h1>
       </ModalBox>
     </div>
   );
