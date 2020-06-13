@@ -17,6 +17,7 @@ import {
   AccordionSingle,
   Accordion,
   Icon,
+  Icons,
   Templates,
   allFeatures,
   FileUpload
@@ -41,6 +42,7 @@ export {
   AccordionSingle,
   Accordion,
   Icon,
+  Icons,
   Templates,
   allFeatures,
   FileUpload

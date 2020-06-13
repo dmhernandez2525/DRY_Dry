@@ -61,7 +61,8 @@ import ConfirmationDialog from "./Modals/ConfirmationDialog";
 import SimpleDialog from "./Modals/SimpleDialog";
 
 // Icons
-import Icon from "./Icon";
+import { Icon } from "./Icon";
+import { Icons } from "./Icon";
 
 // Features
 import About from "./Features/About";
@@ -135,6 +136,7 @@ export {
   ConfirmationDialog,
   SimpleDialog,
   Icon,
+  Icons,
   About,
   ImageCarousel,
   Team,
