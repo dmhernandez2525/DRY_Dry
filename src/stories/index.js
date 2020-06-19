@@ -12,7 +12,7 @@ import * as CircularIndicator from "../components/ProgressIndicators/CircularInd
 import * as LinearIndicator from "../components/ProgressIndicators/LinearIndicator/LinearIndicator.stories.js";
 // Buttons
 import * as ActionButton from "../components/Buttons/ActionButton/ActionButton.stories.js";
-import * as DryButton from "../components/Buttons/DryButton/DryButton.stories.js";
+import * as DryButton from "../components/Buttons/Button/Button.stories.js";
 import * as ToggleButton from "../components/Buttons/ToggleButton/ToggleButton.stories.js";
 import * as OutlinedButton from "../components/Buttons/OutlinedButton/OutlinedButton.stories.js";
 import * as ContainedButton from "../components/Buttons/ContainedButton/ContainedButton.stories.js";
