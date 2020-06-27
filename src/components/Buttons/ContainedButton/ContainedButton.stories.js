@@ -17,13 +17,27 @@ import {
 
 import ContainedButton from "./ContainedButton";
 
-export default {
-  component: ContainedButton,
-  title: "ContainedButton",
-  decorators: [withKnobs],
-  // Our exports that end in "Data" are not stories.
-  excludeStories: /.*Data$/
-};
+import { storiesOf } from "@storybook/react";
+
+import ButtonReadme from "../Button/DryDocsReadme.md";
+
+// storiesOf("Components/Buttons/ContainedButton", module)
+//   .addParameters({
+//     readme: {
+//       codeTheme: "duotone-sea",
+//       sidebar: ButtonReadme
+//     }
+//   })
+//   .add("Default", () => <Default />)
+//   .add("Disable", () => <Disable />);
+
+// export default {
+//   component: ContainedButton,
+//   title: "ContainedButton",
+//   decorators: [withKnobs],
+//   // Our exports that end in "Data" are not stories.
+//   excludeStories: /.*Data$/
+// };
 
 export const actionsData = {
   onClick: action("onClick"),
@@ -91,3 +105,15 @@ export const UserTip = () => (
     {...actionsData}
   />
 );
+
+storiesOf("Components/Buttons/ContainedButton", module)
+  .addParameters({
+    readme: {
+      codeTheme: "duotone-sea",
+      sidebar: ButtonReadme
+    }
+  })
+  .add("Default", () => <Default />)
+  .add("Error", () => <Error />)
+  .add("UserTip", () => <UserTip />)
+  .add("Disable", () => <Disable />);

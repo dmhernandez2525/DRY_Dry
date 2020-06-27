@@ -1,4 +1,14 @@
 import React from "react";
+import { storiesOf } from "@storybook/react";
+
+// storiesOf("Components/Buttons/ToggleButton", module)
+//   .addParameters({
+//     readme: {
+//       codeTheme: "duotone-sea",
+//     }
+//   })
+//   .add("Default", () => <Default />)
+
 import {
   Accordion,
   BottomSheet,
@@ -13,10 +23,10 @@ import {
   NavigationRail
 } from "../stories";
 
-export default {
-  title: "Menus"
-  // component: Menus
-};
+// export default {
+//   title: "Menus"
+//   // component: Menus
+// };
 
 const DryAccordion = Accordion.Default;
 const DryBottomSheet = BottomSheet.Default;
@@ -43,3 +53,91 @@ export {
   DryBottomNavigation,
   DryNavigationRail
 };
+
+storiesOf("Components/Menus/Accordion", module)
+  .addParameters({
+    readme: {
+      codeTheme: "duotone-sea"
+    }
+  })
+  .add("Default", () => <DryAccordion />);
+
+storiesOf("Components/Menus/BottomSheet", module)
+  .addParameters({
+    readme: {
+      codeTheme: "duotone-sea"
+    }
+  })
+  .add("Default", () => <DryBottomSheet />);
+
+storiesOf("Components/Menus/SideSheet", module)
+  .addParameters({
+    readme: {
+      codeTheme: "duotone-sea"
+    }
+  })
+  .add("Default", () => <DrySideSheet />);
+
+storiesOf("Components/Menus/AccordionSingle", module)
+  .addParameters({
+    readme: {
+      codeTheme: "duotone-sea"
+    }
+  })
+  .add("Default", () => <DryAccordionSingle />);
+
+storiesOf("Components/Menus/DropdownMenu", module)
+  .addParameters({
+    readme: {
+      codeTheme: "duotone-sea"
+    }
+  })
+  .add("Default", () => <DryDropdownMenu />);
+
+storiesOf("Components/Menus/Tab", module)
+  .addParameters({
+    readme: {
+      codeTheme: "duotone-sea"
+    }
+  })
+  .add("Default", () => <DryTab />);
+
+storiesOf("Components/Menus/BottomBar", module)
+  .addParameters({
+    readme: {
+      codeTheme: "duotone-sea"
+    }
+  })
+  .add("Default", () => <DryBottomBar />);
+
+storiesOf("Components/Menus/NavigationDrawer", module)
+  .addParameters({
+    readme: {
+      codeTheme: "duotone-sea"
+    }
+  })
+  .add("Default", () => <DryNavigationDrawer />);
+
+storiesOf("Components/Menus/TopBar", module)
+  .addParameters({
+    readme: {
+      codeTheme: "duotone-sea"
+    }
+  })
+  .add("Default", () => <DryTopBar />);
+
+storiesOf("Components/Menus/BottomNavigation", module)
+  .addParameters({
+    readme: {
+      codeTheme: "duotone-sea"
+    }
+  })
+  .add("Default", () => <DryBottomNavigation />);
+
+storiesOf("Components/Menus/NavigationRail", module)
+  .addParameters({
+    readme: {
+      codeTheme: "duotone-sea"
+    }
+  })
+  .add("Default", () => <DryNavigationRail />);

@@ -1,5 +1,6 @@
 import "./component.css";
-import { addParameters } from "@storybook/react";
+import { addParameters, addDecorator } from "@storybook/react";
+import { addReadme } from "storybook-readme";
 import yourTheme from "./yourTheme";
 import { themes } from "@storybook/theming";
 
@@ -8,3 +9,4 @@ addParameters({
     theme: yourTheme
   }
 });
+addDecorator(addReadme);

@@ -17,13 +17,17 @@ import {
 
 import OutlinedButton from "./OutlinedButton";
 
-export default {
-  component: OutlinedButton,
-  title: "OutlinedButton",
-  decorators: [withKnobs],
-  // Our exports that end in "Data" are not stories.
-  excludeStories: /.*Data$/
-};
+import { storiesOf } from "@storybook/react";
+
+import ButtonReadme from "../Button/DryDocsReadme.md";
+
+// export default {
+//   component: OutlinedButton,
+//   title: "OutlinedButton",
+//   decorators: [withKnobs],
+//   // Our exports that end in "Data" are not stories.
+//   excludeStories: /.*Data$/
+// };
 
 export const actionsData = {
   onClick: action("onClick"),
@@ -91,3 +95,15 @@ export const UserTip = () => (
     {...actionsData}
   />
 );
+
+storiesOf("Components/Buttons/OutlinedButton", module)
+  .addParameters({
+    readme: {
+      codeTheme: "duotone-sea",
+      sidebar: ButtonReadme
+    }
+  })
+  .add("Default", () => <Default />)
+  .add("Error", () => <Error />)
+  .add("UserTip", () => <UserTip />)
+  .add("Disable", () => <Disable />);

@@ -1,5 +1,6 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
+
 import {
   withKnobs,
   knob,
@@ -14,15 +15,10 @@ import {
   files,
   button
 } from "@storybook/addon-knobs/react";
+import { storiesOf } from "@storybook/react";
 
 import Button from "./Button";
-
-export default {
-  component: Button,
-  title: "Button",
-  decorators: [withKnobs],
-  excludeStories: /.*Data$/
-};
+import ButtonReadme from "./DryDocsReadme.md";
 
 export const actionsData = {
   onClick: action("onClick"),
@@ -42,7 +38,9 @@ export const Default = () => {
     />
   );
 };
-
+// Default.story = {
+//   name: "default"
+// };
 export const Disable = () => (
   <Button
     id={text("id", "")}
@@ -53,3 +51,20 @@ export const Disable = () => (
     {...actionsData}
   />
 );
+
+// export default {
+//   component: Button,
+//   title: "Components/Badges/Button",
+//   decorators: [withKnobs],
+//   excludeStories: /.*Data$/
+// };
+
+storiesOf("Components/Buttons/Button", module)
+  .addParameters({
+    readme: {
+      codeTheme: "duotone-sea",
+      sidebar: ButtonReadme
+    }
+  })
+  .add("Default", () => <Default />)
+  .add("Disable", () => <Disable />);

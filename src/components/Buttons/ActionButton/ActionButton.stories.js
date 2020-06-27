@@ -17,13 +17,17 @@ import {
 
 import ActionButton from "./ActionButton";
 
-export default {
-  component: ActionButton,
-  title: "ActionButton",
-  decorators: [withKnobs],
-  // Our exports that end in "Data" are not stories.
-  excludeStories: /.*Data$/
-};
+import { storiesOf } from "@storybook/react";
+
+import ButtonReadme from "../Button/DryDocsReadme.md";
+import AsdfPropTable from "./AsdfPropTable.md";
+// export default {
+//   component: ActionButton,
+//   title: "ActionButton",
+//   decorators: [withKnobs],
+//   // Our exports that end in "Data" are not stories.
+//   excludeStories: /.*Data$/
+// };
 
 export const actionsData = {
   onClick: action("onClick"),
@@ -91,3 +95,16 @@ export const UserTip = () => (
     {...actionsData}
   />
 );
+
+storiesOf("Components/Buttons/ActionButton", module)
+  .addParameters({
+    readme: {
+      codeTheme: "duotone-sea",
+      sidebar: ButtonReadme,
+      content: AsdfPropTable
+    }
+  })
+  .add("Default", () => <Default />)
+  .add("Error", () => <Error />)
+  .add("UserTip", () => <UserTip />)
+  .add("Disable", () => <Disable />);

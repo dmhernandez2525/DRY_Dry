@@ -14,7 +14,9 @@ import Restaurant from "./Templates/Restaurant";
 import NonProfit from "./Templates/NonProfit";
 // Buttons
 import ActionButton from "./Buttons/ActionButton";
-import DryButton from "./Buttons/DryButton";
+import DryButton from "./Buttons/Button";
+
+// import DryButton from "./Buttons/DryButton";
 import ToggleButton from "./Buttons/ToggleButton";
 import OutlinedButton from "./Buttons/OutlinedButton";
 import ContainedButton from "./Buttons/ContainedButton";
