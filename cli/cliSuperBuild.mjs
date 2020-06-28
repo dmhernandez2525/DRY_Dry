@@ -1,6 +1,8 @@
 import fs from "fs";
 import format from "./format.js";
 import component from "./component.mjs";
+import componentPropTable from "./componentPropTable.mjs";
+import componentReadme from "./componentReadme.mjs";
 import componentTest from "./componentTest.mjs";
 import componentStory from "./componentStory.mjs";
 import styles from "./styles.mjs";
@@ -27,6 +29,8 @@ const lowerCaseWord = word => {
 const makeComponent = async (
   parent,
   name,
+  propTable,
+  readme,
   component,
   test,
   story,
@@ -52,6 +56,26 @@ const makeComponent = async (
       resolve(error);
     }
     console.log(`${name}.jsx Created`);
+    resolve("Saved");
+  });
+
+  await new Promise((resolve, reject) => {
+    try {
+      fs.appendFile(`${path}/${name}PropTable.md`, `${propTable}`, handleError);
+    } catch (error) {
+      resolve(error);
+    }
+    console.log(`${name}.md Created`);
+    resolve("Saved");
+  });
+
+  await new Promise((resolve, reject) => {
+    try {
+      fs.appendFile(`${path}/README.md`, `${readme}`, handleError);
+    } catch (error) {
+      resolve(error);
+    }
+    console.log(`README.md Created`);
     resolve("Saved");
   });
 
@@ -166,7 +190,27 @@ const makeAll = () => {
 import  ${input} from "./${input}";
 export default ${input};
 `;
+
+      const componentProps = {
+        properties: {
+          id: "",
+          name: "",
+          userTip: "",
+          disable: false,
+          className: "",
+          errorMes: "",
+          styles: null,
+          passProps: null
+        },
+        events: { onClick: null, onChange: null, onBlur: null }
+      };
+
       const displayComponent = component(input, lowerCaseInput);
+      const displayComponentPropTable = componentPropTable(
+        input,
+        componentProps
+      );
+      const displayComponentReadme = componentReadme(input, componentProps);
       const displayComponentTest = componentTest(input, lowerCaseInput);
       const displayComponentStory = componentStory(input, lowerCaseInput);
       const displayStyles = styles(lowerCaseInput);
@@ -174,6 +218,8 @@ export default ${input};
       makeComponent(
         parent,
         input,
+        displayComponentPropTable,
+        displayComponentReadme,
         displayComponent,
         displayComponentTest,
         displayComponentStory,
