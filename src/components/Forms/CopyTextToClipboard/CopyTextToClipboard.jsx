@@ -1,44 +1,43 @@
+import React from "react";
 
-    import React from "react";
-    
-    import "./CopyTextToClipboard.scss";
-    
-    const CopyTextToClipboard = ({
-      id,
-      name,
-      userTip,
-      onClick,
-      onChange,
-      onBlur,
-      onFocus,
-      disable,
-      className,
-      errorMes,
-      styles,
-      passProps
-    }) => {
-    return (
-        <div onClick={() => onClick("DryCopyTextToClipboard")}
-          className="dry-copyTextToClipboard">
-          DryCopyTextToClipboard
+import "./CopyTextToClipboard.scss";
 
-        </div>
-    );
-    };
-    
-    CopyTextToClipboard.defaultProps = {
-        id: "",
-        name: "",
-        userTip: "",
-        onClick: null,
-        onChange: null,
-        onBlur: null,
-        disable: false,
-        className: "",
-        errorMes: "",
-        styles: null,
-        passProps: null
-      };
-      
-    export default CopyTextToClipboard;
-    
+const CopyTextToClipboard = ({
+  id,
+  name,
+  userTip,
+  onClick,
+  onChange,
+  onBlur,
+  onFocus,
+  disable,
+  className,
+  errorMes,
+  styles,
+  passProps,
+}) => {
+  return (
+    <div
+      onClick={() => onClick("DryCopyTextToClipboard")}
+      className="dry-copyTextToClipboard"
+    >
+      DryCopyTextToClipboard
+    </div>
+  );
+};
+
+CopyTextToClipboard.defaultProps = {
+  id: "",
+  name: "",
+  userTip: "",
+  onClick: null,
+  onChange: null,
+  onBlur: null,
+  disable: false,
+  className: "",
+  errorMes: "",
+  styles: null,
+  passProps: null,
+};
+
+export default CopyTextToClipboard;

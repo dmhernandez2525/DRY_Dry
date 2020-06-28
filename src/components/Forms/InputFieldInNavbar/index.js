@@ -1,3 +1,2 @@
-
-import  InputFieldInNavbar from "./InputFieldInNavbar";
+import InputFieldInNavbar from "./InputFieldInNavbar";
 export default InputFieldInNavbar;

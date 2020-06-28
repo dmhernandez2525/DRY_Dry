@@ -1,3 +1,2 @@
-
-import  StickySocialBar from "./StickySocialBar";
+import StickySocialBar from "./StickySocialBar";
 export default StickySocialBar;

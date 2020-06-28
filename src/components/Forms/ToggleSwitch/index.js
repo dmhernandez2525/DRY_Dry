@@ -1,3 +1,2 @@
-
-import  ToggleSwitch from "./ToggleSwitch";
+import ToggleSwitch from "./ToggleSwitch";
 export default ToggleSwitch;

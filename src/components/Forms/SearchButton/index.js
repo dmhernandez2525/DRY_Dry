@@ -1,3 +1,2 @@
-
-import  SearchButton from "./SearchButton";
+import SearchButton from "./SearchButton";
 export default SearchButton;

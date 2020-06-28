@@ -1,3 +1,2 @@
-
-import  TriggerButtonOnEnter from "./TriggerButtonOnEnter";
+import TriggerButtonOnEnter from "./TriggerButtonOnEnter";
 export default TriggerButtonOnEnter;

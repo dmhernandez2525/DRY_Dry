@@ -1,3 +1,2 @@
-
-import  MultipleStepForm from "./MultipleStepForm";
+import MultipleStepForm from "./MultipleStepForm";
 export default MultipleStepForm;

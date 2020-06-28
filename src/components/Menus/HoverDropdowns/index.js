@@ -1,3 +1,2 @@
-
-import  HoverDropdowns from "./HoverDropdowns";
+import HoverDropdowns from "./HoverDropdowns";
 export default HoverDropdowns;

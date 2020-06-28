@@ -1,3 +1,2 @@
-
-import  LoginFormInNavbar from "./LoginFormInNavbar";
+import LoginFormInNavbar from "./LoginFormInNavbar";
 export default LoginFormInNavbar;

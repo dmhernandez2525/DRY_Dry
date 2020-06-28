@@ -1,3 +1,2 @@
-
-import  FormWithIcons from "./FormWithIcons";
+import FormWithIcons from "./FormWithIcons";
 export default FormWithIcons;

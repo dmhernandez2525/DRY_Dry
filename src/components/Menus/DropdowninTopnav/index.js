@@ -1,3 +1,2 @@
-
-import  DropdowninTopnav from "./DropdowninTopnav";
+import DropdowninTopnav from "./DropdowninTopnav";
 export default DropdowninTopnav;

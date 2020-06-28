@@ -1,3 +1,2 @@
-
-import  TogglePasswordVisibility from "./TogglePasswordVisibility";
+import TogglePasswordVisibility from "./TogglePasswordVisibility";
 export default TogglePasswordVisibility;

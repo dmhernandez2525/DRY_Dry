@@ -1,3 +1,2 @@
-
-import  CollapsedSidebar from "./CollapsedSidebar";
+import CollapsedSidebar from "./CollapsedSidebar";
 export default CollapsedSidebar;

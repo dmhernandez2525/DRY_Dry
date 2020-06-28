@@ -1,3 +1,2 @@
-
-import  PillNavigation from "./PillNavigation";
+import PillNavigation from "./PillNavigation";
 export default PillNavigation;

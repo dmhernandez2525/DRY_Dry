@@ -1,3 +1,2 @@
-
-import  EqualWidthMenuLinks from "./EqualWidthMenuLinks";
+import EqualWidthMenuLinks from "./EqualWidthMenuLinks";
 export default EqualWidthMenuLinks;
