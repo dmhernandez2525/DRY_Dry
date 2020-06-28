@@ -159,14 +159,9 @@ class NonProfit extends React.Component {
               width="100%"
               height="450"
               frameborder="0"
-              // style="border:0"
               allowfullscreen=""
             ></iframe>
-            {/* <iframe
-              id="restaurant-map"
-              className="restaurant-map"
-              src={`https://www.google.com/maps/embed/v1/place?key=${token}&q=${this.props.businessData.address}`}
-            ></iframe> */}
+
             <button class="" type="submit">
               <a href="tel:217-508-4048">Call Now</a>
             </button>
@@ -176,10 +171,10 @@ class NonProfit extends React.Component {
         <div id="teleport-footer" className="feature" ref={this.teleRefSocal}>
           <div>
             <span>Socal Links</span>
+            {/* <Icon />
             <Icon />
             <Icon />
-            <Icon />
-            <Icon />
+            <Icon /> */}
           </div>
 
           <footer id="restaurant-footer">

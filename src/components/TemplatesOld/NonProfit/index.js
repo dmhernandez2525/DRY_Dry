@@ -22,8 +22,8 @@ class Index extends React.Component {
 
   makeFeature(feature, data) {
     switch (feature) {
-      case "Pricing":
-        return <Pricing data={data[0]} />;
+      // case "Pricing":
+      //   return <Pricing data={data[0]} />;
       case "About":
         return <About {...data[0]} />;
       case "Hours":
