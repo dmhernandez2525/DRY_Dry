@@ -100,6 +100,8 @@ export const UserTip = () => (
 
 storiesOf("Components/Buttons/ActionButton", module)
   .addParameters({
+    zeplinLink:
+      "https://app.zeplin.io/project/5ea6d579b0189824e6da8f37/screen/5eaf6155c0bf31b0c3600bc7",
     readme: {
       codeTheme: "atom-dark",
       sidebar: [ButtonReadme, AsdfPropTable],

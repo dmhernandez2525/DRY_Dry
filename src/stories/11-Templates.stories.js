@@ -8,9 +8,9 @@ import { Restaurant, NonProfit } from "./index";
 //   // component: Templates
 // };
 
-let restaurant = Restaurant.Default;
-let nonprofit = NonProfit.Default;
-export { restaurant, nonprofit };
+let RRestaurant = Restaurant.Default;
+let NNonprofit = NonProfit.Default;
+// export { restaurant, nonprofit };
 
 storiesOf("Templates/Restaurant", module)
   .addParameters({
@@ -18,7 +18,7 @@ storiesOf("Templates/Restaurant", module)
       codeTheme: "atom-dark"
     }
   })
-  .add("Default", () => <restaurant />);
+  .add("Default", () => <RRestaurant />);
 
 storiesOf("Templates/Nonprofit", module)
   .addParameters({
@@ -26,4 +26,4 @@ storiesOf("Templates/Nonprofit", module)
       codeTheme: "atom-dark"
     }
   })
-  .add("Default", () => <nonprofit />);
+  .add("Default", () => <NNonprofit />);
