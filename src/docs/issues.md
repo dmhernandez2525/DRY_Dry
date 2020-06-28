@@ -1,6 +1,6 @@
 # Reporting Issues
 
-If you're experiencing an issue with DRY: React, or have a neato enhancement idea, or feature request, please [create a new issue](https://github.com/helpscout/DRY-react/issues/new) on Github 🤗.
+If you're experiencing an issue with DRY: React, or have a enhancement idea, or feature request, please reach out to daniel hernandez or jonathon johnson
 
 ### Writing the issue
 

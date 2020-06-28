@@ -1,6 +1,6 @@
 # Adding documentation
 
-In this guide, we'll walk through adding documentation for our [fully test](testing.md) [custom `Strong` component](creating.md).
+In this guide, we'll walk through adding documentation for our [fully test](testing.md) [custom `Checkbox` component](creating.md).
 
 ## Directory
 
@@ -8,23 +8,29 @@ All of DRY's component documenations files are scoped in the same directory as t
 
 ```
 DRY-react/
-  └── components/
-      └── Button/
-          └── README.md
+  └── src/
+      └── components/
+          └── FormHelpers/
+              └── Checkbox/
+                    └── README.md
+                    ├── PropTable.md
 ```
 
-## Initial file
+## Initial files
 
-The first thing we'll need to do is create a `README.md` directory under `Strong/`:
+The first thing we'll need to do is create a `README.md` & `PropTable.md` directory under `Checkbox/`:
 
 ```
 DRY-react/
-  └── components/
-      └── Strong/
-          └── README.md
+  └── src/
+      └── components/
+          └── FormHelpers/
+              └── Checkbox/
+                    └── README.md
+                    ├── PropTable.md
 ```
 
-## Content
+## README
 
 Our `README.md` documentation should contain:
 
@@ -32,7 +38,13 @@ Our `README.md` documentation should contain:
 - An example of how it can be used
 - Descriptions of the available component `prop`
 
-Check out any `README.md` file from [any component](https://github.com/helpscout/DRY-react/tree/master/src/components) for some examples.
+## PropTable
+
+Our `PropTable.md` documentation should contain:
+
+- Descriptions of the available component `prop`
+
+Check out any `README.md` / `PropTable.md` file from any component for some examples.
 
 Yay, you did it 🤗! Documentation is [super important](https://www.quora.com/Why-is-documentation-important-in-programming). Thank you for taking the time to write docs!
 

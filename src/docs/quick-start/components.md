@@ -4,11 +4,9 @@ This guide will show you how to use components from DRY!
 
 ## Usage
 
-Any one of DRY's [components](https://github.com/helpscout/DRY-react/tree/master/src/components) can be imported into your React app.
+Any one of DRY's [components](link to sticker sheet) can be imported into your React app.
 
 In the following example, we're going to be building a form using a handful of DRY's components.
-
-Welp. This `Form` looks mighty empty.
 
 ```jsx
 import React, { Component } from "react";
@@ -27,13 +25,13 @@ export default Form;
 Let's add an `Input` to make it useful. We can import DRY's `Input` by adding:
 
 ```jsx
-import Input from "@helpscout/DRY-react/components/Input";
+import Input from "@comfort-order/dry/components/Input";
 ```
 
 Technically, you can do this:
 
 ```jsx
-import { Input } from "@helpscout/DRY-react";
+import { Input } from "@comfort-order/dry";
 ```
 
 However, the above example will, by default, import **all** of DRY. I get that DRY is cool and all, but we don't want to make your App bigger than it needs to be.
@@ -42,7 +40,7 @@ Using the first example's import method ensures you're only adding what you need
 
 ```jsx
 import React, { Component } from 'react'
-import Input from '@helpscout/DRY-react/components/Input'
+import Input from '@comfort-order/dry/components/Input'
 
 class Form extends Component {
   ...
@@ -55,7 +53,7 @@ Great 👍! Now that we have our `Input`, let's add it to our `Form`:
 
 ```jsx
 import React, { Component } from "react";
-import Input from "@helpscout/DRY-react/components/Input";
+import Input from "@comfort-order/dry/components/Input";
 
 class Form extends Component {
   render() {
@@ -75,14 +73,14 @@ You'll notice that we've added some props to our `Input`. DRY's components were 
 Hmm 🤔. Our `Input` is missing a `label`. We could add an HTML `label` to our `Form`. Or we could even import DRY's `Label` component:
 
 ```jsx
-import Label from "@helpscout/DRY-react/components/Label";
+import Label from "@comfort-order/dry/components/Label";
 ```
 
 Or... we could use the super convenient `label` prop from `Input` to automatically generate a `Label` for us:
 
 ```jsx
 import React, { Component } from "react";
-import Input from "@helpscout/DRY-react/components/Input";
+import Input from "@comfort-order/dry/components/Input";
 
 class Form extends Component {
   render() {
@@ -97,13 +95,11 @@ class Form extends Component {
 
 React is neat as it allows us to create custom components with special props that do special things ⚡️.
 
-To see what non-HTML special props DRY's components can accept, check out the component's [README](https://github.com/helpscout/DRY-react/tree/master/src/components/Input) file. **Every component has one**.
-
-Neato! We have our first DRY `Input` within our `Form`. Let's add a couple more:
+We have our first DRY `Input` within our `Form`. Let's add a couple more:
 
 ```jsx
 import React, { Component } from "react";
-import Input from "@helpscout/DRY-react/components/Input";
+import Input from "@comfort-order/dry/components/Input";
 
 class Form extends Component {
   render() {
@@ -125,15 +121,15 @@ The `Input` spacing seems a little off in our `Form` 😱. Good thing DRY has a 
 Just like with `Input`, we'll start by importing it:
 
 ```jsx
-import FormGroup from "@helpscout/DRY-react/components/FormGroup";
+import FormGroup from "@comfort-order/dry/components/FormGroup";
 ```
 
 Now we can wrap our `Input` components:
 
 ```jsx
 import React, { Component } from "react";
-import FormGroup from "@helpscout/DRY-react/components/FormGroup";
-import Input from "@helpscout/DRY-react/components/Input";
+import FormGroup from "@comfort-order/dry/components/FormGroup";
+import Input from "@comfort-order/dry/components/Input";
 
 class Form extends Component {
   render() {
@@ -159,16 +155,16 @@ Nice 😍! Our `Form` is looking mighty spiffy. It's a good thing DRY's componen
 Lastly, we need a way to submit our `Form` data. We need a `Button`!
 
 ```jsx
-import Button from "@helpscout/DRY-react/components/Button";
+import Button from "@comfort-order/dry/components/Button";
 ```
 
 Just like our `Input`, we'll wrap our `Button` with `FormGroup` to ensure proper spacing:
 
 ```jsx
 import React, { Component } from "react";
-import Button from "@helpscout/DRY-react/components/Button";
-import FormGroup from "@helpscout/DRY-react/components/FormGroup";
-import Input from "@helpscout/DRY-react/components/Input";
+import Button from "@comfort-order/dry/components/Button";
+import FormGroup from "@comfort-order/dry/components/FormGroup";
+import Input from "@comfort-order/dry/components/Input";
 
 class Form extends Component {
   render() {
@@ -193,3 +189,7 @@ class Form extends Component {
 ```
 
 Amazing 🌈! We have our completed form.
+
+## Next
+
+Let's add some [contributing](contributing/README.md)!

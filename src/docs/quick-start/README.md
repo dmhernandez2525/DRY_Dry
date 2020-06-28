@@ -1,15 +1,13 @@
 # Quick start
 
-This guide will show you how to get started with Blue!
+This guide will show you how to get started with DRY!
 
 ## Installation
 
-The first thing you'll need to do, is add Blue to your React project. This can be done by adding the [latest version](https://github.com/helpscout/DRY-react/releases) to your `package.json` file.
-
-Or, even faster, you can run:
+The first thing you'll need to do, is add DRY to your React project. you can run:
 
 ```
-npm install @helpscout/DRY-react --save
+npm install @comfort-order/dry --save
 ```
 
 ## React (v16.8+)
@@ -21,11 +19,7 @@ DRY has a couple of `peerDependencies`:
 
 Make sure you have these installed in your project.
 
-Blue currently runs on **React version 16**.
-
-### Future of CSS-in-Blue
-
-We're moving towards a CSS-in-JS future, powered by [Styled component](https://styled-components.com/).
+DRY currently runs on **React version 16**.
 
 ## Next
 

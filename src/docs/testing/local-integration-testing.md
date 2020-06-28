@@ -86,12 +86,12 @@ Congrats! You just created a prepatch beta release!
 
 ### Integration with local development
 
-Awesome! We just released a custom beta build with the version `@helpscout/DRY-react@v2.6-8-hello-0.
+Awesome! We just released a custom beta build with the version `@comfort-order/dry@v2.6-8-hello-0.
 
-To test it out in your local development project, simply version bump the `@helpscout/DRY-react` version in your project's `package.json`.
+To test it out in your local development project, simply version bump the `@comfort-order/dry` version in your project's `package.json`.
 
 ```
-"@helpscout/DRY-react": "2.6.7" -> "2.6-8-hello-0"
+"@comfort-order/dry": "2.6.7" -> "2.6-8-hello-0"
 ```
 
 And that's it 🙏! You've successfully integrated your newly custom beta build with your local project.

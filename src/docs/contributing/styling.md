@@ -13,21 +13,10 @@ DRY-react/
   └── src/
       └── components/
           └── FormHelpers/
-                  └── Checkbox.scss
-                  ├── index.js
-                  ├── Checkbox.jsx
-```
-
-Within `styles/`, create a file named after our component. In our case, `Strong.css.js`:
-
-```
-DRY-react/
-  └── src/
-      └── components/
-          ├── styles/
-          │    └── Strong.css.js
-          ├── index.js
-          └── Strong.js
+              └── Checkbox/
+                    └── Checkbox.scss
+                    ├── index.js
+                    ├── Checkbox.jsx
 ```
 
 ## Styled Components

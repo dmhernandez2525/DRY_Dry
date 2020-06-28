@@ -21,8 +21,6 @@ import TestingS from "../../docs/testing/local-integration-testing.md";
 
 // Issues
 import Issues from "../../docs/issues.md";
-// Review
-import ReviewW from "../../docs/review.md";
 
 storiesOf("Docs/QuickStart", module)
   .addParameters({
@@ -65,19 +63,6 @@ storiesOf("Docs/Issues", module)
   .add("Issues", () => <></>, {
     readme: {
       content: Issues
-    }
-  });
-
-storiesOf("Docs/Review", module)
-  .addParameters({
-    readme: {
-      codeTheme: "atom-dark"
-    }
-  })
-
-  .add("Review", () => <></>, {
-    readme: {
-      content: ReviewW
     }
   });
 

@@ -1,8 +1,8 @@
 # Writing tests
 
-In this guide, we'll walk through writing test for our [custom `Strong` component](creating.md) in [Storybook](https://storybook.js.org/).
+In this guide, we'll walk through writing test for our [custom `Checkbox` component](creating.md) in [Storybook](https://storybook.js.org/).
 
-DRY uses [Jest](https://jestjs.io/) and [Enzyme](https://github.com/airbnb/enzyme) for testing.
+DRY uses [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) for testing.
 
 ## Directory
 
@@ -11,54 +11,41 @@ All of DRY's component test files are scoped in the same directory as the compon
 ```
 DRY-react/
   └── components/
-      └── Button/
-          └── __tests__/
-              └── Button.test.js
+      └── FormHealpers/
+          └──Checkbox
 ```
 
 ## Initial files
 
-The first thing we'll need to do is create a dedicated `__tests__` directory under `Strong/`:
+Under `Checkbox`, we'll need to create the main `Checkbox.test.js` file:
 
 ```
 DRY-react/
   └── components/
-      └── Strong/
-          └── __tests__/
-```
-
-Under `__tests__/`, we'll need to create the main `Strong.test.js` file:
-
-```
-DRY-react/
-  └── components/
-      └── Strong/
-          └── __tests__/
-              └── Strong.test.js
+      └── FormHealpers/
+          └──Checkbox
+             └──Checkbox.test.js
 ```
 
 ## Base test code
 
-In our `__tests__/Strong.test.js` file, we'll need to add:
+In our `Checkbox/Checkbox.test.js` file, we'll need to add:
 
 ```jsx
 import React from "react";
-import { mount } from "enzyme";
-import Strong from "../Strong";
+import { render, fireEvent, waitFor, screen } from "@testing-library/react";
+import "@testing-library/jest-dom/extend-expect";
+
+import Checkbox from "./Checkbox";
 
 describe("classNames", () => {
-  test("Has default className", () => {
-    const wrapper = mount(<Strong />);
-    const el = wrapper.find("Strong");
-
-    expect(el.hasClass("c-Strong")).toBe(true);
-  });
+  test("Has default className", () => {});
 });
 ```
 
-#### `mount`
+#### `data-testid`
 
-DRY favours [mount rendering vs. shallow rendering](https://blog.kentcdodds.com/why-i-never-use-shallow-rendering-c08851a68bb7) for testing. The benefits are many. The only downside is `mount` is slightly slower compared to `shallow`.
+DRY favours dealing with instances of rendered React components, your tests will work with actual DOM nodes. The utilities this library provides facilitate querying the DOM in the same way the user would. Finding form elements by their label text (just like a user would), finding links and buttons from their text (like a user would). It also exposes a recommended way to find elements by a `data-testid` as an "escape hatch" for elements where the text content and label do not make sense or is not practical.
 
 ## Test development
 
@@ -91,23 +78,20 @@ DRY-react/
 
 You can open the `index.html` in your browser to view the full report.
 
-Since Aug 31, 2017, DRY has maintained [**100% code coverage**](https://coveralls.io/github/helpscout/DRY-react?branch=master) for tests. Because DRY is a component library (rather than an App), it's testing coverage is stricter. Everything must be tested. There are no exceptions... Except...
+DRY Aims for **95% code coverage**for tests. Because DRY is a component library (rather than an App), it's testing coverage is stricter. Everything must be tested. There are no exceptions... Except...
 
 ## Exceptions
 
 ...the strange or untestable cases within the [JSDOM](https://github.com/jsdom/jsdom) environment (which Jest runs on). (lol). Many DOM APIs are **not supported** in JSDOM (e.g. height/width calculations, scrolling, positioning, etc...).
 
-For anything that Jest/JSDOM cannot catch, use [`istanbul ignore`](https://github.com/gotwarlost/istanbul/blob/master/ignoring-code-for-coverage.md) to skip coverage checking.
-
-Fabulous 🤩! `Strong` is now super reliable, thanks to tests!
+Sweet! `Checkbox` is now super reliable, thanks to tests!
 
 ## Next
 
-Let's [write some documentation](documentation.md) to make sure other folks know how to use `Strong`.
+Let's [write some documentation](documentation.md) to make sure other folks know how to use `Checkbox`.
 
 ## See also
 
 - [Jest](https://jestjs.io/)
-- [Enzyme](https://github.com/airbnb/enzyme)
-- [Istanbul](https://istanbul.js.org/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
 - [Coveralls](https://coveralls.io/)

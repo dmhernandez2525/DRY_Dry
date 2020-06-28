@@ -1,10 +1,10 @@
 # Publishing a release
 
-In this guide, we'll walk through publishing for our [newly merged](review.md) [custom `Strong` component](creating.md) to [npm](https://www.npmjs.com/package/@helpscout/DRY-react).
+In this guide, we'll walk through publishing for our [newly merged](review.md) [custom `Checkbox` component](creating.md) to [npm](https://www.npmjs.com/package/@comfort-order/dry).
 
 ## Log in
 
-To publish to npm, you **must** have [maintainer access](https://docs.npmjs.com/cli/owner) to the [@helpscout/DRY-react](https://www.npmjs.com/package/@helpscout/DRY-react) package.
+To publish to npm, you **must** have [maintainer access](https://docs.npmjs.com/cli/owner) to the [@comfort-order/dry](https://www.npmjs.com/package/@comfort-order/dry) package.
 
 ## Publish!
 
@@ -32,7 +32,7 @@ Select what kind of release you would like to do:
 - minor
 - major
 
-Our `Strong` component doesn't affect anything, and should be a non-breaking enhancement to the library. Let's select `patch` and hit `Enter`.
+Our `Checkbox` component doesn't affect anything, and should be a non-breaking enhancement to the library. Let's select `patch` and hit `Enter`.
 
 Once you do, `np` will:
 
@@ -47,11 +47,9 @@ Once you do, `np` will:
 
 (😻 `np` is amazing)
 
-## Release notes
+## CHANGELOG
 
-DRY is very transparent with it's [release notes](https://github.com/helpscout/DRY-react/releases). `np` should have automatically created a new version on Github. Edit that version with the appropriate descriptions/screenshots.
-
-You can follow that template to complete your release notes:
+DRY is very transparent with it's CHANGELOG. Edit that version with the format based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 **Release Title** should be the release tag name
 
@@ -61,15 +59,8 @@ Pro Tip: If your pull request description is thorough. You can just copy/paste i
 
 ## High five
 
-🙌 Yay! We did it. We walked throug the entire process of creating a component to publishing it on npm.
+🙌 Yay! We did it. We walked through the entire process of creating a component to publishing it on npm.
 
 Thank you so much for sticking through this guide.
 
 Hope you have a fantastic day ❤️!
-
-## See also
-
-- [npm](https://www.npmjs.com/)
-- [@helpscout/DRY-react](https://www.npmjs.com/package/@helpscout/DRY-react)
-- [np](https://github.com/sindresorhus/np)
-- [Release notes](https://github.com/helpscout/DRY-react/releases)
