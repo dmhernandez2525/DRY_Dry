@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react";
 // storiesOf("Components/Buttons/ToggleButton", module)
 //   .addParameters({
 //     readme: {
-//       codeTheme: "duotone-sea",
+//       codeTheme: "atom-dark",
 //     }
 //   })
 //   .add("Default", () => <Default />)
@@ -57,7 +57,7 @@ export {
 storiesOf("Components/Menus/Accordion", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryAccordion />);
@@ -65,7 +65,7 @@ storiesOf("Components/Menus/Accordion", module)
 storiesOf("Components/Menus/BottomSheet", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryBottomSheet />);
@@ -73,7 +73,7 @@ storiesOf("Components/Menus/BottomSheet", module)
 storiesOf("Components/Menus/SideSheet", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DrySideSheet />);
@@ -81,7 +81,7 @@ storiesOf("Components/Menus/SideSheet", module)
 storiesOf("Components/Menus/AccordionSingle", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryAccordionSingle />);
@@ -89,7 +89,7 @@ storiesOf("Components/Menus/AccordionSingle", module)
 storiesOf("Components/Menus/DropdownMenu", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryDropdownMenu />);
@@ -97,7 +97,7 @@ storiesOf("Components/Menus/DropdownMenu", module)
 storiesOf("Components/Menus/Tab", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryTab />);
@@ -105,7 +105,7 @@ storiesOf("Components/Menus/Tab", module)
 storiesOf("Components/Menus/BottomBar", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryBottomBar />);
@@ -113,7 +113,7 @@ storiesOf("Components/Menus/BottomBar", module)
 storiesOf("Components/Menus/NavigationDrawer", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryNavigationDrawer />);
@@ -121,7 +121,7 @@ storiesOf("Components/Menus/NavigationDrawer", module)
 storiesOf("Components/Menus/TopBar", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryTopBar />);
@@ -129,7 +129,7 @@ storiesOf("Components/Menus/TopBar", module)
 storiesOf("Components/Menus/BottomNavigation", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryBottomNavigation />);
@@ -137,7 +137,7 @@ storiesOf("Components/Menus/BottomNavigation", module)
 storiesOf("Components/Menus/NavigationRail", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryNavigationRail />);

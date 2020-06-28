@@ -23,28 +23,28 @@ export { Divid, SingleLine, ThreeLine, TwoLineL };
 storiesOf("Components/Lists/Divid", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <Divid />);
 storiesOf("Components/Lists/SingleLine", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <SingleLine />);
 storiesOf("Components/Lists/ThreeLine", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <ThreeLine />);
 storiesOf("Components/Lists/TwoLineL", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <TwoLineL />);

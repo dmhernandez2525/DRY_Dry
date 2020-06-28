@@ -10,7 +10,7 @@ import Button from "./Button";
 // storiesOf("Button", module)
 //   .addParameters({
 //     readme: {
-//       codeTheme: "duotone-sea",
+//       codeTheme: "atom-dark",
 //       sidebar: ButtonReadme
 //     }
 //   })

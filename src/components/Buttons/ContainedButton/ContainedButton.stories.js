@@ -24,7 +24,7 @@ import ButtonReadme from "../Button/DryDocsReadme.md";
 // storiesOf("Components/Buttons/ContainedButton", module)
 //   .addParameters({
 //     readme: {
-//       codeTheme: "duotone-sea",
+//       codeTheme: "atom-dark",
 //       sidebar: ButtonReadme
 //     }
 //   })
@@ -109,7 +109,7 @@ export const UserTip = () => (
 storiesOf("Components/Buttons/ContainedButton", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea",
+      codeTheme: "atom-dark",
       sidebar: ButtonReadme
     }
   })

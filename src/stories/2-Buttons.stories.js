@@ -13,7 +13,7 @@ import { storiesOf } from "@storybook/react";
 // storiesOf("Componentsdefrge/Buttons/ContainedButton", module)
 //   .addParameters({
 //     readme: {
-//       codeTheme: "duotone-sea"
+//       codeTheme: "atom-dark"
 //       // sidebar: ButtonReadme
 //     }
 //   })

@@ -15,7 +15,7 @@ export { restaurant, nonprofit };
 storiesOf("Templates/Restaurant", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <restaurant />);
@@ -23,7 +23,7 @@ storiesOf("Templates/Restaurant", module)
 storiesOf("Templates/Nonprofit", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <nonprofit />);

@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react";
 // storiesOf("Components/Buttons/ToggleButton", module)
 //   .addParameters({
 //     readme: {
-//       codeTheme: "duotone-sea",
+//       codeTheme: "atom-dark",
 //     }
 //   })
 //   .add("Default", () => <Default />)
@@ -62,7 +62,7 @@ const DryFileUpload = FileUpload.Default;
 storiesOf("Components/Forms/Checkbox", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryCheckbox />);
@@ -70,7 +70,7 @@ storiesOf("Components/Forms/Checkbox", module)
 storiesOf("Components/Forms/Label", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryLabel />);
@@ -78,7 +78,7 @@ storiesOf("Components/Forms/Label", module)
 storiesOf("Components/Forms/SelectionControl", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DrySelectionControl />);
@@ -86,7 +86,7 @@ storiesOf("Components/Forms/SelectionControl", module)
 storiesOf("Components/Forms/Chip", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryChip />);
@@ -94,7 +94,7 @@ storiesOf("Components/Forms/Chip", module)
 storiesOf("Components/Forms/Password", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryPassword />);
@@ -102,7 +102,7 @@ storiesOf("Components/Forms/Password", module)
 storiesOf("Components/Forms/Slider", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DrySlider />);
@@ -110,7 +110,7 @@ storiesOf("Components/Forms/Slider", module)
 storiesOf("Components/Forms/DatePicker", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryDatePicker />);
@@ -118,7 +118,7 @@ storiesOf("Components/Forms/DatePicker", module)
 storiesOf("Components/Forms/Radio", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryRadio />);
@@ -126,7 +126,7 @@ storiesOf("Components/Forms/Radio", module)
 storiesOf("Components/Forms/Switch", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DrySwitch />);
@@ -134,7 +134,7 @@ storiesOf("Components/Forms/Switch", module)
 storiesOf("Components/Forms/Input", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryInput />);
@@ -142,7 +142,7 @@ storiesOf("Components/Forms/Input", module)
 storiesOf("Components/Forms/Select", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DrySelect />);
@@ -150,7 +150,7 @@ storiesOf("Components/Forms/Select", module)
 storiesOf("Components/Forms/FileUpload", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryFileUpload />);

@@ -22,7 +22,7 @@ export { DryAlertDialog, DryModalBox, DryConfirmationDialog, DrySimpleDialog };
 storiesOf("Components/Modals/AlertDialog", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryAlertDialog />);
@@ -30,7 +30,7 @@ storiesOf("Components/Modals/AlertDialog", module)
 storiesOf("Components/Modals/ModalBox", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryModalBox />);
@@ -38,7 +38,7 @@ storiesOf("Components/Modals/ModalBox", module)
 storiesOf("Components/Modals/ConfirmationDialog", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryConfirmationDialog />);
@@ -46,7 +46,7 @@ storiesOf("Components/Modals/ConfirmationDialog", module)
 storiesOf("Components/Modals/SimpleDialog", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DrySimpleDialog />);

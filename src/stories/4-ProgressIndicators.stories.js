@@ -15,14 +15,14 @@ export { Circular, Linear };
 storiesOf("Components/ProgressIndicators/Circular", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <Circular />);
 storiesOf("Components/ProgressIndicators/Linear", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <Linear />);

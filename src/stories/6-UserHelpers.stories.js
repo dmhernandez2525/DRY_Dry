@@ -16,21 +16,21 @@ const DryTooltip = Tooltip.Default;
 storiesOf("Components/UserHelpers/DryBanner", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryBanner />);
 storiesOf("Components/UserHelpers/DrySnackbar", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DrySnackbar />);
 storiesOf("Components/UserHelpers/DryTooltip", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryTooltip />);

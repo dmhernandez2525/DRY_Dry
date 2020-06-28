@@ -1,4 +1,6 @@
 import React from "react";
+import { withReadme } from "storybook-readme";
+
 import { action } from "@storybook/addon-actions";
 import {
   withKnobs,
@@ -99,12 +101,24 @@ export const UserTip = () => (
 storiesOf("Components/Buttons/ActionButton", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea",
-      sidebar: ButtonReadme,
-      content: AsdfPropTable
+      codeTheme: "atom-dark",
+      sidebar: [ButtonReadme, AsdfPropTable],
+      StoryPreview: ({ children }) => {
+        return (
+          <div>
+            {children}
+            {/* {AsdfPropTable} */}
+          </div>
+        );
+      }
+      // content: AsdfPropTable
     }
   })
-  .add("Default", () => <Default />)
+  // .addDecorator(withReadme(ButtonReadme))
+  // .add(
+  //   "Default",
+  //   withReadme(ButtonReadme, () => <Default />)
+  // )
   .add("Error", () => <Error />)
   .add("UserTip", () => <UserTip />)
   .add("Disable", () => <Disable />);

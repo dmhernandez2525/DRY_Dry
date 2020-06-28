@@ -99,7 +99,7 @@ export const UserTip = () => (
 storiesOf("Components/Buttons/TextButton", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea",
+      codeTheme: "atom-dark",
       sidebar: ButtonReadme
     }
   })

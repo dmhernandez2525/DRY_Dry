@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react";
 // storiesOf("Components/Buttons/ToggleButton", module)
 //   .addParameters({
 //     readme: {
-//       codeTheme: "duotone-sea",
+//       codeTheme: "atom-dark",
 //     }
 //   })
 //   .add("Default", () => <Default />)
@@ -20,7 +20,7 @@ let Cardd = Card.Default;
 storiesOf("Components/Base/Card", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <Cardd />);

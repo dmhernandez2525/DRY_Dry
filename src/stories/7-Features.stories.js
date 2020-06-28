@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react";
 // storiesOf("Components/Buttons/ToggleButton", module)
 //   .addParameters({
 //     readme: {
-//       codeTheme: "duotone-sea",
+//       codeTheme: "atom-dark",
 //     }
 //   })
 //   .add("Default", () => <Default />)
@@ -47,7 +47,7 @@ const DryMenu = Menu.Default;
 // storiesOf("Features/All", module)
 //   .addParameters({
 //     readme: {
-//       codeTheme: "duotone-sea"
+//       codeTheme: "atom-dark"
 //     }
 //   })
 //   .add("About", () => <DryAbout />)
@@ -62,7 +62,7 @@ const DryMenu = Menu.Default;
 storiesOf("Features/About", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryAbout />);
@@ -70,7 +70,7 @@ storiesOf("Features/About", module)
 storiesOf("Features/ImageCarousel", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryImageCarousel />);
@@ -78,7 +78,7 @@ storiesOf("Features/ImageCarousel", module)
 storiesOf("Features/Team", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryTeam />);
@@ -86,7 +86,7 @@ storiesOf("Features/Team", module)
 storiesOf("Features/Header1", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryHeader1 />);
@@ -94,7 +94,7 @@ storiesOf("Features/Header1", module)
 storiesOf("Features/Pricing", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryPricing />);
@@ -102,7 +102,7 @@ storiesOf("Features/Pricing", module)
 storiesOf("Features/Hours", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryHours />);
@@ -110,7 +110,7 @@ storiesOf("Features/Hours", module)
 storiesOf("Features/SpotlightGallery", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DrySpotlightGallery />);
@@ -118,7 +118,7 @@ storiesOf("Features/SpotlightGallery", module)
 storiesOf("Features/Menu", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <DryMenu />);

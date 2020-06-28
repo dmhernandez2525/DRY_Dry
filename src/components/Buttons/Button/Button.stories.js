@@ -62,7 +62,7 @@ export const Disable = () => (
 storiesOf("Components/Buttons/Button", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea",
+      codeTheme: "atom-dark",
       sidebar: ButtonReadme
     }
   })

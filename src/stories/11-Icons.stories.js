@@ -17,14 +17,14 @@ export { defaultIcon, AllIcons };
 storiesOf("Components/Icons/Icon", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <defaultIcon />);
 storiesOf("Components/Icons/AllIcons", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <AllIcons />);

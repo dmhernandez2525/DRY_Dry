@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react";
 // storiesOf("Components/Buttons/ToggleButton", module)
 //   .addParameters({
 //     readme: {
-//       codeTheme: "duotone-sea",
+//       codeTheme: "atom-dark",
 //     }
 //   })
 //   .add("Default", () => <Default />)
@@ -27,21 +27,21 @@ const WovenImage = WovenImageList.Default;
 storiesOf("Components/ImageLists/QuiltedImage", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <QuiltedImage />);
 storiesOf("Components/ImageLists/StandardImage", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <StandardImage />);
 storiesOf("Components/ImageLists/WovenImage", module)
   .addParameters({
     readme: {
-      codeTheme: "duotone-sea"
+      codeTheme: "atom-dark"
     }
   })
   .add("Default", () => <WovenImage />);
