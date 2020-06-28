@@ -192,4 +192,4 @@ Amazing 🌈! We have our completed form.
 
 ## Next
 
-Let's add some [contributing](contributing/README.md)!
+Let's add some [contributing](../contributing/README.md)!
