@@ -1,5 +1,4 @@
 import React from "react";
-import Icons from "./Icons";
 
 const Icon = ({ className, width, height, title, viewBox, icon }) => {
   let displayTitle = "";

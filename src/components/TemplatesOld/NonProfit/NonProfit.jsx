@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../../../components/Base/Footer";
 import placeholder from "./placeholder.jpg";
 import Icons from "../../Icons/Icon/Icons";
-import Icon from "../../Icons/Icon";
+import Icon from "../../Icons/Icon/Icon";
 import "./NonProfit.scss";
 
 const token = process.env.REACT_APP_TOKEN;
@@ -171,10 +171,10 @@ class NonProfit extends React.Component {
         <div id="teleport-footer" className="feature" ref={this.teleRefSocal}>
           <div>
             <span>Socal Links</span>
-            {/* <Icon />
             <Icon />
             <Icon />
-            <Icon /> */}
+            <Icon />
+            <Icon />
           </div>
 
           <footer id="restaurant-footer">
