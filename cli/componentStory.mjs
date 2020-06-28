@@ -1,4 +1,4 @@
-const storyComponent = (input, lowerCaseInput) => {
+const storyComponent = (input, type, lowerCaseInput) => {
   const displayStoryComponent = `
         import React from "react";
         import { storiesOf } from "@storybook/react";
@@ -84,7 +84,7 @@ const storyComponent = (input, lowerCaseInput) => {
             {...actionsData} />
         );
 
-        storiesOf("Components/${input}", module)
+        storiesOf("Components/${type}/${input}", module)
         .addParameters({
           zeplinLink:
             "",

@@ -6,6 +6,7 @@ import componentReadme from "./componentReadme.mjs";
 import componentTest from "./componentTest.mjs";
 import componentStory from "./componentStory.mjs";
 import styles from "./styles.mjs";
+import Types from "./types.mjs";
 // run node cliBuild.mjs  testing2
 
 const handleError = err => {
@@ -181,8 +182,8 @@ const files = {
 };
 
 const makeAll = () => {
-  Object.keys(files).forEach(parent => {
-    files[parent].forEach(child => {
+  Object.keys(Types).forEach(parent => {
+    Types[parent].forEach(child => {
       const input = capitalizeWord(child);
       const lowerCaseInput = lowerCaseWord(child);
 
@@ -212,7 +213,11 @@ export default ${input};
       );
       const displayComponentReadme = componentReadme(input, componentProps);
       const displayComponentTest = componentTest(input, lowerCaseInput);
-      const displayComponentStory = componentStory(input, lowerCaseInput);
+      const displayComponentStory = componentStory(
+        input,
+        parent,
+        lowerCaseInput
+      );
       const displayStyles = styles(lowerCaseInput);
 
       makeComponent(

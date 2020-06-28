@@ -1,4 +1,4 @@
-const types = {
+const Types = {
   Special: [
     "DarkMode",
     "Timeline",
@@ -316,3 +316,5 @@ const types = {
 
   Chat: ["ChatMessages", "PopupChatWindow"]
 };
+
+export default Types;

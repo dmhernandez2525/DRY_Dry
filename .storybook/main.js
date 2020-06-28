@@ -1,7 +1,7 @@
 module.exports = {
   // stories: ["../src/components/**/*.stories.js"],
-  // stories: ["../src/components/**/*.stories.(js|mdx)"],
-  stories: ["../src/stories/**/*.stories.(js|mdx)"],
+  stories: ["../src/components2/**/*.stories.(js|mdx)"],
+  // stories: ["../src/stories/**/*.stories.(js|mdx)"],
   // stories: ['../src/**/*.stories.(js|mdx)'],
   addons: [
     // https://github.com/storybookjs/storybook/tree/master/addons/a11y
