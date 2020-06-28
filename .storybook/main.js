@@ -1,5 +1,5 @@
 module.exports = {
-  stories: ["../src/components/**/*.stories.(js|mdx)"],
+  stories: ["../src/**/**/*.stories.(js|mdx)"],
   // stories: ["../src/components2/**/*.stories.(js|mdx)"],
   // stories: ["../src/stories/**/*.stories.(js|mdx)"],
   // stories: ['../src/**/*.stories.(js|mdx)'],

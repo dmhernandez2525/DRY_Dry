@@ -222,7 +222,7 @@ export default ${input};
       );
       const displayComponentReadme = componentReadme(input, componentProps);
       const displayComponentTest = componentTest(input, lowerCaseInput);
-      const displayComponentStory = componentStory(input, type, lowerCaseInput);
+      const displayComponentStory = componentStory(input, lowerCaseInput, type);
       const displayStyles = styles(lowerCaseInput);
 
       makeComponent(

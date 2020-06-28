@@ -1,21 +1,130 @@
 import React from "react";
-// import { action } from "@storybook/addon-actions";
-// import { storiesOf } from "@storybook/react";
+import { storiesOf } from "@storybook/react";
+
+// quick-start
 import DryDocs from "./DryDocs";
-import DryDocsReadme from "./DryDocsReadme.md";
-import { withKnobs } from "@storybook/addon-knobs/react";
+import QuickReadme from "../../docs/quick-start/README.md";
+import QuickComponents from "../../docs/quick-start/components.md";
 
-export default {
-  component: DryDocs,
-  title: "DryDocs",
-  decorators: [withKnobs],
-  readme: {
-    content: DryDocsReadme,
-    sidebar: DryDocsReadme
-  },
-  excludeStories: /.*Data$/
-};
+// Contributing
+import Creating from "../../docs/contributing/creating.md";
+import Documentation from "../../docs/contributing/documentation.md";
+import Release from "../../docs/contributing/release.md";
+import Review from "../../docs/contributing/review.md";
+import Setup from "../../docs/contributing/setup.md";
+import Storybook from "../../docs/contributing/storybook.md";
+import Styling from "../../docs/contributing/styling.md";
+import Testing from "../../docs/contributing/testing.md";
 
-export const Default = () => {
-  return <DryDocs />;
-};
+// Testing
+import TestingS from "../../docs/testing/local-integration-testing.md";
+
+// Issues
+import Issues from "../../docs/issues.md";
+// Review
+import ReviewW from "../../docs/review.md";
+
+storiesOf("Docs/QuickStart", module)
+  .addParameters({
+    readme: {
+      codeTheme: "atom-dark"
+    }
+  })
+  .add("quick-start", () => <DryDocs />)
+  .add("QuickReadme", () => <></>, {
+    readme: {
+      content: QuickReadme
+    }
+  })
+  .add("QuickComponents", () => <></>, {
+    readme: {
+      content: QuickComponents
+    }
+  });
+
+storiesOf("Docs/Testing", module)
+  .addParameters({
+    readme: {
+      codeTheme: "atom-dark"
+    }
+  })
+
+  .add("TestingS", () => <></>, {
+    readme: {
+      content: TestingS
+    }
+  });
+
+storiesOf("Docs/Issues", module)
+  .addParameters({
+    readme: {
+      codeTheme: "atom-dark"
+    }
+  })
+
+  .add("Issues", () => <></>, {
+    readme: {
+      content: Issues
+    }
+  });
+
+storiesOf("Docs/Review", module)
+  .addParameters({
+    readme: {
+      codeTheme: "atom-dark"
+    }
+  })
+
+  .add("Review", () => <></>, {
+    readme: {
+      content: ReviewW
+    }
+  });
+
+storiesOf("Docs/Contributing", module)
+  .addParameters({
+    readme: {
+      codeTheme: "atom-dark"
+    }
+  })
+
+  .add("Creating", () => <></>, {
+    readme: {
+      content: Creating
+    }
+  })
+  .add("Documentation", () => <></>, {
+    readme: {
+      content: Documentation
+    }
+  })
+  .add("Release", () => <></>, {
+    readme: {
+      content: Release
+    }
+  })
+  .add("Review", () => <></>, {
+    readme: {
+      content: Review
+    }
+  })
+  .add("Setup", () => <></>, {
+    readme: {
+      content: Setup
+    }
+  })
+  .add("Storybook", () => <></>, {
+    readme: {
+      content: Storybook
+    }
+  })
+  .add("Styling", () => <></>, {
+    readme: {
+      content: Styling
+    }
+  })
+  .add("Testing", () => <></>, {
+    readme: {
+      content: Testing
+    }
+  });
