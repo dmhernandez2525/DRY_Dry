@@ -4,19 +4,19 @@ In this guide, we'll walk through render our newly [styled](styling.md) [custom 
 
 ## Directory
 
-All of HSDS's stories are located under `src/stories/`:
+All of DRY's stories are located under `src/stories/`:
 
 ```
-hsds-react/
+DRY-react/
   └── stories/
 ```
 
 They are manually imported and rendered with the main `index.js` file:
 
-All of HSDS's stories are located under `src/stories/`:
+All of DRY's stories are located under `src/stories/`:
 
 ```
-hsds-react/
+DRY-react/
   └── stories/
       └── index.js
 ```
@@ -26,7 +26,7 @@ hsds-react/
 The first thing we'll need to do is create a dedicated `Strong` directory under `stories/`:
 
 ```
-hsds-react/
+DRY-react/
   └── stories/
       └── Strong/
 ```
@@ -34,7 +34,7 @@ hsds-react/
 Under `Strong/`, we'll need to create the main `index.js` file:
 
 ```
-hsds-react/
+DRY-react/
   └── stories/
       └── Strong/
           └── index.js
@@ -45,13 +45,13 @@ hsds-react/
 In our `Strong/index.js` file, we'll need to add:
 
 ```jsx
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import { Strong } from '../../src/index'
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { Strong } from "../../src/index";
 
-const stories = storiesOf('Strong', module)
+const stories = storiesOf("Strong", module);
 
-stories.add('default', () => <Strong>Super strong!</Strong>)
+stories.add("default", () => <Strong>Super strong!</Strong>);
 ```
 
 Additional stories can be added using `stories.add`. Be sure to give each story a unique name.
@@ -76,4 +76,4 @@ Let's [write some tests](testing.md) to make sure `Strong` works as we expect it
 
 ## See also
 
-* [Storybook](https://storybook.js.org/)
+- [Storybook](https://storybook.js.org/)

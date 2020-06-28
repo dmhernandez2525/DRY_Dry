@@ -1,10 +1,10 @@
 # Local Integration Testing
 
-In this guide, we'll walk through how you can integrate your new HSDS: React updates with local projects.
+In this guide, we'll walk through how you can integrate your new DRY: React updates with local projects.
 
 ## Creating a beta build
 
-The simplest way to do this is to create a new beta build for HSDS: React.
+The simplest way to do this is to create a new beta build for DRY: React.
 
 To do this, run this command:
 
@@ -86,12 +86,12 @@ Congrats! You just created a prepatch beta release!
 
 ### Integration with local development
 
-Awesome! We just released a custom beta build with the version `@helpscout/hsds-react@v2.6-8-hello-0.
+Awesome! We just released a custom beta build with the version `@helpscout/DRY-react@v2.6-8-hello-0.
 
-To test it out in your local development project, simply version bump the `@helpscout/hsds-react` version in your project's `package.json`.
+To test it out in your local development project, simply version bump the `@helpscout/DRY-react` version in your project's `package.json`.
 
 ```
-"@helpscout/hsds-react": "2.6.7" -> "2.6-8-hello-0"
+"@helpscout/DRY-react": "2.6.7" -> "2.6-8-hello-0"
 ```
 
 And that's it 🙏! You've successfully integrated your newly custom beta build with your local project.

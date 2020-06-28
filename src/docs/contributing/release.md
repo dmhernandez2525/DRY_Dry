@@ -1,10 +1,10 @@
 # Publishing a release
 
-In this guide, we'll walk through publishing for our [newly merged](review.md) [custom `Strong` component](creating.md) to [npm](https://www.npmjs.com/package/@helpscout/hsds-react).
+In this guide, we'll walk through publishing for our [newly merged](review.md) [custom `Strong` component](creating.md) to [npm](https://www.npmjs.com/package/@helpscout/DRY-react).
 
 ## Log in
 
-To publish to npm, you **must** have [maintainer access](https://docs.npmjs.com/cli/owner) to the [@helpscout/hsds-react](https://www.npmjs.com/package/@helpscout/hsds-react) package.
+To publish to npm, you **must** have [maintainer access](https://docs.npmjs.com/cli/owner) to the [@helpscout/DRY-react](https://www.npmjs.com/package/@helpscout/DRY-react) package.
 
 ## Publish!
 
@@ -22,7 +22,7 @@ Once you're ready, run the following command:
 npm run release
 ```
 
-This will kick of HSDS's automated release scripts, powered by [np](https://github.com/sindresorhus/np).
+This will kick of DRY's automated release scripts, powered by [np](https://github.com/sindresorhus/np).
 
 ![Release prompt by np](https://github.com/sindresorhus/np/raw/master/screenshot-ui.png)
 
@@ -49,7 +49,7 @@ Once you do, `np` will:
 
 ## Release notes
 
-HSDS is very transparent with it's [release notes](https://github.com/helpscout/hsds-react/releases). `np` should have automatically created a new version on Github. Edit that version with the appropriate descriptions/screenshots.
+DRY is very transparent with it's [release notes](https://github.com/helpscout/DRY-react/releases). `np` should have automatically created a new version on Github. Edit that version with the appropriate descriptions/screenshots.
 
 You can follow that template to complete your release notes:
 
@@ -70,6 +70,6 @@ Hope you have a fantastic day ❤️!
 ## See also
 
 - [npm](https://www.npmjs.com/)
-- [@helpscout/hsds-react](https://www.npmjs.com/package/@helpscout/hsds-react)
+- [@helpscout/DRY-react](https://www.npmjs.com/package/@helpscout/DRY-react)
 - [np](https://github.com/sindresorhus/np)
-- [Release notes](https://github.com/helpscout/hsds-react/releases)
+- [Release notes](https://github.com/helpscout/DRY-react/releases)

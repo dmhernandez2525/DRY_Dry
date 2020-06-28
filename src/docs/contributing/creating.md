@@ -1,113 +1,124 @@
 # Creating a component
 
-In this guide, we'll walk through creating a custom component in HSDS!
+In this guide, we'll walk through creating a custom component in DRY!
 
-We do encourage you to have a look at other components and follow how thay are put together, you might learn a thing or two, which is always a good thing!
+We do encourage you to have a look at other components and follow how they are put together, you might learn a thing or two, which is always a good thing!
 
-We'll be created a `Strong` component, an enhancement to the default HTML `strong` primitive.
+We'll be creating a `Checkbox` component, an enhancement to the default HTML `Checkbox` primitive.
 
 ## Directory
 
-All of HSDS's components are located under `src/components/`:
+All of DRY's components are located in one of 2 spots, under `src/components/` or `src/animations/`:
 
 ```
-hsds-react/
+DRY-react/
   └── src/
       └── components/
+```
+
+```
+DRY-react/
+  └── src/
+      └── animations/
 ```
 
 ## Initial files
 
-The first thing we'll need to do is create a dedicated `Strong` directory under `Components/`:
+The first thing we'll need to do is create a dedicated `Checkbox` directory under the parent directory (In this case FormHelpers) in `components/`:
 
 ```
-hsds-react/
+DRY-react/
   └── src/
       └── components/
-          └── Strong/
+          └── FormHelpers/
+              └── Checkbox/
 ```
 
-Under our newly created `Strong/` directory, we'll need to create a few files:
+Under our newly created `Checkbox/` directory, we'll need to create a few files:
 
 - `index.js`
-- `Strong.jsx`
+- `Checkbox.jsx`
 
-If your component will be styled (not all are!) add a `styles` folder and put a `Strong.css.js` file in it
+If your component will be styled (not all are!) add a `styles` file named `Checkbox.scss`
 
 ```
-hsds-react/
+DRY-react/
   └── src/
       └── components/
-          └── Strong/
-              └── Strong.css.js
-              ├── index.js
-              ├── Strong.jsx
-              └── Strong.utils.js
+          └── FormHelpers/
+              └── Checkbox/
+                  └── Checkbox.scss
+                  ├── index.js
+                  ├── Checkbox.jsx
+                  ├── Checkbox.utils.js
 ```
 
-The **`index.js`** file is the main file allow the consuming App/component to use `Strong`.
+The **`index.js`** file is the main file allow the consuming App/component to use `Checkbox`.
 
-The **`String.jsx`** file our actual React component.
+The **`Checkbox.jsx`** file our actual React component.
 
 ## Base component code
 
-Add the starting React component boilerplate for `Strong.jsx`:
+Add the starting React component boilerplate for `Checkbox.jsx`:
 
 ```jsx
-import React from 'react'
-import getValidProps from '@helpscout/react-utils/dist/getValidProps'
-import { classNames } from '../../utilities/classNames'
-import { StrongUI } from './styles/Strong.css.js'
+import React from "react";
+import PropTypes from 'prop-types';
+import classNames from "@classnames";
 
-class Strong extends React.PureComponent {
-  static defaultProps = {
-    isSuperBold: false,
-  }
+import * as Utils from "./Checkbox.utils.js"
 
-  render() {
-    const { children, className, ...rest } = this.props
+import "./Checkbox.scss";
 
-    const componentClassName = classNames(
-      'c-Strong',
-      isSuperBold && 'is-superBold',
-      className
-    )
+const DryCheckbox = ({ id,name, className, passProps,styles }) => {
+  return (
+    <div
+      className={classnames({
+        [className]: true,
+        "dry-checkbox": true
+      })}
+    >
+        <input type="checkbox" {...passProps} {...styles} name={name} id={id}/>
 
-    return (
-      <StrongUI {...getValidProps(rest)} className={componentClassName}>
-        {children}
-      </StrongUI>
-    )
-  }
+    </div>
+  );
+};
+
+DryCheckbox.defaultProps = {
+  passProps:null,
+  styles:null,
+  id:""
+  name:""
 }
 
-export default Strong
+DryCheckbox.propTypes = {
+  passProps: PropTypes.obj,
+  styles: PropTypes.obj,
+  id: PropTypes.string,
+  name: PropTypes.string
+};
+
+
+export default DryCheckbox;
 ```
 
 Whoa 😳! Lots of stuff going on already!
 
-#### `Strong.css.js`
+#### `Checkbox.scss`
 
-The style `strong` component, using CSS-in-JS techniques. More on that our [styling guide](styling.md).
+The style `Checkbox` component, Scss paired with bem techniques. More on that our [styling guide](styling.md).
 
-#### `PureComponent`
+#### `Functional Components`
 
-Creating a component **class** from extending `React.PureComponent` works seems to work best for component libraries.
+Creating a component with `Functional Components` seems to work best for component libraries.
 
-Compared to a `React.Component`, it's often more performant and faster since it shallow diff's props when React needs to re-render.
+Compared to a `React.Component`, it's often more preferment and faster since the interdiction of hooks. `Functional Components` out preform `React.Component` because of the constant shallow dif re-render that comes with `React.Component` as well as has the added benefits of React.PureComponent.
 
-If you're expecting your Component to have a bunch of deeply nested, logic heavy child components, extends from `React.Component` instead of `React.PureComponent`.
+If you're expecting your Component to have a bunch of deeply nested, logic heavy child components, extends from `React.Component` instead of a `Functional Component`.
 
-Compared to Stateless-Functional Components, the pros are many, which include:
+#### `classnames`
 
-- Ability to reference DOM nodes
-- Standardized component structure
-- Access to React [lifecycle hooks](https://reactjs.org/docs/state-and-lifecycle.html)
-- Prop-diffing, so that it doesn't re-render all the time (this is a big one)
-
-#### `componentClassName`
-
-The `classNames` utility is a light-weight version of the popular [`classnames`](https://www.npmjs.com/package/classnames) library.
+The `classnames` utility is a popular library that allows for dynamic rendering of classnames based on conditions. [`classnames`](https://www.npmjs.com/package/classnames).
 
 It is used to both define your component's `className`, and to extends the `className` prop.
 
@@ -117,7 +128,7 @@ The concept of markup and classNames can be understood by everyone who knows HTM
 
 The second point is thoughtful architecture. HTML is the foundation to your React component. It's critical to get this right to make your components/app accessible and easy to reason about/comprehend. There has to be a purpose for every single HTML selector added to a React component. Describe that reasoning with a thoughtful className.
 
-HSDS follows the [ITCSS](https://developer.helpscout.com/seed/glossary/itcss/) naming architecture, which is why components have a `className` prefix of `c-`.
+DRY follows the [ITCSS](https://developer.helpscout.com/seed/glossary/itcss/) naming architecture, which is why components have a `className` prefix of `dry-`.
 
 #### `is-superBold`
 
@@ -125,9 +136,13 @@ Any prop that can modify a components appearance or behaviour is added as a `cla
 
 These modifier classNames should typically be prefixed with words like `is-`, `has-`, `with`.
 
-#### `...getValidProps(rest)`
+#### `{...styles}`
 
-HSDS's components are designed to be used as if they were default HTML elements. The `...rest` pattern allows for users to pass in custom (but HTML-supported) props like:
+DRY's components are designed to be as dynamic as posable. The `{...styles}` pattern allows for users to pass in an object of inline styles to have maxume control over the component.
+
+#### `{...passProps}`
+
+DRY's components are designed to be used as if they were default HTML elements. The `{...passProps}` pattern allows for users to pass in custom (but HTML-supported) props like:
 
 - `aria` roles
 - `data-` attributes
@@ -141,110 +156,116 @@ It also allows for the user to hook into default React props, like:
 - `onClick`
 - `htmlFor`
 
-`getValidProps()` is a special [utility function](https://helpscout.gitbook.io/react-utils) that filters out non-default HTML/React props. This prevents React from throwing errors if non-default props are accidentally passed during the Object spread process.
-
-Wonderful 🙏! You've created the base for `Strong`, that's performant, easy to extend, and Flow typed.
-
 ## Utils
 
-Your component might need different functions, constants or other stuff that don't need to live inside of it, the place to put those is inside your utils file: `Strong.utils.js`.
+Your component might need different functions, constants or other stuff that don't need to live inside of it, the place to put those is inside your utils file: `Checkbox.utils.js`.
 
 ## Exporting
 
-We'll need to export `Strong` to make it simpler to import and use. This is all done in our `index.js` file:
+We'll need to export `Checkbox` to make it simpler to import and use. This is all done in our `index.js` file:
 
 ```jsx
-import Strong from './Strong'
+import Checkbox from "./Checkbox";
 
-export default Strong
+export default Checkbox;
 ```
 
 Whoa 😳! More stuff!
 
 ## More Exporting
 
-All of HSDS's components are made available in `components/index.js`:
+All of DRY's components are made available in `components/index.js`:
 
 ```
-hsds-react/
+DRY-react/
   └── src/
       └── components/
           └── index.js
 ```
 
-Open that file. You should see a **bunch** of exports listed in **alphabetical order**. Add `Strong`:
+Open that file. You should see a **bunch** of exports listed under its **parent name**. Add `Checkbox`:
 
 ```jsx
 ...
-export { default as Strong } from './Strong'
+// FormHelpers
+export { default as Checkbox } from './FormHelpers/Checkbox'
 ...
 ```
 
-**Strong.jsx**
+**Checkbox.jsx**
 
 ```jsx
-import React from 'react'
-import getValidProps from '@helpscout/react-utils/dist/getValidProps'
-import { classNames } from '../../utilities/classNames'
-import { namespaceComponent } from '../../utilities/component'
-import { StrongUI } from './styles/Strong.css.js'
+import React from "react";
+import PropTypes from 'prop-types';
+import classNames from "@classnames";
 
-class Strong extends React.PureComponent {
-  static defaultProps = {
-    isSuperBold: false,
-  }
+import * as Utils from "./Checkbox.utils.js"
 
-  render() {
-    const { children, className, ...rest } = this.props
+import "./Checkbox.scss";
 
-    const componentClassName = classNames(
-      'c-Strong',
-      isSuperBold && 'is-superBold',
-      className
-    )
+const DryCheckbox = ({ id,name, className, passProps,styles }) => {
+  return (
+    <div
+      className={classnames({
+        [className]: true,
+        "dry-checkbox": true
+      })}
+    >
+        <input type="checkbox" {...passProps} {...styles} name={name} id={id}/>
 
-    return (
-      <StrongUI {...getValidProps(rest)} className={componentClassName}>
-        {children}
-      </StrongUI>
-    )
-  }
+    </div>
+  );
+};
+
+DryCheckbox.defaultProps = {
+  passProps:null,
+  styles:null,
+  id:""
+  name:""
 }
 
-export default Strong
+DryCheckbox.propTypes = {
+  passProps: PropTypes.obj,
+  styles: PropTypes.obj,
+  id: PropTypes.string,
+  name: PropTypes.string
+};
+
+
+export default DryCheckbox;
 ```
 
-And that's it 🙏! You've successfully created, hooked up, and exported our new `Strong` component 💪.
+And that's it 🙏! You've successfully created, hooked up, and exported our new `Checkbox` component 💪.
 
 ## About naming conventions
 
-You'll quickly notice a pattern to everything we add inside a component. The reason for this is that HSDS has many components! And when you are working inside your code editor, it's easier to find what you need if everything is named following a convention.
+You'll quickly notice a pattern to everything we add inside a component. The reason for this is that DRY has many components! And when you are working inside your code editor, it's easier to find what you need if everything is named following a convention.
 
 Below is a summary of things to pay attention to with examples of a slightly more complex component:
 
 #### Folder Structure
 
 ```
-hsds-react/
+DRY-react/
   └── src/
       └── components/
           └── Table/
               └── __tests__/
                   ├── Table.Cell.test.js
                   └── Table.test.js
-              └── styles/
-                  ├── Table.Cell.css.js
-                  └── Table.css.js
-              ├── index.js
-              ├── Table.jsx
-              ├── Table.Cell.jsx
-              ├── Table.utils.js
+DRY-react/
+  └── src/
+      └── components/
+          └── FormHelpers/
+              └── Checkbox/
+                  ├── __snapshot__
+                  └── Checkbox.test.js
+                  └── Checkbox.scss
+                  ├── index.js
+                  ├── Checkbox.jsx
+                  ├── Checkbox.utils.js
 ```
 
 ## Next
 
 Let's add some [styles](stying.md)!
-
-## See also
-
-- [react-utils](https://helpscout.gitbook.io/react-utils)

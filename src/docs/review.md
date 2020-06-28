@@ -1,14 +1,14 @@
 # Submitting for review
 
-In this guide, we'll walk through submitting an HSDS: React related update for code review!
+In this guide, we'll walk through submitting an DRY: React related update for code review!
 
 ## Create a pull request
 
-An HSDS: React integration update almost always involves a version bump.
+An DRY: React integration update almost always involves a version bump.
 
 When writing your pull request description, include the areas of effect (AoE) the version bump may change within your application.
 
-Refer to the [release notes](https://github.com/helpscout/hsds-react/releases) for update details. It's also a good idea to link to release version to provide context to code reviewers.
+Refer to the [release notes](https://github.com/helpscout/DRY-react/releases) for update details. It's also a good idea to link to release version to provide context to code reviewers.
 
 ## Assigning Reviewers
 
@@ -18,7 +18,7 @@ Regardless of the folks you `@` for review, it's always a good idea to help set 
 
 This may include:
 
-* Providing a checklist for steps to check the update
-* Including a direct link to a deploy preview/staging environment
-* Attaching screenshots/GIFs of any visual/interaction changes
-* Recording a short screencast that goes over the updates
+- Providing a checklist for steps to check the update
+- Including a direct link to a deploy preview/staging environment
+- Attaching screenshots/GIFs of any visual/interaction changes
+- Recording a short screencast that goes over the updates

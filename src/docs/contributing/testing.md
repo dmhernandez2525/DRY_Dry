@@ -2,14 +2,14 @@
 
 In this guide, we'll walk through writing test for our [custom `Strong` component](creating.md) in [Storybook](https://storybook.js.org/).
 
-HSDS uses [Jest](https://jestjs.io/) and [Enzyme](https://github.com/airbnb/enzyme) for testing.
+DRY uses [Jest](https://jestjs.io/) and [Enzyme](https://github.com/airbnb/enzyme) for testing.
 
 ## Directory
 
-All of HSDS's component test files are scoped in the same directory as the component, example:
+All of DRY's component test files are scoped in the same directory as the component, example:
 
 ```
-hsds-react/
+DRY-react/
   └── components/
       └── Button/
           └── __tests__/
@@ -21,7 +21,7 @@ hsds-react/
 The first thing we'll need to do is create a dedicated `__tests__` directory under `Strong/`:
 
 ```
-hsds-react/
+DRY-react/
   └── components/
       └── Strong/
           └── __tests__/
@@ -30,7 +30,7 @@ hsds-react/
 Under `__tests__/`, we'll need to create the main `Strong.test.js` file:
 
 ```
-hsds-react/
+DRY-react/
   └── components/
       └── Strong/
           └── __tests__/
@@ -42,23 +42,23 @@ hsds-react/
 In our `__tests__/Strong.test.js` file, we'll need to add:
 
 ```jsx
-import React from 'react'
-import { mount } from 'enzyme'
-import Strong from '../Strong'
+import React from "react";
+import { mount } from "enzyme";
+import Strong from "../Strong";
 
-describe('classNames', () => {
-  test('Has default className', () => {
-    const wrapper = mount(<Strong />)
-    const el = wrapper.find('Strong')
+describe("classNames", () => {
+  test("Has default className", () => {
+    const wrapper = mount(<Strong />);
+    const el = wrapper.find("Strong");
 
-    expect(el.hasClass('c-Strong')).toBe(true)
-  })
-})
+    expect(el.hasClass("c-Strong")).toBe(true);
+  });
+});
 ```
 
 #### `mount`
 
-HSDS favours [mount rendering vs. shallow rendering](https://blog.kentcdodds.com/why-i-never-use-shallow-rendering-c08851a68bb7) for testing. The benefits are many. The only downside is `mount` is slightly slower compared to `shallow`.
+DRY favours [mount rendering vs. shallow rendering](https://blog.kentcdodds.com/why-i-never-use-shallow-rendering-c08851a68bb7) for testing. The benefits are many. The only downside is `mount` is slightly slower compared to `shallow`.
 
 ## Test development
 
@@ -83,7 +83,7 @@ npm run test
 This runs through the entire Jest test suite, and generates a [coverage report](https://istanbul.js.org/) under:
 
 ```
-hsds-react/
+DRY-react/
   └── coverage/
       └── lcov-report/
           └── index.html
@@ -91,7 +91,7 @@ hsds-react/
 
 You can open the `index.html` in your browser to view the full report.
 
-Since Aug 31, 2017, HSDS has maintained [**100% code coverage**](https://coveralls.io/github/helpscout/hsds-react?branch=master) for tests. Because HSDS is a component library (rather than an App), it's testing coverage is stricter. Everything must be tested. There are no exceptions... Except...
+Since Aug 31, 2017, DRY has maintained [**100% code coverage**](https://coveralls.io/github/helpscout/DRY-react?branch=master) for tests. Because DRY is a component library (rather than an App), it's testing coverage is stricter. Everything must be tested. There are no exceptions... Except...
 
 ## Exceptions
 
@@ -107,7 +107,7 @@ Let's [write some documentation](documentation.md) to make sure other folks know
 
 ## See also
 
-* [Jest](https://jestjs.io/)
-* [Enzyme](https://github.com/airbnb/enzyme)
-* [Istanbul](https://istanbul.js.org/)
-* [Coveralls](https://coveralls.io/)
+- [Jest](https://jestjs.io/)
+- [Enzyme](https://github.com/airbnb/enzyme)
+- [Istanbul](https://istanbul.js.org/)
+- [Coveralls](https://coveralls.io/)

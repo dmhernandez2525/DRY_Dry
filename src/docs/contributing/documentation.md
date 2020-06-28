@@ -4,10 +4,10 @@ In this guide, we'll walk through adding documentation for our [fully test](test
 
 ## Directory
 
-All of HSDS's component documenations files are scoped in the same directory as the component, example:
+All of DRY's component documenations files are scoped in the same directory as the component, example:
 
 ```
-hsds-react/
+DRY-react/
   └── components/
       └── Button/
           └── README.md
@@ -18,7 +18,7 @@ hsds-react/
 The first thing we'll need to do is create a `README.md` directory under `Strong/`:
 
 ```
-hsds-react/
+DRY-react/
   └── components/
       └── Strong/
           └── README.md
@@ -28,11 +28,11 @@ hsds-react/
 
 Our `README.md` documentation should contain:
 
-* Brief explanation of what the component is/doesn
-* An example of how it can be used
-* Descriptions of the available component `prop`
+- Brief explanation of what the component is/doesn
+- An example of how it can be used
+- Descriptions of the available component `prop`
 
-Check out any `README.md` file from [any component](https://github.com/helpscout/hsds-react/tree/master/src/components) for some examples.
+Check out any `README.md` file from [any component](https://github.com/helpscout/DRY-react/tree/master/src/components) for some examples.
 
 Yay, you did it 🤗! Documentation is [super important](https://www.quora.com/Why-is-documentation-important-in-programming). Thank you for taking the time to write docs!
 

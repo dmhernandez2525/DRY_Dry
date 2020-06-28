@@ -4,12 +4,12 @@ In this guide, we'll walk through styling our newly created [custom `Strong` com
 
 ## CSS-in-JS
 
-HSDS uses CSS-in-JS techniques for styling, powered by [styled-component](https://styled-components.com/).
+DRY uses CSS-in-JS techniques for styling, powered by [styled-component](https://styled-components.com/).
 
 Start by creating a dedicated `styles/` directory under `Strong/`:
 
 ```
-hsds-react/
+DRY-react/
   └── src/
       └── components/
           ├── styles/
@@ -20,7 +20,7 @@ hsds-react/
 Within `styles/`, create a file named after our component. In our case, `Strong.css.js`:
 
 ```
-hsds-react/
+DRY-react/
   └── src/
       └── components/
           ├── styles/
@@ -29,24 +29,24 @@ hsds-react/
           └── Strong.js
 ```
 
-The `.css.js` file extension is a convention HSDS uses to distinguish dedicated CSS-in-JS file types. They're still plain ol' `.js` files though 🤓.
+The `.css.js` file extension is a convention DRY uses to distinguish dedicated CSS-in-JS file types. They're still plain ol' `.js` files though 🤓.
 
 ## Styled Components
 
 Add the starting styled component boilerplate for `Strong.css.js`:
 
 ```jsx
-import styled from 'styled-components'
+import styled from "styled-components";
 
-export const StrongUI = styled('strong')`
+export const StrongUI = styled("strong")`
   font-weight: 600;
 
   &.is-superBold {
     font-weight: 900;
   }
-`
+`;
 
-export default StrongUI
+export default StrongUI;
 ```
 
 Whoa 😳! Lots of stuff! What is this stuff!
@@ -59,7 +59,7 @@ The design pattern we use to distinguish styled-components (SC) vs. regular Reac
 
 This contains the modifier styles specified in our `Strong` component. Similar to Sass, ampersand for className inheritance is supported.
 
-HSDS's CSS-in-JS practices favour the use of conventional CSS modifier classes, rather than [dynamically computed styles](https://www.styled-components.com/docs/basics#adapting-based-on-props). From experience, this keeps the code much cleaner and easier to read. It also avoids clashing, which sometimes happens with dynamic styling.
+DRY's CSS-in-JS practices favour the use of conventional CSS modifier classes, rather than [dynamically computed styles](https://www.styled-components.com/docs/basics#adapting-based-on-props). From experience, this keeps the code much cleaner and easier to read. It also avoids clashing, which sometimes happens with dynamic styling.
 
 #### export
 
