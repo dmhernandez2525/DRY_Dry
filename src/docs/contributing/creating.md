@@ -249,13 +249,6 @@ Below is a summary of things to pay attention to with examples of a slightly mor
 DRY-react/
   └── src/
       └── components/
-          └── Table/
-              └── __tests__/
-                  ├── Table.Cell.test.js
-                  └── Table.test.js
-DRY-react/
-  └── src/
-      └── components/
           └── FormHelpers/
               └── Checkbox/
                   ├── __snapshot__

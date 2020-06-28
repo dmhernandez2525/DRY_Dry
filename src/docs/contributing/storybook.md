@@ -1,78 +1,58 @@
 # Write a story
 
-In this guide, we'll walk through render our newly [styled](styling.md) [custom `Strong` component](creating.md) in [Storybook](https://storybook.js.org/).
+In this guide, we'll walk through render our newly [styled](styling.md) [custom `Checkbox` component](creating.md) in [Storybook](https://storybook.js.org/).
 
 ## Directory
 
-All of DRY's stories are located under `src/stories/`:
+All of DRY's stories are located under the custum components directory `src/componets/FormHelpers/Checkbox/`:
 
 ```
 DRY-react/
-  └── stories/
-```
-
-They are manually imported and rendered with the main `index.js` file:
-
-All of DRY's stories are located under `src/stories/`:
-
-```
-DRY-react/
-  └── stories/
-      └── index.js
-```
-
-## Initial files
-
-The first thing we'll need to do is create a dedicated `Strong` directory under `stories/`:
-
-```
-DRY-react/
-  └── stories/
-      └── Strong/
-```
-
-Under `Strong/`, we'll need to create the main `index.js` file:
-
-```
-DRY-react/
-  └── stories/
-      └── Strong/
-          └── index.js
+  └── src/
+      └── components/
+          └── FormHelpers/
+              └── Checkbox/
+                  └── Checkbox.stories.js
 ```
 
 ## Base story code
 
-In our `Strong/index.js` file, we'll need to add:
+In our `Checkbox.stories.js` file, we'll need to add:
 
 ```jsx
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { Strong } from "../../src/index";
+import Checkbox from "./Checkbox.jsx";
+import README from "./README.md";
+import PropTable from "./PropTable.md";
 
-const stories = storiesOf("Strong", module);
+const stories = storiesOf("Components/Checkbox", module);
 
-stories.add("default", () => <Strong>Super strong!</Strong>);
+stories.add("default", () => <Checkbox />);
+stories.addParameters({
+  zeplinLink: "",
+  readme: {
+    codeTheme: "atom-dark",
+
+    StoryPreview: ({ children }) => {
+      return <div>{children}</div>;
+    }
+  }
+});
 ```
 
 Additional stories can be added using `stories.add`. Be sure to give each story a unique name.
+Additional confergration can be added using `stories.addParameters` for a full list look here [Storybook Readme](https://github.com/tuchk4/storybook-readme)
 
 ## Add to Storybook
 
-Almost there 🌈! The last thing we need to do is add our `Strong/index.js` file to the main `stories/index.js` file.
+the path of `storiesOf("Components/Checkbox", module)` will determine where the component is placed in the docs
 
-Open up `stories/index.js`. You should see a **bunch** of imports listed in **alphabetical order**. Add `Strong`:
-
-```jsx
-...
-import './Strong'
-...
-```
-
-Amaze 😍! We can see our `Strong` component in Storybook!
+Awesome! We can see our `Checkbox` component in Storybook!
 
 ## Next
 
-Let's [write some tests](testing.md) to make sure `Strong` works as we expect it to. (Just in case!)
+Let's [write some tests](testing.md) to make sure `Checkbox` works as we expect it to. (Just in case!)
 
 ## See also
 
