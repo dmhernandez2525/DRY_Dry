@@ -121,6 +121,7 @@ storiesOf("Components/Buttons/ActionButton", module)
   //   "Default",
   //   withReadme(ButtonReadme, () => <Default />)
   // )
+  .add("Default", () => <Default />)
   .add("Error", () => <Error />)
   .add("UserTip", () => <UserTip />)
   .add("Disable", () => <Disable />);

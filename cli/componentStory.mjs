@@ -1,6 +1,7 @@
 const storyComponent = (input, lowerCaseInput) => {
   const displayStoryComponent = `
         import React from "react";
+        import { storiesOf } from "@storybook/react";
         import { action } from "@storybook/addon-actions";
         import { 
             withKnobs, 
@@ -17,14 +18,8 @@ const storyComponent = (input, lowerCaseInput) => {
             button } from "@storybook/addon-knobs/react";
         
         import ${input} from "./${input}";
-
-        export default {
-            component: ${input},
-            title: "${input}",
-            decorators: [withKnobs],
-            // Our exports that end in "Data" are not stories.
-            excludeStories: /.*Data$/
-          };
+        import ${input}PropTable from "./${input}PropTable.md";
+        import README from "./README.md";
         
         export const actionsData = {
             onClick: action("onClick"),
@@ -88,6 +83,28 @@ const storyComponent = (input, lowerCaseInput) => {
                 passProps={object("passProps",  {})} 
             {...actionsData} />
         );
+
+        storiesOf("${input}", module)
+        .addParameters({
+          zeplinLink:
+            "",
+          readme: {
+            codeTheme: "atom-dark",
+            sidebar: [README, ${input}PropTable],
+            StoryPreview: ({ children }) => {
+              return (
+                <div>
+                  {children}
+                </div>
+              );
+            }
+          }
+        })
+        .add("Default", () => <Default />)
+        .add("Error", () => <Error />)
+        .add("UserTip", () => <UserTip />)
+        .add("Disable", () => <Disable />);
+      
         `;
 
   return displayStoryComponent;
