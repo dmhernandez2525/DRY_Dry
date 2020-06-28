@@ -1,5 +1,6 @@
 import React from "react";
 import faker from "faker";
+import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import {
   withKnobs,
@@ -17,14 +18,6 @@ import {
 } from "@storybook/addon-knobs/react";
 
 import Index from "./index";
-
-export default {
-  component: Index,
-  title: "NonProfit",
-  decorators: [withKnobs],
-  // Our exports that end in "Data" are not stories.
-  excludeStories: /.*Data$/
-};
 
 export const actionsData = {
   onClick: action("onClick"),
@@ -462,10 +455,14 @@ export const Default = () => {
   );
 };
 
-// ,feature: {
-//   Name: [
-//     {
-
-//     }
-//   ]
-// },
+storiesOf("Templates/NonProfit", module)
+  .addParameters({
+    zeplinLink: "",
+    readme: {
+      codeTheme: "atom-dark",
+      StoryPreview: ({ children }) => {
+        return <div>{children}</div>;
+      }
+    }
+  })
+  .add("Default", () => <Default />);

@@ -1,4 +1,5 @@
 import React from "react";
+import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import {
   withKnobs,
@@ -16,14 +17,6 @@ import {
 } from "@storybook/addon-knobs/react";
 
 import Restaurant from "../Restaurant";
-
-export default {
-  component: Restaurant,
-  title: "Restaurant",
-  decorators: [withKnobs],
-  // Our exports that end in "Data" are not stories.
-  excludeStories: /.*Data$/
-};
 
 export const actionsData = {
   onClick: action("onClick"),
@@ -69,3 +62,15 @@ export const Default = () => {
     />
   );
 };
+
+storiesOf("Templates/Restaurant", module)
+  .addParameters({
+    zeplinLink: "",
+    readme: {
+      codeTheme: "atom-dark",
+      StoryPreview: ({ children }) => {
+        return <div>{children}</div>;
+      }
+    }
+  })
+  .add("Default", () => <Default />);

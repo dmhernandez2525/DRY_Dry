@@ -1,4 +1,5 @@
 import React from "react";
+import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import {
   withKnobs,
@@ -16,14 +17,6 @@ import {
 } from "@storybook/addon-knobs/react";
 
 import Team from "./Team";
-
-export default {
-  component: Team,
-  title: "Team",
-  decorators: [withKnobs],
-  // Our exports that end in "Data" are not stories.
-  excludeStories: /.*Data$/
-};
 
 export const actionsData = {
   onClick: action("onClick"),
@@ -147,3 +140,18 @@ export const UserTip = () => (
     {...actionsData}
   />
 );
+
+storiesOf("Features/Team", module)
+  .addParameters({
+    zeplinLink: "",
+    readme: {
+      codeTheme: "atom-dark",
+      StoryPreview: ({ children }) => {
+        return <div>{children}</div>;
+      }
+    }
+  })
+  .add("Default", () => <Default />)
+  .add("Error", () => <Error />)
+  .add("UserTip", () => <UserTip />)
+  .add("Disable", () => <Disable />);

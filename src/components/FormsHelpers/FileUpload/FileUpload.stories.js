@@ -1,15 +1,9 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
 import { withKnobs, text, boolean } from "@storybook/addon-knobs/react";
+import { storiesOf } from "@storybook/react";
 
 import FileUpload from "./FileUpload";
-
-export default {
-  component: FileUpload,
-  title: "FileUpload",
-  decorators: [withKnobs],
-  excludeStories: /.*Data$/
-};
 
 export const actionsData = {
   onBlur: action("onBlur")
@@ -30,3 +24,15 @@ export const Default = () => {
     />
   );
 };
+
+storiesOf("Components/FormHelper/FileUpload", module)
+  .addParameters({
+    zeplinLink: "",
+    readme: {
+      codeTheme: "atom-dark",
+      StoryPreview: ({ children }) => {
+        return <div>{children}</div>;
+      }
+    }
+  })
+  .add("Default", () => <Default />);

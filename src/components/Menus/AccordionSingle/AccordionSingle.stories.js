@@ -1,4 +1,6 @@
 import React from "react";
+import { storiesOf } from "@storybook/react";
+
 import { action } from "@storybook/addon-actions";
 import {
   withKnobs,
@@ -16,14 +18,6 @@ import {
 } from "@storybook/addon-knobs/react";
 
 import AccordionSingle from "./AccordionSingle";
-
-export default {
-  component: AccordionSingle,
-  title: "AccordionSingle",
-  decorators: [withKnobs],
-  // Our exports that end in "Data" are not stories.
-  excludeStories: /.*Data$/
-};
 
 export const actionsData = {
   onClick: action("onClick"),
@@ -91,3 +85,19 @@ export const UserTip = () => (
     {...actionsData}
   />
 );
+
+storiesOf("Components/Menus/AccordionSingle", module)
+  .addParameters({
+    zeplinLink: "",
+    readme: {
+      codeTheme: "atom-dark",
+
+      StoryPreview: ({ children }) => {
+        return <div>{children}</div>;
+      }
+    }
+  })
+  .add("Default", () => <Default />)
+  .add("Error", () => <Error />)
+  .add("UserTip", () => <UserTip />)
+  .add("Disable", () => <Disable />);
