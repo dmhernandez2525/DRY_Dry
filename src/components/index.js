@@ -1,5 +1,5 @@
 // Base
-import Card from "./Base/Card";
+import Card from "./Base/Cards";
 import Footer from "./Base/Footer";
 // ImageLists
 import QuiltedImageList from "./ImageLists/QuiltedImageList";
@@ -9,14 +9,12 @@ import WovenImageList from "./ImageLists/WovenImageList";
 import CircularIndicator from "./ProgressIndicators/CircularIndicator";
 import LinearIndicator from "./ProgressIndicators/LinearIndicator";
 // Templates
-import Templates from "./Templates";
-import Restaurant from "./Templates/Restaurant";
-import NonProfit from "./Templates/NonProfit";
+import Templates from "./TemplatesOld";
+import Restaurant from "./TemplatesOld/Restaurant";
+import NonProfit from "./TemplatesOld/NonProfit";
 // Buttons
 import ActionButton from "./Buttons/ActionButton";
-import DryButton from "./Buttons/Button";
-
-// import DryButton from "./Buttons/DryButton";
+import DryButton from "./Buttons/IconButtons";
 import ToggleButton from "./Buttons/ToggleButton";
 import OutlinedButton from "./Buttons/OutlinedButton";
 import ContainedButton from "./Buttons/ContainedButton";
@@ -44,18 +42,18 @@ import TopBar from "./Menus/TopBar";
 import BottomNavigation from "./Menus/BottomNavigation";
 import NavigationRail from "./Menus/NavigationRail";
 // Forms
-import Checkbox from "./Forms/Checkbox";
-import Label from "./Forms/Label";
-import SelectionControl from "./Forms/SelectionControl";
-import Chip from "./Forms/Chip";
-import Password from "./Forms/Password";
-import Slider from "./Forms/Slider";
-import DatePicker from "./Forms/DatePicker";
-import Radio from "./Forms/Radio";
-import Switch from "./Forms/Switch";
-import Input from "./Forms/Input";
-import Select from "./Forms/Select";
-import FileUpload from "./Forms/FileUpload";
+import Checkbox from "./FormsHelpers/Checkbox";
+import Label from "./FormsHelpers/Label";
+import SelectionControl from "./FormsHelpers/SelectionControl";
+import Chip from "./FormsHelpers/Chip";
+import Password from "./FormsHelpers/Password";
+import Slider from "./FormsHelpers/Slider";
+import DatePicker from "./FormsHelpers/DatePicker";
+import Radio from "./FormsHelpers/Radio";
+import Switch from "./FormsHelpers/Switch";
+import Input from "./FormsHelpers/Input";
+import Select from "./FormsHelpers/Select";
+import FileUpload from "./FormsHelpers/FileUpload";
 // Modals
 import AlertDialog from "./Modals/AlertDialog";
 import ModalBox from "./Modals/ModalBox";
@@ -63,18 +61,18 @@ import ConfirmationDialog from "./Modals/ConfirmationDialog";
 import SimpleDialog from "./Modals/SimpleDialog";
 
 // Icons
-import { Icon } from "./Icon";
-import { Icons } from "./Icon";
+import { Icon } from "./Icons/Icon";
+import { Icons } from "./Icons/Icon";
 
 // Features
-import About from "./Features/About";
-import ImageCarousel from "./Features/ImageCarousel";
-import Team from "./Features/Team";
-import Header1 from "./Features/Header1";
-import Pricing from "./Features/Pricing";
-import Hours from "./Features/Hours";
-import SpotlightGallery from "./Features/SpotlightGallery";
-import Menu from "./Features/Menu";
+import About from "./FeaturesOld/About";
+import ImageCarousel from "./FeaturesOld/ImageCarousel";
+import Team from "./FeaturesOld/Team";
+import Header1 from "./FeaturesOld/Header1";
+import Pricing from "./FeaturesOld/Pricing";
+import Hours from "./FeaturesOld/Hours";
+import SpotlightGallery from "./FeaturesOld/SpotlightGallery";
+import Menu from "./FeaturesOld/Menu";
 const allFeatures = {
   About: About.exampleData,
   ImageCarousel: ImageCarousel.exampleData,

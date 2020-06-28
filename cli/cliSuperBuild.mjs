@@ -184,6 +184,15 @@ const files = {
 const makeAll = () => {
   Object.keys(Types).forEach(parent => {
     Types[parent].forEach(child => {
+      // this will be the main directory for storybook files
+      const mainTypes = ["Templates", "Features"];
+      const dir = mainTypes.includes(parent) ? parent : "Components";
+      let type;
+      if (dir === "Components") {
+        type = `Components/${parent}`;
+      } else {
+        type = parent;
+      }
       const input = capitalizeWord(child);
       const lowerCaseInput = lowerCaseWord(child);
 
@@ -213,11 +222,7 @@ export default ${input};
       );
       const displayComponentReadme = componentReadme(input, componentProps);
       const displayComponentTest = componentTest(input, lowerCaseInput);
-      const displayComponentStory = componentStory(
-        input,
-        parent,
-        lowerCaseInput
-      );
+      const displayComponentStory = componentStory(input, type, lowerCaseInput);
       const displayStyles = styles(lowerCaseInput);
 
       makeComponent(

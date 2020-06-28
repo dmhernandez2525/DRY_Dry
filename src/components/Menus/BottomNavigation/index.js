@@ -1,2 +1,3 @@
-import BottomNavigation from "./BottomNavigation";
+
+import  BottomNavigation from "./BottomNavigation";
 export default BottomNavigation;

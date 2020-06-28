@@ -1,2 +1,3 @@
-import Team from "./Team";
+
+import  Team from "./Team";
 export default Team;

@@ -1,0 +1,34 @@
+
+# BottomNavigation
+
+## Import
+  
+```
+import BottomNavigation from @comfort-order/dry
+```
+  
+## Important Notes
+  
+- Some Info
+- Some Info
+- Some Info
+  
+## Usage
+  
+**Using Basic Options**
+  
+```jsx
+<BottomNavigation props={props} />
+```
+  
+**Using Advanced Options**
+  
+```jsx
+const demo = "demo"
+<div>
+  <BottomNavigation props={props}>
+  </BottomNavigation>
+</div>;
+```
+  
+_Built with [DryCli](link to dry cli)_

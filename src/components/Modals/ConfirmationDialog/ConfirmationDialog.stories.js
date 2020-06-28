@@ -1,4 +1,5 @@
 import React from "react";
+import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import {
   withKnobs,
@@ -12,23 +13,17 @@ import {
   date,
   select,
   files,
-  button
+  button,
 } from "@storybook/addon-knobs/react";
 
 import ConfirmationDialog from "./ConfirmationDialog";
-
-export default {
-  component: ConfirmationDialog,
-  title: "ConfirmationDialog",
-  decorators: [withKnobs],
-  // Our exports that end in "Data" are not stories.
-  excludeStories: /.*Data$/
-};
+import ConfirmationDialogPropTable from "./ConfirmationDialogPropTable.md";
+import README from "./README.md";
 
 export const actionsData = {
   onClick: action("onClick"),
   onChange: action("onChange"),
-  onBlur: action("onBlur")
+  onBlur: action("onBlur"),
 };
 
 export const Default = () => {
@@ -91,3 +86,19 @@ export const UserTip = () => (
     {...actionsData}
   />
 );
+
+storiesOf("Components/Modals/ConfirmationDialog", module)
+  .addParameters({
+    zeplinLink: "",
+    readme: {
+      codeTheme: "atom-dark",
+      sidebar: [README, ConfirmationDialogPropTable],
+      StoryPreview: ({ children }) => {
+        return <div>{children}</div>;
+      },
+    },
+  })
+  .add("Default", () => <Default />)
+  .add("Error", () => <Error />)
+  .add("UserTip", () => <UserTip />)
+  .add("Disable", () => <Disable />);

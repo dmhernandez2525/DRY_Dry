@@ -1,2 +1,3 @@
-import LinearIndicator from "./LinearIndicator";
+
+import  LinearIndicator from "./LinearIndicator";
 export default LinearIndicator;

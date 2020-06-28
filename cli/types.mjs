@@ -21,7 +21,7 @@ const Types = {
     "ComingSoonPage"
   ],
 
-  Base: ["Cards", "Cards", "FlipCard", "ProfileCard", "ProductCard"],
+  Base: ["Cards", "FlipCard", "ProfileCard", "ProductCard"],
 
   ImageLists: ["QuiltedImageList", "StandardImageList", "WovenImageList"],
 
@@ -109,12 +109,10 @@ const Types = {
     "BottomBar",
     "NavigationDrawer",
     "TopBar",
-    "BottomNavigation",
     "NavigationRail",
     "Sidebar",
     "IconBar",
     "MenuIcon",
-    "Accordion",
     "Tabs",
     "VerticalTabs",
     "TabHeaders",

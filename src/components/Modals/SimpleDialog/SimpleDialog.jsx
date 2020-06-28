@@ -14,7 +14,7 @@ const SimpleDialog = ({
   className,
   errorMes,
   styles,
-  passProps
+  passProps,
 }) => {
   return (
     <div
@@ -37,7 +37,7 @@ SimpleDialog.defaultProps = {
   className: "",
   errorMes: "",
   styles: null,
-  passProps: null
+  passProps: null,
 };
 
 export default SimpleDialog;

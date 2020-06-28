@@ -1,2 +1,3 @@
-import CircularIndicator from "./CircularIndicator";
+
+import  CircularIndicator from "./CircularIndicator";
 export default CircularIndicator;

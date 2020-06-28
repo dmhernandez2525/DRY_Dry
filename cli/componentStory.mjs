@@ -84,7 +84,7 @@ const storyComponent = (input, type, lowerCaseInput) => {
             {...actionsData} />
         );
 
-        storiesOf("Components/${type}/${input}", module)
+        storiesOf("${type}/${input}", module)
         .addParameters({
           zeplinLink:
             "",

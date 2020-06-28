@@ -1,2 +1,3 @@
-import StandardImageList from "./StandardImageList";
+
+import  StandardImageList from "./StandardImageList";
 export default StandardImageList;
