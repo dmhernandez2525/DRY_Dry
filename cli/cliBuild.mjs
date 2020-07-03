@@ -27,6 +27,8 @@ const lowerCaseWord = word => {
 };
 
 const makeDirectory = async (
+  directory,
+  parent,
   name,
   component,
   propTable,
@@ -36,7 +38,7 @@ const makeDirectory = async (
   styles,
   index
 ) => {
-  const path = `../src/components/${name}`;
+  const path = `../src/${directory}/${parent}/${name}`;
 
   await new Promise((resolve, reject) => {
     try {
@@ -55,6 +57,22 @@ const makeDirectory = async (
       resolve(error);
     }
     console.log(`${name}.jsx Created`);
+    resolve("Saved");
+  });
+
+  await new Promise((resolve, reject) => {
+    try {
+      fs.appendFile(
+        `${path}/${name}.utils.js`,
+        `const test = 1 
+         module.exports = test;
+         `,
+        handleError
+      );
+    } catch (error) {
+      resolve(error);
+    }
+    console.log(`${name}.utils.js Created`);
     resolve("Saved");
   });
 
@@ -122,9 +140,29 @@ const makeDirectory = async (
   console.log(mess);
 };
 
-const cli = process.argv[2];
-const input = capitalizeWord(cli);
-const lowerCaseInput = lowerCaseWord(cli);
+let directory = process.argv[2];
+let parent = process.argv[3];
+let componentName = process.argv[4];
+
+if (
+  directory !== undefined &&
+  parent !== undefined &&
+  componentName !== undefined
+) {
+  //  we doint need to do any thing bc the user passed in 3 args
+  if (directory === "A" || directory === "a") {
+    directory = "Animations";
+  } else {
+    directory = "components";
+  }
+} else {
+  componentName = directory;
+  directory = "Components";
+  parent = "Component";
+}
+
+const input = capitalizeWord(componentName);
+const lowerCaseInput = lowerCaseWord(componentName);
 const componentProps = {
   properties: {
     id: "",
@@ -147,11 +185,18 @@ const displayComponent = component(input, lowerCaseInput);
 const displayComponentPropTable = componentPropTable(input, componentProps);
 const displayComponentReadme = componentReadme(input, componentProps);
 const displayComponentTest = componentTest(input, lowerCaseInput);
-const displayComponentStory = componentStory(input, lowerCaseInput);
+const displayComponentStory = componentStory(
+  directory,
+  parent,
+  componentName,
+  lowerCaseInput
+);
 const displayStyles = styles(lowerCaseInput);
 
 makeDirectory(
-  input,
+  directory,
+  parent,
+  componentName,
   displayComponent,
   displayComponentPropTable,
   displayComponentReadme,

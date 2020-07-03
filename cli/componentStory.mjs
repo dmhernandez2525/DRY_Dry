@@ -1,4 +1,10 @@
-const storyComponent = (input, lowerCaseInput, type = "Components") => {
+const storyComponent = (
+  directory,
+  parent,
+  component,
+  lowerCaseInput,
+  type = "Components"
+) => {
   const displayStoryComponent = `
         import React from "react";
         import { storiesOf } from "@storybook/react";
@@ -17,8 +23,8 @@ const storyComponent = (input, lowerCaseInput, type = "Components") => {
             files,
             button } from "@storybook/addon-knobs/react";
         
-        import ${input} from "./${input}";
-        import ${input}PropTable from "./${input}PropTable.md";
+        import ${component} from "./${component}";
+        import ${component}PropTable from "./${component}PropTable.md";
         import README from "./README.md";
         
         export const actionsData = {
@@ -28,7 +34,7 @@ const storyComponent = (input, lowerCaseInput, type = "Components") => {
         };
         
         export const Default = () => {
-            return <${input}             
+            return <${component}             
                 id={text("id","")}
                 name={text("name","")}
                 userTip={text("userTip","")}
@@ -43,13 +49,13 @@ const storyComponent = (input, lowerCaseInput, type = "Components") => {
         
         
 
-        storiesOf("${type}/${input}", module)
+        storiesOf("${directory}/${parent}/${component}", module)
         .addParameters({
           zeplinLink:
             "",
           readme: {
             codeTheme: "atom-dark",
-            sidebar: [README, ${input}PropTable],
+            sidebar: [README, ${component}PropTable],
             StoryPreview: ({ children }) => {
               return (
                 <div>

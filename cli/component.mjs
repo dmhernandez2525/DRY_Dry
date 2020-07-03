@@ -1,6 +1,10 @@
 const component = (input, lowerCaseInput) => {
   const displayComponent = `
     import React from "react";
+    import PropTypes from 'prop-types';
+    import classNames from "@classnames";
+  
+    import * as Utils from "./${input}.utils.js"
     
     import "./${input}.scss";
     
@@ -19,14 +23,33 @@ const component = (input, lowerCaseInput) => {
       passProps
     }) => {
     return (
-        <div onClick={() => onClick("Dry${input}")}
-          className="dry-${lowerCaseInput}">
+        <div className={classnames({
+          [className]: true,
+          "dry-${lowerCaseInput}": true
+        })}>
+
           Dry${input}
 
         </div>
     );
     };
     
+
+    
+    ${input}.propTypes = {
+      id: PropTypes.string,
+      name: PropTypes.string,
+      userTip: PropTypes.string,
+      onClick: PropTypes.fuc,
+      onChange: PropTypes.fuc,
+      onBlur: PropTypes.fuc,
+      disable: PropTypes.bool,
+      className: PropTypes.string,
+      errorMes: PropTypes.string,
+      styles: PropTypes.obj,
+      passProps: PropTypes.obj
+    };
+
     ${input}.defaultProps = {
         id: "",
         name: "",
