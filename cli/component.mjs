@@ -40,14 +40,14 @@ const component = (input, lowerCaseInput) => {
       id: PropTypes.string,
       name: PropTypes.string,
       userTip: PropTypes.string,
-      onClick: PropTypes.fuc,
-      onChange: PropTypes.fuc,
-      onBlur: PropTypes.fuc,
+      onClick: PropTypes.func,
+      onChange: PropTypes.func,
+      onBlur: PropTypes.func,
       disable: PropTypes.bool,
       className: PropTypes.string,
       errorMes: PropTypes.string,
-      styles: PropTypes.obj,
-      passProps: PropTypes.obj
+      styles: PropTypes.object,
+      passProps: PropTypes.object
     };
 
     ${input}.defaultProps = {

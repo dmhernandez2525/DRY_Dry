@@ -198,7 +198,7 @@ const displayStyles = styles(lowerCaseInput);
 makeDirectory(
   directory,
   parent,
-  componentName,
+  capitalizeWord(componentName),
   displayComponent,
   displayComponentPropTable,
   displayComponentReadme,
