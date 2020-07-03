@@ -27,9 +27,12 @@
 
 - [About the Project](#about-the-project)
   - [Built With](#built-with)
+- [Roadmap](#roadmap)
+- [License](#license)
+- [Contact](#contact)
+- [Resources](#resources)
 - [Quick Start](src/docs/quick-start/README.md)
 - [Contrubuting](src/docs/contributing/setup.md)
-    - [Prerequisites](#prerequisites)
     - [Creating a component](src/docs/contributing/creating.md)
     - [Styling](src/docs/contributing/styling.md)
     - [Write a story](src/docs/contributing/storybook.md)
@@ -37,10 +40,6 @@
     - [Adding documentation](src/docs/contributing/documentation.md)
     - [Submitting for review](src/docs/contributing/review.md)
     - [Publishing a release](src/docs/contributing/release.md)
-- [Roadmap](#roadmap)
-- [License](#license)
-- [Contact](#contact)
-- [Resources](#resources)
 
 <!-- ABOUT THE PROJECT -->
 
@@ -55,16 +54,6 @@
 - []()
 - []()
 - []()
-
-
-### Prerequisites
-
-
-- npm 
-
-```sh
-npm install npm@latest -g
-```
 
 <!-- ROADMAP -->
 
