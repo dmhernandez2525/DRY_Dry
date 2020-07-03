@@ -2,9 +2,13 @@
 
 In this guide, we'll walk through how to get started with DRY development.
 
+### CLI
+
+Checkout the cli if you want to generate a component now. [CLI](cli.md)
+
 ## Setup
 
-First, we need to clone the Azure repo to your computer.Go to the Azure dry repo page[Dry Repo](https://dev.azure.com/Comfort-Order/DRY/_git/Dry) and click `clone` in the top right corner, then click the `Generate Git Credentials` button and copy the key
+First, we need to clone the Azure repo to your computer. Go to the Azure dry repo page[Dry Repo](https://dev.azure.com/Comfort-Order/DRY/_git/Dry) and click `clone` in the top right corner, then click the `Generate Git Credentials` button and copy the key
 
 Open up your terminal, and run this command in the directory of your choice:
 
@@ -24,8 +28,6 @@ And install all the dependencies in the world...
 npm install
 ```
 
-Note: You can use [Yarn](https://yarnpkg.com/en/) if you like, but it is recommended you use [npm](https://www.npmjs.com/), as that is what we use. This is to avoid install conflicts from `yarn.lock` vs `package-lock.json`.
-
 Great 🌈! You've setup and installed all of DRY's dependencies.
 
 ## Development environment
@@ -38,7 +40,7 @@ DRY's development environment is powered by [Storybook](https://storybook.js.org
 npm run storybook
 ```
 
-DRY's `start` does a neat thing that automatically checks and installs dependencies for you as well as compiles all of the revelent fiels to be used in a local repo.
+DRY's `start` does a neat thing that automatically checks and installs dependencies for you as well as compiles all of the relevant files to be used in a local repo.
 
 Once Storybook builds, you'll be able to visit it at [http://localhost:9009/](http://localhost:9009/).
 

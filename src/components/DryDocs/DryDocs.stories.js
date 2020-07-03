@@ -28,15 +28,64 @@ storiesOf("Docs/QuickStart", module)
       codeTheme: "atom-dark"
     }
   })
-  .add("quick-start", () => <DryDocs />)
-  .add("QuickReadme", () => <></>, {
+  // .add("quick-start", () => <DryDocs />)
+  .add("Setup", () => <></>, {
     readme: {
       content: QuickReadme
     }
   })
-  .add("QuickComponents", () => <></>, {
+  .add("Components", () => <></>, {
     readme: {
       content: QuickComponents
+    }
+  });
+
+storiesOf("Docs/Contributing", module)
+  .addParameters({
+    readme: {
+      codeTheme: "atom-dark"
+    }
+  })
+  .add("Setup", () => <></>, {
+    readme: {
+      content: Setup
+    }
+  })
+  .add("Creating", () => <></>, {
+    readme: {
+      content: Creating
+    }
+  })
+  .add("Styling", () => <></>, {
+    readme: {
+      content: Styling
+    }
+  })
+  .add("Storybook", () => <></>, {
+    readme: {
+      content: Storybook
+    }
+  })
+  .add("Testing", () => <></>, {
+    readme: {
+      content: Testing
+    }
+  })
+
+  .add("Documentation", () => <></>, {
+    readme: {
+      content: Documentation
+    }
+  })
+
+  .add("Review", () => <></>, {
+    readme: {
+      content: Review
+    }
+  })
+  .add("Release", () => <></>, {
+    readme: {
+      content: Release
     }
   });
 
@@ -63,53 +112,5 @@ storiesOf("Docs/Issues", module)
   .add("Issues", () => <></>, {
     readme: {
       content: Issues
-    }
-  });
-
-storiesOf("Docs/Contributing", module)
-  .addParameters({
-    readme: {
-      codeTheme: "atom-dark"
-    }
-  })
-
-  .add("Creating", () => <></>, {
-    readme: {
-      content: Creating
-    }
-  })
-  .add("Documentation", () => <></>, {
-    readme: {
-      content: Documentation
-    }
-  })
-  .add("Release", () => <></>, {
-    readme: {
-      content: Release
-    }
-  })
-  .add("Review", () => <></>, {
-    readme: {
-      content: Review
-    }
-  })
-  .add("Setup", () => <></>, {
-    readme: {
-      content: Setup
-    }
-  })
-  .add("Storybook", () => <></>, {
-    readme: {
-      content: Storybook
-    }
-  })
-  .add("Styling", () => <></>, {
-    readme: {
-      content: Styling
-    }
-  })
-  .add("Testing", () => <></>, {
-    readme: {
-      content: Testing
     }
   });

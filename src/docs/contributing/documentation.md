@@ -34,15 +34,14 @@ DRY-react/
 
 Our `README.md` documentation should contain:
 
-- Brief explanation of what the component is/doesn
+- Brief explanation of what the component is/does
 - An example of how it can be used
-- Descriptions of the available component `prop`
 
 ## PropTable
 
 Our `PropTable.md` documentation should contain:
 
-- Descriptions of the available component `prop`
+- Descriptions of the available component `props`
 
 Check out any `README.md` / `PropTable.md` file from any component for some examples.
 

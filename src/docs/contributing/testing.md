@@ -92,6 +92,7 @@ Let's [write some documentation](documentation.md) to make sure other folks know
 
 ## See also
 
+- [Resource On RTL](https://jkettmann.com/beginners-guide-to-testing-react/)
 - [Jest](https://jestjs.io/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
 - [Coveralls](https://coveralls.io/)

@@ -4,7 +4,7 @@ In this guide, we'll walk through creating a custom component in DRY!
 
 We do encourage you to have a look at other components and follow how they are put together, you might learn a thing or two, which is always a good thing!
 
-We'll be creating a `Checkbox` component, an enhancement to the default HTML `Checkbox` primitive.
+We'll be creating a `Checkbox` component, an enhancement to the default HTML `Checkbox` element.
 
 ## Directory
 
@@ -122,7 +122,7 @@ The `classnames` utility is a popular library that allows for dynamic rendering 
 
 It is used to both define your component's `className`, and to extends the `className` prop.
 
-**Always give your components a className**. Even if it's not directly attached to a CSS style rule. The main reasons are for inclusivity and thoughtful architecture.
+**Always give your components a className**. Even if it's not directly attached to a CSS style rule. The main reasons are for inclusively and thoughtful architecture.
 
 The concept of markup and classNames can be understood by everyone who knows HTML. That allows for non JS/React folks to inspect to understand/debug the UI. It also allows for folks to write tests that explicitly target selectors.
 
@@ -153,7 +153,7 @@ DRY's components are designed to be used as if they were default HTML elements. 
 It also allows for the user to hook into default React props, like:
 
 - `onMouseEnter`
-- `onClick`
+- `onBlur`
 - `htmlFor`
 
 ## Utils

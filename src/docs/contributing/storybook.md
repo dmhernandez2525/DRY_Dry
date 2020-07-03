@@ -42,7 +42,7 @@ stories.addParameters({
 ```
 
 Additional stories can be added using `stories.add`. Be sure to give each story a unique name.
-Additional confergration can be added using `stories.addParameters` for a full list look here [Storybook Readme](https://github.com/tuchk4/storybook-readme)
+Additional Configuration can be added using `stories.addParameters` for a full list look here [Storybook Readme](https://github.com/tuchk4/storybook-readme)
 
 ## Add to Storybook
 
