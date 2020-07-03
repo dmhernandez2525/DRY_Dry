@@ -184,12 +184,14 @@ export default ${input};
 const displayComponent = component(input, lowerCaseInput);
 const displayComponentPropTable = componentPropTable(input, componentProps);
 const displayComponentReadme = componentReadme(input, componentProps);
+
 const displayComponentTest = componentTest(input, lowerCaseInput);
+
 const displayComponentStory = componentStory(
   directory,
   parent,
-  componentName,
-  lowerCaseInput
+  capitalizeWord(componentName),
+  lowerCaseWord(componentName)
 );
 const displayStyles = styles(lowerCaseInput);
 
