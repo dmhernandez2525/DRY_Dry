@@ -1,3 +1,11 @@
+# Add Assets To the project
+
+Import the packages css In App file
+
+```jsx
+import "@comfort-order/dry/dist/index.css";
+```
+
 # Components
 
 This guide will show you how to use components from DRY!

@@ -2,6 +2,14 @@
 
 This guide will show you how to get started with DRY!
 
+### Prerequisites
+
+- npm
+
+```sh
+npm install npm@latest -g
+```
+
 ## Installation
 
 The first thing you'll need to do, is add DRY to your React project. you can run:
