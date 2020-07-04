@@ -4,10 +4,13 @@ export default create({
   base: "light",
 
   // colorPrimary: "hotpink",
-  // colorSecondary: "deepskyblue",
+  colorSecondary: "black",
 
   // UI
-  appBg: "rgba(57, 12, 110, 1)",
+  // colors: ['#1EA7FD']
+  // appBg: "#ddd",
+  appBg: "#1ea7fd29",
+  // appBg: "rgba(57, 12, 110, 1)",
   // appContentBg: "silver",
   // appBorderColor: "grey",
   // appBorderRadius: 4,
@@ -17,7 +20,7 @@ export default create({
   // fontCode: "monospace",
 
   // Text colors
-  textColor: "gold",
+  textColor: "black",
   // textInverseColor: "rgba(255,255,255,0.9)",
 
   // Toolbar default and active colors
