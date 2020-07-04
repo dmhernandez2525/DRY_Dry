@@ -4,6 +4,7 @@ import { addReadme } from "storybook-readme";
 import yourTheme from "./yourTheme";
 import { withA11y } from "@storybook/addon-a11y";
 import { themes } from "@storybook/theming";
+import { withKnobs } from "@storybook/addon-knobs/react";
 import {
   INITIAL_VIEWPORTS
   // or MINIMAL_VIEWPORTS,
@@ -44,5 +45,6 @@ addParameters({
     // defaultViewport: "iphone6"
   }
 });
+addDecorator(withKnobs);
 addDecorator(addReadme);
 addDecorator(withA11y);
