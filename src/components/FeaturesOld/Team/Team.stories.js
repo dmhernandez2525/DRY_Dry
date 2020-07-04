@@ -17,6 +17,8 @@ import {
 } from "@storybook/addon-knobs/react";
 
 import Team from "./Team";
+import TeamPropTable from "./TeamPropTable.md";
+import README from "./README.md";
 
 export const actionsData = {
   onClick: action("onClick"),
@@ -101,6 +103,7 @@ storiesOf("Features/Team", module)
     zeplinLink: "",
     readme: {
       codeTheme: "atom-dark",
+      sidebar: [README, TeamPropTable],
       StoryPreview: ({ children }) => {
         return <div>{children}</div>;
       }
