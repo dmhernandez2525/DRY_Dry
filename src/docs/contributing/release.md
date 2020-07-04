@@ -22,7 +22,7 @@ Once you're ready, run the following command:
 npm run release
 ```
 
-This will kick of DRY's automated release scripts, powered by [np](https://github.com/sindresorhus/np).
+This command will kick of DRY's automated release scripts, powered by [np](https://github.com/sindresorhus/np).
 
 ![Release prompt by np](https://github.com/sindresorhus/np/raw/master/screenshot-ui.png)
 
@@ -32,30 +32,28 @@ Select what kind of release you would like to do:
 - minor
 - major
 
-Our `Checkbox` component doesn't affect anything, and should be a non-breaking enhancement to the library. Let's select `patch` and hit `Enter`.
+Our `Checkbox` component doesn't affect anything and should be a non-breaking enhancement to the library. Let's select **patch** and hit **Enter**.
 
 Once you do, `np` will:
 
 - Run the linter
 - Run all Jest tests
 - Build/bundle `.js` files
-- Build/bunlde `.css`/`.js` files
-- Semver bump the `git` Tag
-- Semver bump the `version` in `package.json`
+- Build/bundle `.css`/`.js` files
+- Server bump the `git` Tag
+- Server bump the `version` in `package.json`
 - Publish to `npm`
-- Push newest version to Github
-
-(😻 `np` is amazing)
+- Push the newest version to Github
 
 ## CHANGELOG
 
-DRY is very transparent with it's CHANGELOG. Edit that version with the format based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+DRY is very transparent with its CHANGELOG. Edit that version with the format based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 **Release Title** should be the release tag name
 
-Title of the PR should start your release note, with a markdown H2 `## your PR title`.
+The PR title should start your release note, with a markdown H2 `## your PR title`.
 
-Pro Tip: If your pull request description is thorough. You can just copy/paste it as the release notes 😎.
+Pro Tip: If your pull request description is thorough. You can copy/paste it as the release notes 😎.
 
 ## High five
 
@@ -63,4 +61,4 @@ Pro Tip: If your pull request description is thorough. You can just copy/paste i
 
 Thank you so much for sticking through this guide.
 
-Hope you have a fantastic day ❤️!
+I hope you have a fantastic day ❤️!

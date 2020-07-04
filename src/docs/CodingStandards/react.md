@@ -1,6 +1,6 @@
 # React Standards
 
-### Imports
+## Imports
 
 imports should have this structure:
 
@@ -23,10 +23,14 @@ import README from "./README";
 
 ### NOTE
 
-Each set of imports should be separated by a space
+A space should separate each set of imports
+
+<!-- TO DO -->
 
 ## Prop Destructuring
 
 ## PropTypes
 
 ## DefaultProps
+
+## TO DO

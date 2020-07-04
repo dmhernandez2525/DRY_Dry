@@ -100,7 +100,31 @@ storiesOf("Docs/Contributing", module)
     }
   });
 
-storiesOf("Docs/Testing", module)
+storiesOf("Docs/Coding Standards", module)
+  .addParameters({
+    readme: {
+      codeTheme: "atom-dark"
+    }
+  })
+
+  .add("Variable Names", () => <></>, {
+    readme: {
+      content: VariableNames
+    }
+  })
+  .add("Styling", () => <></>, {
+    readme: {
+      content: Css
+    }
+  })
+
+  .add("React", () => <></>, {
+    readme: {
+      content: react
+    }
+  });
+
+storiesOf("Docs/Extra", module)
   .addParameters({
     readme: {
       codeTheme: "atom-dark"
@@ -111,39 +135,9 @@ storiesOf("Docs/Testing", module)
     readme: {
       content: TestingS
     }
-  });
-
-storiesOf("Docs/Issues", module)
-  .addParameters({
-    readme: {
-      codeTheme: "atom-dark"
-    }
   })
-
   .add("Issues", () => <></>, {
     readme: {
       content: Issues
-    }
-  });
-storiesOf("Docs/Coding Standards", module)
-  .addParameters({
-    readme: {
-      codeTheme: "atom-dark"
-    }
-  })
-
-  .add("Styling", () => <></>, {
-    readme: {
-      content: Css
-    }
-  })
-  .add("Variable Names", () => <></>, {
-    readme: {
-      content: VariableNames
-    }
-  })
-  .add("React", () => <></>, {
-    readme: {
-      content: react
     }
   });

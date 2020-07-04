@@ -4,7 +4,7 @@ In this guide, we'll walk through how to get started with DRY development.
 
 ### CLI
 
-Checkout the cli if you want to generate a component now. [CLI](cli.md)
+Check out the CLI if you want to generate a component now. [CLI](cli.md)
 
 ## Setup
 
@@ -22,7 +22,7 @@ Next, go into that directory:
 cd Dry
 ```
 
-And install all the dependencies in the world...
+And install all the dependencies in the world.
 
 ```
 npm install
@@ -56,7 +56,7 @@ You can use **whatever code editor you like**! We recommend using [Visual Studio
 
 Create a new `git` branch for your work. The naming convention is feature or bug/description of the task - PBI number:
 
-For example, If we were making a Checkbox component with a pbi of 50, this is what it would look like:
+For example, If we were making a Checkbox component with a PBI of 50, it would look like:
 
 ```
 git checkout -b feature/checkbox-50

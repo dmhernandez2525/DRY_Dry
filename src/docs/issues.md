@@ -10,6 +10,6 @@ Be as descriptive as you can with the **title**. Be as detailed as you can **des
 
 Please, at minimum, label your issue as one of the following:
 
-- Bug 🐛
+- Fix 🐛
 - Enhancement ✨
 - Feature 💅

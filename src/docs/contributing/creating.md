@@ -2,7 +2,7 @@
 
 In this guide, we'll walk through creating a custom component in DRY!
 
-We do encourage you to have a look at other components and follow how they are put together, you might learn a thing or two, which is always a good thing!
+We do encourage you to have a look at other components and follow how they are put together. You might learn a thing or two, which is always a good thing!
 
 We'll be creating a `Checkbox` component, an enhancement to the default HTML `Checkbox` element.
 
@@ -24,7 +24,7 @@ DRY-react/
 
 ## Initial files
 
-The first thing we'll need to do is create a dedicated `Checkbox` directory under the parent directory (In this case FormHelpers) in `components/`:
+The first thing we'll need to do is create a dedicated `Checkbox` directory under the parent directory (In this case, FormHelpers) in `components/`:
 
 ```
 DRY-react/
@@ -39,7 +39,7 @@ Under our newly created `Checkbox/` directory, we'll need to create a few files:
 - `index.js`
 - `Checkbox.jsx`
 
-If your component will be styled (not all are!) add a `styles` file named `Checkbox.scss`
+If your Component is styled (not all are!) add a `styles` file named `Checkbox.scss`
 
 ```
 DRY-react/
@@ -53,7 +53,7 @@ DRY-react/
                   ├── Checkbox.utils.js
 ```
 
-The **`index.js`** file is the main file allow the consuming App/component to use `Checkbox`.
+The **`index.js`** file is the main file that allows the consuming App/component to use `Checkbox`.
 
 The **`Checkbox.jsx`** file our actual React component.
 
@@ -102,11 +102,11 @@ DryCheckbox.propTypes = {
 export default DryCheckbox;
 ```
 
-Whoa 😳! Lots of stuff going on already!
+Whoa 😳! Lots of stuff is going on already!
 
 #### `Checkbox.scss`
 
-The style `Checkbox` component, Scss paired with bem techniques. More on that our [styling guide](styling.md).
+The style `Checkbox` Component, Scss paired with BEM techniques. More on that our [styling guide](styling.md).
 
 #### `Functional Components`
 
@@ -118,13 +118,13 @@ If you're expecting your Component to have a bunch of deeply nested, logic heavy
 
 #### `classnames`
 
-The `classnames` utility is a popular library that allows for dynamic rendering of classnames based on conditions. [`classnames`](https://www.npmjs.com/package/classnames).
+The `classnames` utility is a popular library that allows for the dynamic rendering of classnames based on conditions. [`classnames`](https://www.npmjs.com/package/classnames).
 
-It is used to both define your component's `className`, and to extends the `className` prop.
+It is used to both define your Component's `className`, and to extends the `className` prop.
 
 **Always give your components a className**. Even if it's not directly attached to a CSS style rule. The main reasons are for inclusively and thoughtful architecture.
 
-The concept of markup and classNames can be understood by everyone who knows HTML. That allows for non JS/React folks to inspect to understand/debug the UI. It also allows for folks to write tests that explicitly target selectors.
+The concept of markup and classNames can be understood by everyone who knows HTML. That allows for non-JS/React folks to inspect to understand/debug the UI. It also allows for people to write tests that explicitly target selectors.
 
 The second point is thoughtful architecture. HTML is the foundation to your React component. It's critical to get this right to make your components/app accessible and easy to reason about/comprehend. There has to be a purpose for every single HTML selector added to a React component. Describe that reasoning with a thoughtful className.
 
@@ -132,13 +132,13 @@ DRY follows the [ITCSS](https://developer.helpscout.com/seed/glossary/itcss/) na
 
 #### `is-superBold`
 
-Any prop that can modify a components appearance or behaviour is added as a `className` under `componentClassName`. This is to both apply styling and to better communicate a component's state within the DOM (for debugging/testing/targeting).
+Any prop that can modify a component's appearance or behavior is added as a `className` under `componentClassName`. This is to both apply to style, and better communicate a component's state within the DOM (for debugging/testing/targeting).
 
 These modifier classNames should typically be prefixed with words like `is-`, `has-`, `with`.
 
 #### `{...styles}`
 
-DRY's components are designed to be as dynamic as posable. The `{...styles}` pattern allows for users to pass in an object of inline styles to have maxume control over the component.
+DRY's components are designed to be as dynamic as posable. The `{...styles}` pattern allows users to pass in an object of inline styles to have maximum control over the Component.
 
 #### `{...passProps}`
 
@@ -158,7 +158,7 @@ It also allows for the user to hook into default React props, like:
 
 ## Utils
 
-Your component might need different functions, constants or other stuff that don't need to live inside of it, the place to put those is inside your utils file: `Checkbox.utils.js`.
+Your Component might need different functions, constants, or other stuff that don't need to live inside of it, the place to put those is inside your utils file: `Checkbox.utils.js`.
 
 ## Exporting
 

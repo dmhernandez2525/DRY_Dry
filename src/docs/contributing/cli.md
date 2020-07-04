@@ -1,6 +1,6 @@
 ### CLI
 
-A super fast and easy way to add a component is to use the CLI built into this repo
+A super fast and easy way to add a component is to use the CLI built into this repo.
 
 To use the CLI, all you have to do is cd into the CLI file.
 
@@ -26,7 +26,7 @@ if you only pass in one, it will place the new component in the Components file 
 
 ### Add To index
 
-After you have run the CLI, all that is left to do is to add the component as an import into the index file of the folder it is in, eg.
+After running the CLI, the last step is to add the component as an import in the index file of the folder it is in, eg.
 
 `/dry/src/components/index.js`
 

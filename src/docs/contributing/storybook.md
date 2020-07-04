@@ -4,7 +4,7 @@ In this guide, we'll walk through render our newly [styled](styling.md) [custom 
 
 ## Directory
 
-All of DRY's stories are located under the custum components directory `src/componets/FormHelpers/Checkbox/`:
+All of DRY's stories are located under the custom components directory `src/components/FormHelpers/Checkbox/`:
 
 ```
 DRY-react/
@@ -42,6 +42,7 @@ stories.addParameters({
 ```
 
 Additional stories can be added using `stories.add`. Be sure to give each story a unique name.
+
 Additional Configuration can be added using `stories.addParameters` for a full list look here [Storybook Readme](https://github.com/tuchk4/storybook-readme)
 
 ## Add to Storybook
@@ -52,8 +53,16 @@ Awesome! We can see our `Checkbox` component in Storybook!
 
 ## Next
 
-Let's [write some tests](testing.md) to make sure `Checkbox` works as we expect it to. (Just in case!)
+Let's [write some tests](testing.md) make sure `Checkbox` works as we expect it to. (Just in case!)
 
-## See also
+## Resources
 
 - [Storybook](https://storybook.js.org/)
+
+### Storybook plugins
+
+- [Readme](https://github.com/tuchk4/storybook-readme)
+- [A11y](https://github.com/storybookjs/storybook/tree/master/addons/a11y)
+- [Backgrounds](https://github.com/storybookjs/storybook/tree/master/addons/backgrounds)
+- [Docs](https://github.com/storybookjs/storybook/tree/master/addons/docs)
+- [Storysource](https://github.com/storybookjs/storybook/tree/master/addons/storysource)

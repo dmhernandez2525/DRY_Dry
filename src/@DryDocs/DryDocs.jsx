@@ -4,37 +4,6 @@ const DryDocs = () => {
   return (
     <div>
       <div>
-        <h2>Add Assets To the project</h2>
-        <p>
-          to add css put `import "@comfort-order/dry/dist/index.css";` In App
-          file
-        </p>
-
-        {`      add:
-
-     
-      Import {Icons} from "@comfort-order/dry"
-
-        return(
-          <div>
-            <Icons />
-          </div>
-        )`}
-      </div>
-      <div>
-        <h2>How to use the components in the project</h2>
-
-        {`  
-      Import {Icons} from "@comfort-order/dry"
-
-        return(
-          <div>
-            <Icons />
-          </div>
-        )
-     `}
-      </div>
-      <div>
         <h2>Contributing</h2>
         <div>
           <h3>Using NPM Link</h3>
@@ -96,11 +65,6 @@ const DryDocs = () => {
           <li>Artifactory</li>
           <li>log into</li>
         </ul>
-      </div>
-      <div>
-        <h2>CLI</h2>
-        <h3>What can you do with it?</h3>
-        <h3></h3>
       </div>
     </div>
   );

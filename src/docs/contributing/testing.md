@@ -17,7 +17,7 @@ DRY-react/
 
 ## Initial files
 
-Under `Checkbox`, we'll need to create the main `Checkbox.test.js` file:
+Under `Checkbox`, we'll need to create the central `Checkbox.test.js` file:
 
 ```
 DRY-react/
@@ -45,7 +45,7 @@ describe("classNames", () => {
 
 #### `data-testid`
 
-DRY favours dealing with instances of rendered React components, your tests will work with actual DOM nodes. The utilities this library provides facilitate querying the DOM in the same way the user would. Finding form elements by their label text (just like a user would), finding links and buttons from their text (like a user would). It also exposes a recommended way to find elements by a `data-testid` as an "escape hatch" for elements where the text content and label do not make sense or is not practical.
+DRY favors dealing with instances of rendered React components, your tests will work with actual DOM nodes. The utilities this library provides facilitate querying the DOM in the same way the user would and finding form elements by their label text (just like a user would), finding links and buttons from their text (like a user would). It also exposes a recommended way to find elements by a `data-testid` as an "escape hatch" for elements where the text content and label do not make sense or is not practical.
 
 ## Test development
 
@@ -55,7 +55,7 @@ For test development, open up your terminal and run the following command:
 npm run dev
 ```
 
-This fires up Jest in watch mode, and runs tests against modified files (and their associated files).
+This command fires up Jest in watch mode and runs tests against modified files (and their associated files).
 
 ## Code coverage
 
@@ -67,7 +67,7 @@ To check code coverage, run the following command:
 npm run test
 ```
 
-This runs through the entire Jest test suite, and generates a [coverage report](https://istanbul.js.org/) under:
+This command runs through the entire Jest test suite and generates a [coverage report](https://istanbul.js.org/) under:
 
 ```
 DRY-react/
@@ -78,17 +78,17 @@ DRY-react/
 
 You can open the `index.html` in your browser to view the full report.
 
-DRY Aims for **95% code coverage**for tests. Because DRY is a component library (rather than an App), it's testing coverage is stricter. Everything must be tested. There are no exceptions... Except...
+DRY Aims for **95% code coverage**for tests. Because DRY is a component library (rather than an App), it's testing coverage is stricter. Everything must be tested. There are no exceptions. Except...
 
 ## Exceptions
 
-...the strange or untestable cases within the [JSDOM](https://github.com/jsdom/jsdom) environment (which Jest runs on). (lol). Many DOM APIs are **not supported** in JSDOM (e.g. height/width calculations, scrolling, positioning, etc...).
+...the strange or untestable cases within the [JSDOM](https://github.com/jsdom/jsdom) environment (which Jest runs on). (lol). Many DOM APIs are **not supported** in JSDOM (e.g., height/width calculations, scrolling, positioning, etc...).
 
 Sweet! `Checkbox` is now super reliable, thanks to tests!
 
 ## Next
 
-Let's [write some documentation](documentation.md) to make sure other folks know how to use `Checkbox`.
+Let's [write some documentation](documentation.md) make sure other folks know how to use `Checkbox`.
 
 ## See also
 

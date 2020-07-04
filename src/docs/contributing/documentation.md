@@ -4,7 +4,7 @@ In this guide, we'll walk through adding documentation for our [fully test](test
 
 ## Directory
 
-All of DRY's component documenations files are scoped in the same directory as the component, example:
+All of DRY's component documentation files are scoped in the same directory as the component, example:
 
 ```
 DRY-react/
@@ -34,14 +34,14 @@ DRY-react/
 
 Our `README.md` documentation should contain:
 
-- Brief explanation of what the component is/does
-- An example of how it can be used
+- A brief explanation of what the component is/does
+- An example of how to use the component
 
 ## PropTable
 
 Our `PropTable.md` documentation should contain:
 
-- Descriptions of the available component `props`
+- Descriptions of the available component `props.`
 
 Check out any `README.md` / `PropTable.md` file from any component for some examples.
 

@@ -4,9 +4,9 @@
 
 ### Let, Const, Var
 
-When declaring a variable, we should always be using **const** or **let**, we have moved away from **var**.
+When declaring a variable, we should always be using **const** or **let**. We have moved away from **var**.
 
-**const** should be the default for all variable names. You should only use **let** if you know that you will reassign the variable name at a later time. This is so that when another developer is looking at your code, they know that the variable is not reassigned anywhere else.
+**const** should be the default for all variable names. You should only use **let** if you know that you will reassign the variable name at a later time. This convention is for when another developer is looking at your code, they know that the variable is not reassigned anywhere else.
 
 ### Dynamic markup
 

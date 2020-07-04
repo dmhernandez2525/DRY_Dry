@@ -33,17 +33,17 @@ Note: The version numbers (below) may be different when you run this.
 
 It is recommended that you select the `Other (specify)` option. This allows you to create a (unique) namespaced release.
 
-From the above example, you'll be asked to specify your own version after selecting `Other (specify)`:
+From the above example, you'll be asked to specify your version after selecting `Other (specify)`:
 
 ```
-? Select semver increment or specify new version Other (specify)
+? Select server increment or specify new version Other (specify)
 ? Version
 ```
 
 For this guide, we'll enter in `2.6.8-hello-0`:
 
 ```
-? Select semver increment or specify new version Other (specify)
+? Select server increment or specify new version Other (specify)
 ? Version 2.6.8-hello-0
 ```
 
@@ -64,7 +64,7 @@ You can either select `next` (if you're confident this release will be 👍). If
 For this example, we'll release under a custom tag of `hello`:
 
 ```
-? Select semver increment or specify new version Other (specify)
+? Select server increment or specify new version Other (specify)
 ? Version 2.6.8-hello-0
 ? How should this pre-release version be tagged in npm? Other (specify)
 ? Tag hello
