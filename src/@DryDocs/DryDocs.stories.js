@@ -23,6 +23,11 @@ import TestingS from "../docs/testing/local-integration-testing.md";
 // Issues
 import Issues from "../docs/issues.md";
 
+// Coding Standards
+import Css from "../docs/CodingStandards/styling.md";
+import VariableNames from "../docs/CodingStandards/varableNames.md";
+import react from "../docs/CodingStandards/react.md";
+
 storiesOf("Docs/QuickStart", module)
   .addParameters({
     readme: {
@@ -118,5 +123,27 @@ storiesOf("Docs/Issues", module)
   .add("Issues", () => <></>, {
     readme: {
       content: Issues
+    }
+  });
+storiesOf("Docs/Coding Standards", module)
+  .addParameters({
+    readme: {
+      codeTheme: "atom-dark"
+    }
+  })
+
+  .add("Styling", () => <></>, {
+    readme: {
+      content: Css
+    }
+  })
+  .add("Variable Names", () => <></>, {
+    readme: {
+      content: VariableNames
+    }
+  })
+  .add("React", () => <></>, {
+    readme: {
+      content: react
     }
   });

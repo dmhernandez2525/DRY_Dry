@@ -1,8 +1,8 @@
 ### CLI
 
-A super fast and easy way to add a component is to just is the cli that is built into this repo
+A super fast and easy way to add a component is to use the CLI built into this repo
 
-To use the cli all you have to do is cd into the cli file
+To use the CLI, all you have to do is cd into the CLI file.
 
 ```jsx
     cd ./cli
@@ -19,14 +19,14 @@ then run the `cliBuild.js` file with node and a few parameters
 you should ALWAYS pass in 3 parameters separated by a space
 
 `first should either be C "Components" or A "Animations"`
-`second should be the Parent / Main type`
-`third should be the name of the component. The component name should be snake case if it is more then one word`
+`second should be the Parent / Main type.`
+`third should be the name of the component. The component name should be snake case if it is more then one word.`
 
-if you only pass in one it will place the new component in the Components file without a component
+if you only pass in one, it will place the new component in the Components file without a component
 
 ### Add To index
 
-After you have run the cli all that is left to do is to add the component as an import in to the index file of the folder it it is in eg.
+After you have run the CLI, all that is left to do is to add the component as an import into the index file of the folder it is in, eg.
 
 `/dry/src/components/index.js`
 
@@ -34,7 +34,7 @@ or
 
 `/dry/src/animations/index.js`
 
-So if we wherer say adding a Checkbox component you would add
+So if we were adding a Checkbox component, you would add:
 
 ```jsx
 `/dry/src/components/index.js`

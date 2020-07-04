@@ -28,7 +28,7 @@ And install all the dependencies in the world...
 npm install
 ```
 
-Great 🌈! You've setup and installed all of DRY's dependencies.
+Great 🌈! You've set up and installed all of DRY's dependencies.
 
 ## Development environment
 
@@ -54,15 +54,15 @@ You can use **whatever code editor you like**! We recommend using [Visual Studio
 
 ## Git branch
 
-Create a new `git` branch for your work. the naming convention is feature or bug/description of the task - pbi number:
+Create a new `git` branch for your work. The naming convention is feature or bug/description of the task - PBI number:
 
-For example, If we where making a Checkbox component with a pbi of 50 this is what it would look like:
+For example, If we were making a Checkbox component with a pbi of 50, this is what it would look like:
 
 ```
 git checkout -b feature/checkbox-50
 ```
 
-It is very important that you use either feature or bug as a prefix because that is what the devops client will be looking for.
+You must use either feature or bug as a prefix because that is what the DevOps client will be looking for.
 
 ## Next
 
