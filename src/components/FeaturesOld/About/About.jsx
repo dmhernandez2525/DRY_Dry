@@ -1,6 +1,6 @@
 import React from "react";
 
-import DryButton from "../../Buttons/DryButton";
+import Button from "../../Buttons/Button";
 
 import "./About.scss";
 
@@ -30,7 +30,7 @@ const About = ({
         <div className="dry-about__content-wrapper">
           <h2 className="dry-about__title">{title}</h2>
           <p>{text}</p>
-          <DryButton name="Learn more" />
+          <Button name="Learn more" />
         </div>
       </div>
     </div>

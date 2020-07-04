@@ -7,6 +7,7 @@ import QuickReadme from "../docs/quick-start/README.md";
 import QuickComponents from "../docs/quick-start/components.md";
 
 // Contributing
+import Cli from "../docs/contributing/cli.md";
 import Creating from "../docs/contributing/creating.md";
 import Documentation from "../docs/contributing/documentation.md";
 import Release from "../docs/contributing/release.md";
@@ -86,6 +87,11 @@ storiesOf("Docs/Contributing", module)
   .add("Release", () => <></>, {
     readme: {
       content: Release
+    }
+  })
+  .add("Cli", () => <></>, {
+    readme: {
+      content: Cli
     }
   });
 
