@@ -41,6 +41,7 @@ const FileUpload = ({
         "content-type": "multipart/form-data"
       }
     };
+    debugger;
     axios
       .post(uploadUrl, formData, config)
       .then(async response => {

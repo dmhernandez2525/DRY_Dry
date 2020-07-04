@@ -1,0 +1,30 @@
+.dry-services {
+  &__service-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+  }
+  &__service-card {
+    height: fit-content;
+    width: 350px;
+    text-align: center;
+    margin-right: 48px;
+    margin-bottom: 48px;
+    border-radius: 146px 116px 116px 200px;
+    -moz-border-radius: 146px 116px 116px 200px;
+    -webkit-border-radius: 146px 116px 116px 200px;
+    &:hover {
+      box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+        0 5px 22px 4px rgba(0, 0, 0, 0.12), 0 12px 17px 2px rgba(0, 0, 0, 0.14);
+    }
+  }
+  &__card-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__card-image {
+    width: 150px;
+    margin: auto;
+  }
+}

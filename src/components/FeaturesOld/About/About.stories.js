@@ -28,14 +28,17 @@ export const Default = () => {
   return (
     <About
       id={text("id", "")}
-      title={text("title", "Demo About")}
+      title={text(
+        "title",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare enim risus, id fringilla tortor elementum tristique. Etiam nec augue et purus aliquet euismod id eget massa. Sed sollicitudin dictum"
+      )}
       text={text(
         "text",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare enim risus, id fringilla tortor elementum tristique. Etiam nec augue et purus aliquet euismod id eget massa. Sed sollicitudin dictum massa. Ut nec lorem sed tortor cursus ornare vel vitae augue. Suspendisse varius nisl ac mi ornare, et luctus metus elementum. Donec non congue lectus, vel rutrum mi. Suspendisse potenti. Aenean accumsan vulputate dui, id pretium mi blandit eu. Sed nec libero at eros congue semper."
       )}
       pic={text(
         "pic",
-        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/20200525_172756.jpg"
+        "https://comfort-order-dev.s3.us-east-2.amazonaws.com/photo-of-woman-wearing-turtleneck-top-2777898.jpg"
       )}
       userTip={text("userTip", "")}
       disable={boolean("disable", false)}
