@@ -1,6 +1,6 @@
 import React from "react";
-import NonProfit from "../../TemplatesOld/NonProfit/NonProfit";
-import Restaurant from "../../TemplatesOld/Restaurant/Restaurant";
+import NonProfit from "./Themes/NonProfit";
+import Restaurant from "./Themes/Restaurant";
 
 import {
   Pricing,

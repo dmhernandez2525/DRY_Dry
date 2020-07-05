@@ -18,6 +18,7 @@ import {
 } from "@storybook/addon-knobs/react";
 
 import SinglePage from "./SinglePage";
+import DryFlowershop from "./Themes/Flowershop/Flowershop.stories";
 import SinglePagePropTable from "./SinglePagePropTable.md";
 import README from "./README.md";
 
@@ -507,4 +508,5 @@ storiesOf("Templates/SinglePage", module)
     }
   })
   .add("Restaurant", () => <DryRestaurant />)
-  .add("NonProfit", () => <DryNonProfit />);
+  .add("NonProfit", () => <DryNonProfit />)
+  .add("Flowershop", () => <DryFlowershop />);

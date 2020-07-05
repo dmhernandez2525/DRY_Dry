@@ -9,9 +9,9 @@ import WovenImageList from "./ImageLists/WovenImageList";
 import CircularIndicator from "./ProgressIndicators/CircularIndicator";
 import LinearIndicator from "./ProgressIndicators/LinearIndicator";
 // Templates
-import Templates from "./TemplatesOld";
-import Restaurant from "./TemplatesOld/Restaurant";
-import NonProfit from "./TemplatesOld/NonProfit";
+import Templates from "./Templates/SinglePage/Themes";
+import Restaurant from "./Templates/SinglePage";
+import NonProfit from "./Templates/SinglePage";
 // Buttons
 import ActionButton from "./Buttons/ActionButton";
 import DryButton from "./Buttons/IconButtons";
@@ -65,7 +65,7 @@ import { Icon } from "./Icons/Icon";
 import { Icons } from "./Icons/Icon";
 
 // Features
-import About from "./FeaturesOld/About";
+import About from "./Features/About";
 import ImageCarousel from "./FeaturesOld/ImageCarousel";
 import Team from "./FeaturesOld/Team";
 import Header1 from "./FeaturesOld/Header1";

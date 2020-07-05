@@ -1,15 +1,13 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-import Footer from "../../Base/Footer";
+import Footer from "../../../../Base/Footer";
 import placeholder from "./placeholder.jpg";
-// import favicon from "./favicon.ico";
-// import companyLogo from "./ComfortOrderLogo.png";
-
-import "./Restaurant.scss";
+import Icons from "../../../../Icons/Icon/Icons";
+import Icon from "../../../../Icons/Icon/Icon";
+import "./NonProfit.scss";
 
 const token = process.env.REACT_APP_TOKEN;
 
-class Restaurant extends React.Component {
+class NonProfit extends React.Component {
   constructor(props) {
     super(props);
 
@@ -28,7 +26,7 @@ class Restaurant extends React.Component {
     this.teleRef9 = React.createRef();
     this.teleRef10 = React.createRef();
     this.teleRefContact = React.createRef();
-    this.teleRefSocal = React.createRef();
+    // this.teleRefSocal = React.createRef();
     this.handleScroll = this.handleScroll.bind(this);
     this.setStateModalCB = this.setStateModalCB.bind(this);
   }
@@ -88,7 +86,7 @@ class Restaurant extends React.Component {
     );
     nav.push(
       <li key={`addOn3`}>
-        <a onClick={() => this.executeScroll(this.teleRefSocal)}>Socal</a>
+        {/* <a onClick={() => this.executeScroll(this.teleRefSocal)}>Socal</a> */}
       </li>
     );
     nav.push(<li key={`addOn4`}> {/* <Link to="/login">Login</Link> */}</li>);
@@ -114,28 +112,16 @@ class Restaurant extends React.Component {
 
     return (
       <div className="restaurant template">
+        <Icons />
         <header className="restaurant-nav">
           <div id="navbar" className="navbar" role="navigation">
-            <div className="container">
-              <div
-                className="nav-cart"
-                onClick={() =>
-                  this.props.setModalCache(true, this.setStateModalCB)
-                }
-              >
-                {/* <Modal
-                  modal="cart"
-                  modalBool={this.props.modalBool}
-                  setParentModalBool={this.setStateModalCB}
-                /> */}
-              </div>
+            <div className="container nav-input-wrapper">
               <ul id="top-menu" className="navbar-nav navbar-right">
                 {nav}
               </ul>
             </div>
           </div>
         </header>
-
         <div id="teleport-Home" className="" ref={this.teleRefHome}>
           <section id="restaurant-hero-section">
             <div className="hero-photo-sizing">
@@ -143,7 +129,9 @@ class Restaurant extends React.Component {
                 <img src={placeholder} />
                 <div className="top-hero-content">
                   <span className="small-hero-title">Welcome To</span>
-                  <h2 className="hero-title">{this.props.businessData.name}</h2>
+                  <h2 className="hero-title-1">
+                    {this.props.businessData.name}
+                  </h2>
                   <p>{this.props.businessData.slogan}</p>
                 </div>
               </div>
@@ -167,14 +155,28 @@ class Restaurant extends React.Component {
           </div>
           <div className="map-wrapper">
             <iframe
-              id="restaurant-map"
-              className="restaurant-map"
-              src={`https://www.google.com/maps/embed/v1/place?key=${token}&q=${this.props.businessData.address}`}
+              src={`https://maps.google.com/maps?q=${this.props.businessData.address}&t=m&z=10&output=embed&iwloc=near`}
+              width="100%"
+              height="450"
+              frameborder="0"
+              allowfullscreen=""
             ></iframe>
+
+            <button class="" type="submit">
+              <a href="tel:217-508-4048">Call Now</a>
+            </button>
           </div>
         </div>
 
         <div id="teleport-footer" className="feature" ref={this.teleRefSocal}>
+          <div>
+            <span>Socal Links</span>
+            <Icon />
+            <Icon />
+            <Icon />
+            <Icon />
+          </div>
+
           <footer id="restaurant-footer">
             <Footer key={"mainFooter"} />
           </footer>
@@ -184,4 +186,4 @@ class Restaurant extends React.Component {
   }
 }
 
-export default Restaurant;
+export default NonProfit;

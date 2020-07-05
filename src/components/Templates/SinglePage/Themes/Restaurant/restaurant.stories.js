@@ -16,7 +16,7 @@ import {
   button
 } from "@storybook/addon-knobs/react";
 
-import Restaurant from "../Restaurant";
+import Restaurant from ".";
 
 export const actionsData = {
   onClick: action("onClick"),
@@ -63,14 +63,13 @@ export const Default = () => {
   );
 };
 
-storiesOf("Templates/Restaurant", module)
-  .addParameters({
-    zeplinLink: "",
-    readme: {
-      codeTheme: "atom-dark",
-      StoryPreview: ({ children }) => {
-        return <div>{children}</div>;
-      }
+storiesOf("Templates/Restaurant", module).addParameters({
+  zeplinLink: "",
+  readme: {
+    codeTheme: "atom-dark",
+    StoryPreview: ({ children }) => {
+      return <div>{children}</div>;
     }
-  })
-  .add("Default", () => <Default />);
+  }
+});
+// .add("Default", () => <Default />);

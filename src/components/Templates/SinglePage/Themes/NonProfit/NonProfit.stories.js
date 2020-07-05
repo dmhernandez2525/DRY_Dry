@@ -455,14 +455,13 @@ export const Default = () => {
   );
 };
 
-storiesOf("Templates/NonProfit", module)
-  .addParameters({
-    zeplinLink: "",
-    readme: {
-      codeTheme: "atom-dark",
-      StoryPreview: ({ children }) => {
-        return <div>{children}</div>;
-      }
+storiesOf("Templates/NonProfit", module).addParameters({
+  zeplinLink: "",
+  readme: {
+    codeTheme: "atom-dark",
+    StoryPreview: ({ children }) => {
+      return <div>{children}</div>;
     }
-  })
-  .add("Default", () => <Default />);
+  }
+});
+// .add("Default", () => <Default />);
