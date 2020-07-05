@@ -1,6 +1,6 @@
 # Reporting Issues
 
-If you're experiencing an issue with DRY: React, or have a enhancement idea, or feature request, please reach out to daniel hernandez or jonathon johnson
+If you're experiencing an issue with DRY: React, or have a enhancement idea, or feature request, please reach out to Daniel Hernandez or Jonathan Johnson
 
 ### Writing the issue
 

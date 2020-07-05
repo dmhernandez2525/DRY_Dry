@@ -12,7 +12,7 @@ This guide will show you how to use components from DRY!
 
 ## Usage
 
-Any one of DRY's [components](link to sticker sheet) can be imported into your React app.
+Any one of DRY's [components](http://localhost:9009/?path=/docs/docs-sticker-sheet--coupon) can be imported into your React app.
 
 In the following example, we're going to be building a form using a handful of DRY's components.
 

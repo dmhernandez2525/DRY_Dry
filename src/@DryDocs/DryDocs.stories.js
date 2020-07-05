@@ -131,7 +131,7 @@ storiesOf("Docs/Extra", module)
     }
   })
 
-  .add("TestingS", () => <></>, {
+  .add("Testing", () => <></>, {
     readme: {
       content: TestingS
     }
