@@ -66,4 +66,4 @@ storiesOf("Features/About", module)
   })
   .add("Default", () => <Default />);
 
-storiesOf("Docs/Sticker Sheet", module).add("Coupon", () => <Default />);
+storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);

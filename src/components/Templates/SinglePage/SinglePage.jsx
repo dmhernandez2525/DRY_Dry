@@ -1,44 +1,78 @@
+import React from "react";
+import NonProfit from "../../TemplatesOld/NonProfit/NonProfit";
+import Restaurant from "../../TemplatesOld/Restaurant/Restaurant";
 
-    import React from "react";
-    
-    import "./SinglePage.scss";
-    
-    const SinglePage = ({
-      id,
-      name,
-      userTip,
-      onClick,
-      onChange,
-      onBlur,
-      onFocus,
-      disable,
-      className,
-      errorMes,
-      styles,
-      passProps
-    }) => {
-    return (
-        <div onClick={() => onClick("DrySinglePage")}
-          className="dry-singlePage">
-          DrySinglePage
+import {
+  Pricing,
+  About,
+  Hours,
+  ImageCarousel,
+  SpotlightGallery,
+  Team,
+  Menu
+} from "../../index";
+// END OF ALL THE FEATURES
 
-        </div>
-    );
-    };
-    
-    SinglePage.defaultProps = {
-        id: "",
-        name: "",
-        userTip: "",
-        onClick: null,
-        onChange: null,
-        onBlur: null,
-        disable: false,
-        className: "",
-        errorMes: "",
-        styles: null,
-        passProps: null
+class SinglePage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.formatFeatures = this.formatFeatures.bind(this);
+    this.makeFeature = this.makeFeature.bind(this);
+    this.features = this.formatFeatures();
+  }
+
+  makeFeature(feature, data) {
+    switch (feature) {
+      case "Pricing":
+        return <Pricing data={data[0]} />;
+      case "About":
+        return <About {...data[0]} />;
+      case "Hours":
+        return <Hours data={data[0]} />;
+      case "ImageCarousel":
+        return <ImageCarousel data={data[0]} />;
+      case "SpotlightGallery":
+        return <SpotlightGallery data={data[0]} />;
+      case "Team":
+        return <Team data={data[0]} />;
+      case "Menu":
+        return <Menu data={data[0]} />;
+
+      default:
+        return <div></div>;
+    }
+  }
+
+  formatFeatures() {
+    let fe = {};
+    Object.keys(this.props.features).map(feature => {
+      let key = Object.keys(this.props.features[feature]);
+      let value = Object.values(this.props.features[feature]);
+      fe[feature] = {
+        feature: this.makeFeature(key[0], value[0]),
+        type: key[0]
       };
-      
-    export default SinglePage;
-    
+    });
+    return fe;
+  }
+
+  render() {
+    if (this.props.template === "NonProfit") {
+      return (
+        <NonProfit
+          features={this.features}
+          businessData={this.props.businessData}
+        />
+      );
+    } else if (this.props.template === "Restaurant") {
+      return (
+        <Restaurant
+          features={this.features}
+          businessData={this.props.businessData}
+        />
+      );
+    }
+  }
+}
+
+export default SinglePage;
