@@ -96,6 +96,7 @@ Project Link: [https://dev.azure.com/Comfort-Order/DRY](https://dev.azure.com/Co
 - [Sticky Kit](http://leafo.net/sticky-kit)
 - [JVectorMap](http://jvectormap.com)
 - [Font Awesome](https://fontawesome.com)
+- [Border Radius Generator](https://www.cssmatic.com/border-radius)
 
 [product-screenshot]: src/docs/images/DryDocs.png
 
