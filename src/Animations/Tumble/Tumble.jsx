@@ -4,7 +4,7 @@ import "./Tumble.scss";
 
 const Tumble = ({ children }) => {
   return (
-    <div className="container dry-tumble">
+    <div className="dry-tumble__container dry-tumble">
       <div className="tumbleweed">{children}</div>
     </div>
   );

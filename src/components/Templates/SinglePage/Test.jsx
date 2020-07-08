@@ -59,6 +59,7 @@ class SinglePage extends React.Component {
     // passed to child component so it can pass to HOC to then invoke
     this.setState({ modalBool });
   }
+
   render() {
     let allFeatures = this.props.features;
     let css = ["container feature-display black", "container feature-display"];
@@ -157,33 +158,23 @@ class SinglePage extends React.Component {
               src={`https://maps.google.com/maps?q=${this.props.businessData.address}&t=m&z=10&output=embed&iwloc=near`}
               width="100%"
               height="450"
-              frameBorder="0"
-              allowFullScreen=""
+              frameborder="0"
+              allowfullscreen=""
             ></iframe>
 
-            <div className="dry-singlePage__icon-wrapper">
-              <a
-                href={`https://www.google.com/maps/dir//${this.props.businessData.address}?hl=en-US`}
-              >
-                <Icon icon="directions-dry" />
-              </a>
-              <a href="tel:217-508-4048">
-                <Icon icon="phone2" />
-              </a>
-            </div>
+            <button class="" type="submit">
+              <a href="tel:217-508-4048">Call Now</a>
+            </button>
           </div>
         </div>
 
         <div id="teleport-footer" className="feature" ref={this.teleRefSocal}>
-          <div className="dry-singlePage__socal-icon-wrapper">
-            {/* TO DO Add DRY typography to this  */}
-            <h3>Socal Links</h3>
-            <div className="dry-singlePage__icon-wrapper">
-              <Icon icon="facebook2" />
-              <Icon icon="instagram" />
-              <Icon icon="youtube" />
-              <Icon icon="twitter" />
-            </div>
+          <div>
+            <span>Socal Links</span>
+            <Icon />
+            <Icon />
+            <Icon />
+            <Icon />
           </div>
 
           <footer id="restaurant-footer">
