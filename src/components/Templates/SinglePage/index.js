@@ -1,5 +1,4 @@
 import React from "react";
-
 import DrySinglePage from "./SinglePage.jsx";
 
 import {

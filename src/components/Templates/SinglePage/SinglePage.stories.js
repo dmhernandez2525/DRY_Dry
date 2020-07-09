@@ -1,5 +1,8 @@
 import React from "react";
 import faker from "faker";
+import nonprofitPlaceholder from "./images/nonprofitPlaceholder.jpg";
+import restaurantPlaceholder from "./images/restaurantPlaceholder.jpg";
+import flowershopPlaceholder from "./images/flowershopPlaceholder.jpg";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import {
@@ -46,6 +49,7 @@ export const DryRestaurant = () => {
       template="Restaurant"
       businessData={{
         template: "Restaurant",
+        hero: restaurantPlaceholder,
         name: "Demo Site name",
         url: "Demo Site url",
         features: [
@@ -484,6 +488,7 @@ export const DryNonProfit = () => {
       template="NonProfit"
       businessData={{
         template: "NonProfit",
+        hero: nonprofitPlaceholder,
         name: "Demo Non Profit Name",
         url: "Demo Non Profit url",
         phoneNumber: "Demo Site phoneNumber",
@@ -910,11 +915,12 @@ export const DryFlowershop = () => {
           ]
         }
       }}
-      template="NonProfit"
+      template="Flowershop"
       businessData={{
-        template: "NonProfit",
-        name: "Demo Non Profit Name",
-        url: "Demo Non Profit url",
+        template: "Flowershop",
+        hero: flowershopPlaceholder,
+        name: "Demo Flowershop Name",
+        url: "Demo Flowershop url",
         phoneNumber: "Demo Site phoneNumber",
         address: "766 6th st charleston,il 61920",
         slogan: "Demo Site slogan",

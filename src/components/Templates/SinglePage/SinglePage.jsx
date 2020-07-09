@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from "../../Base/Footer";
-import placeholder from "./Themes/NonProfit/placeholder.jpg";
 import Icons from "../../Icons/Icon/Icons";
 import Icon from "../../Icons/Icon/Icon";
 import "./SinglePage.scss";
@@ -125,7 +124,7 @@ class SinglePage extends React.Component {
           <section id="restaurant-hero-section">
             <div className="hero-photo-sizing">
               <div className="landing-photo-container">
-                <img src={placeholder} />
+                <img src={this.props.businessData.hero} />
                 <div className="top-hero-content">
                   <span className="small-hero-title">Welcome To</span>
                   <h2 className="hero-title-1">

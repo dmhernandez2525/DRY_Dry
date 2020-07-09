@@ -9,7 +9,7 @@ import WovenImageList from "./ImageLists/WovenImageList";
 import CircularIndicator from "./ProgressIndicators/CircularIndicator";
 import LinearIndicator from "./ProgressIndicators/LinearIndicator";
 // Templates
-import Templates from "./Templates/SinglePage/Themes";
+import Templates from "./Templates/SinglePage";
 import Restaurant from "./Templates/SinglePage";
 import NonProfit from "./Templates/SinglePage";
 // Buttons
