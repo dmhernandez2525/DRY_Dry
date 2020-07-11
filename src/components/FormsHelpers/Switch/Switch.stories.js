@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import {
@@ -27,23 +27,44 @@ export const actionsData = {
 };
 
 export const Default = () => {
+  const [toggled, setToggled] = useState(false);
   return (
     <Switch
       id={text("id", "")}
       name={text("name", "")}
+      active={toggled}
       userTip={text("userTip", "")}
       disable={boolean("disable", false)}
       className={text("className", "")}
       errorMes={text("errorMes", "")}
       styles={object("styles", {})}
       passProps={object("passProps", {})}
+      onClick={() => setToggled(prevValue => !prevValue)}
+    />
+  );
+};
+
+export const Active = () => {
+  return (
+    <Switch
+      id={text("id", "")}
+      name={text("name", "")}
+      userTip={text("userTip", "")}
+      active={boolean("active", true)}
+      disable={boolean("disable", false)}
+      className={text("className", "")}
+      errorMes={text("errorMes", "Someting")}
+      styles={object("styles", {})}
+      passProps={object("passProps", {})}
       {...actionsData}
     />
   );
 };
-storiesOf("Components/FormsHelpers/Switch", module)
+
+storiesOf("components/FormsHelpers/Switch", module)
   .addParameters({
-    zeplinLink: "",
+    zeplinLink:
+      "https://app.zeplin.io/project/5ea6d579b0189824e6da8f37/screen/5eaf615494b35819006ce58e",
     readme: {
       codeTheme: "atom-dark",
       sidebar: [README, SwitchPropTable],
@@ -53,3 +74,4 @@ storiesOf("Components/FormsHelpers/Switch", module)
     }
   })
   .add("Default", () => <Default />);
+// .add("Active", () => <Active />);

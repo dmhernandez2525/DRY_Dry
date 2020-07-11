@@ -1,2 +1,45 @@
 .dry-switch {
+  &__track-wrapper {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__focus {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+  &__focus--active {
+    position: absolute;
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+    border: solid 1px #bb86fc;
+    border-radius: 23px;
+    background-color: rgba(187, 134, 252, 0.12);
+  }
+
+  &__track {
+    position: relative;
+
+    height: 14px;
+    width: 34px;
+    border-radius: 7px;
+    background-color: rgba(98, 0, 238, 0.38);
+  }
+
+  &__ball {
+    position: absolute;
+    bottom: -3px;
+    height: 20px;
+    width: 20px;
+    background-color: #6200ee;
+    border-radius: 10px;
+  }
+  &__ball--active {
+    left: 15px;
+  }
 }

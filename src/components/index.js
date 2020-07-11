@@ -50,7 +50,7 @@ import Password from "./FormsHelpers/Password";
 import Slider from "./FormsHelpers/Slider";
 import DatePicker from "./FormsHelpers/DatePicker";
 import Radio from "./FormsHelpers/Radio";
-import Switch from "./FormsHelpers/Switch";
+// import Switch from "./FormsHelpers/Switch";
 import Input from "./FormsHelpers/Input";
 import Select from "./FormsHelpers/Select";
 import FileUpload from "./FormsHelpers/FileUpload";
@@ -127,7 +127,7 @@ export {
   Slider,
   DatePicker,
   Radio,
-  Switch,
+  // Switch,
   Input,
   Select,
   FileUpload,
