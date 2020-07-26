@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/Filters/SortTable", module)
+storiesOf("Components/Filters/SortTable", module)
   .addParameters({
     zeplinLink: "",
     readme: {

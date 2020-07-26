@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/Special/DarkMode", module)
+storiesOf("Components/Special/DarkMode", module)
   .addParameters({
     zeplinLink: "",
     readme: {

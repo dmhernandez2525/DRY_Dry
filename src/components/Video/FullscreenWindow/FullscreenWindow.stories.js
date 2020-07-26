@@ -13,7 +13,7 @@ import {
   date,
   select,
   files,
-  button,
+  button
 } from "@storybook/addon-knobs/react";
 
 import FullscreenWindow from "./FullscreenWindow";
@@ -23,7 +23,7 @@ import README from "./README.md";
 export const actionsData = {
   onClick: action("onClick"),
   onChange: action("onChange"),
-  onBlur: action("onBlur"),
+  onBlur: action("onBlur")
 };
 
 export const Default = () => {
@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/Video/FullscreenWindow", module)
+storiesOf("Components/Video/FullscreenWindow", module)
   .addParameters({
     zeplinLink: "",
     readme: {
@@ -52,7 +52,7 @@ storiesOf("components/Video/FullscreenWindow", module)
       sidebar: [README, FullscreenWindowPropTable],
       StoryPreview: ({ children }) => {
         return <div>{children}</div>;
-      },
-    },
+      }
+    }
   })
   .add("Default", () => <Default />);

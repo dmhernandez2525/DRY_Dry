@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/Grid/ThreeColumnLayout", module)
+storiesOf("Components/Grid/ThreeColumnLayout", module)
   .addParameters({
     zeplinLink: "",
     readme: {

@@ -51,7 +51,7 @@ export const AllIcons = () => <DryIconSearch />;
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/Icons/Icon", module)
+storiesOf("Components/Icons/Icon", module)
   .addParameters({
     zeplinLink: "",
     readme: {

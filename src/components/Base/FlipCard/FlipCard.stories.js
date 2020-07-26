@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("FlipCard", () => <Default />);
 
-storiesOf("components/Base/FlipCard", module)
+storiesOf("Components/Base/FlipCard", module)
   .addParameters({
     zeplinLink: "",
     readme: {

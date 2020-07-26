@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/Forms/TurnOffSpellCheck", module)
+storiesOf("Components/Forms/TurnOffSpellCheck", module)
   .addParameters({
     zeplinLink: "",
     readme: {

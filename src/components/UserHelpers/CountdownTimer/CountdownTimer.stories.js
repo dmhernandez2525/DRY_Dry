@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/UserHelpers/CountdownTimer", module)
+storiesOf("Components/UserHelpers/CountdownTimer", module)
   .addParameters({
     zeplinLink: "",
     readme: {

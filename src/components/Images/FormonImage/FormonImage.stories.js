@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/Images/FormonImage", module)
+storiesOf("Components/Images/FormonImage", module)
   .addParameters({
     zeplinLink: "",
     readme: {

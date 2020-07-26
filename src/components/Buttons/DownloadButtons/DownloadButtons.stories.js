@@ -46,7 +46,7 @@ storiesOf("Docs/Sticker Sheet", module).add("DownloadButtons", () => (
   <Default />
 ));
 
-storiesOf("components/Buttons/DownloadButtons", module)
+storiesOf("Components/Buttons/DownloadButtons", module)
   .addParameters({
     zeplinLink: "",
     readme: {

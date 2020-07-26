@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/Table/ZebraStripedTable", module)
+storiesOf("Components/Table/ZebraStripedTable", module)
   .addParameters({
     zeplinLink: "",
     readme: {

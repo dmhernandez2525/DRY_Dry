@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("BlockButtons", () => <Default />);
 
-storiesOf("components/Buttons/BlockButtons", module)
+storiesOf("Components/Buttons/BlockButtons", module)
   .addParameters({
     zeplinLink: "",
     readme: {

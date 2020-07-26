@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/Forms/CustomCheckboxRadio", module)
+storiesOf("Components/Forms/CustomCheckboxRadio", module)
   .addParameters({
     zeplinLink: "",
     readme: {

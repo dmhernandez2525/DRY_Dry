@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/Iframs/GetIframeElements", module)
+storiesOf("Components/Iframs/GetIframeElements", module)
   .addParameters({
     zeplinLink: "",
     readme: {

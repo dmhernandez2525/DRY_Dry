@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/ProgressIndicators/LinearIndicator", module)
+storiesOf("Components/ProgressIndicators/LinearIndicator", module)
   .addParameters({
     zeplinLink: "",
     readme: {

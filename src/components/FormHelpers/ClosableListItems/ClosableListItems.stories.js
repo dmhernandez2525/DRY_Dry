@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/FormHelpers/ClosableListItems", module)
+storiesOf("Components/FormHelpers/ClosableListItems", module)
   .addParameters({
     zeplinLink: "",
     readme: {

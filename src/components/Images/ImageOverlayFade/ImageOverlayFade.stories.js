@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/Images/ImageOverlayFade", module)
+storiesOf("Components/Images/ImageOverlayFade", module)
   .addParameters({
     zeplinLink: "",
     readme: {

@@ -46,7 +46,7 @@ storiesOf("Docs/Sticker Sheet", module).add("ContainedButton", () => (
   <Default />
 ));
 
-storiesOf("components/Buttons/ContainedButton", module)
+storiesOf("Components/Buttons/ContainedButton", module)
   .addParameters({
     zeplinLink: "",
     readme: {

@@ -43,7 +43,7 @@ export const Default = () => {
 };
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/FormHelpers/CustomScrollbar", module)
+storiesOf("Components/FormHelpers/CustomScrollbar", module)
   .addParameters({
     zeplinLink: "",
     readme: {

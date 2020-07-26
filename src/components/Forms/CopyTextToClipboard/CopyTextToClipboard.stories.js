@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/Forms/CopyTextToClipboard", module)
+storiesOf("Components/Forms/CopyTextToClipboard", module)
   .addParameters({
     zeplinLink: "",
     readme: {

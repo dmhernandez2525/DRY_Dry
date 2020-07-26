@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/FormHelpers/RangeSliders", module)
+storiesOf("Components/FormHelpers/RangeSliders", module)
   .addParameters({
     zeplinLink: "",
     readme: {

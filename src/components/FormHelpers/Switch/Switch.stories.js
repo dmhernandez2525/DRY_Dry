@@ -63,7 +63,7 @@ export const Active = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/FormHelpers/Switch", module)
+storiesOf("Components/FormHelpers/Switch", module)
   .addParameters({
     zeplinLink:
       "https://app.zeplin.io/project/5ea6d579b0189824e6da8f37/screen/5eaf615494b35819006ce58e",

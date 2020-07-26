@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/ProgressIndicators/CircularIndicator", module)
+storiesOf("Components/ProgressIndicators/CircularIndicator", module)
   .addParameters({
     zeplinLink: "",
     readme: {

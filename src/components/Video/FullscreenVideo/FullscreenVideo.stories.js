@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/Video/FullscreenVideo", module)
+storiesOf("Components/Video/FullscreenVideo", module)
   .addParameters({
     zeplinLink: "",
     readme: {

@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/Forms/DetectCapsLock", module)
+storiesOf("Components/Forms/DetectCapsLock", module)
   .addParameters({
     zeplinLink: "",
     readme: {

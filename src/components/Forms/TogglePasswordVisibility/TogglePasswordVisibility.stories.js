@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/Forms/TogglePasswordVisibility", module)
+storiesOf("Components/Forms/TogglePasswordVisibility", module)
   .addParameters({
     zeplinLink: "",
     readme: {

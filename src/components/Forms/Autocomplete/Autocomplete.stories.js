@@ -44,7 +44,7 @@ export const Default = () => {
 
 storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
 
-storiesOf("components/Forms/Autocomplete", module)
+storiesOf("Components/Forms/Autocomplete", module)
   .addParameters({
     zeplinLink: "",
     readme: {
