@@ -1,0 +1,55 @@
+.dry-liftoff {
+  &__container {
+    width: 100%;
+    height: 400px;
+    background: url() no-repeat;
+    background-size: 100%;
+  }
+}
+
+.liftoff {
+  position: relative;
+  bottom: 0px;
+  width: 150px;
+  height: inherit;
+  margin: auto;
+  background: url("https://comfort-order-dev.s3.amazonaws.com/logo%20%281%29.svg")
+    no-repeat;
+  background-size: 100%;
+}
+
+.liftoff {
+  animation: liftoff linear 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes liftoff {
+  0% {
+    transform: translate(0px, 450px) rotate(0deg);
+  }
+  5% {
+    transform: translate(0px, 450px) rotate(10deg);
+  }
+  10% {
+    transform: translate(0px, 450px) rotate(-10deg);
+  }
+  15% {
+    transform: translate(0px, 450px) rotate(10deg);
+  }
+  25% {
+    transform: translate(0px, 450px) rotate(-10deg);
+  }
+
+  25% {
+    transform: translate(0px, 50px) rotate(0deg);
+  }
+  35% {
+    transform: translate(0px, 30px) rotate(0deg);
+  }
+  50% {
+    transform: translate(0px, 5px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0px, -50px) rotate(0deg);
+  }
+}
