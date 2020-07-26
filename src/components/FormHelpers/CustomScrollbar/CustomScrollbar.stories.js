@@ -16,8 +16,8 @@ import {
   button
 } from "@storybook/addon-knobs/react";
 
-import Label from "./Label";
-import LabelPropTable from "./LabelPropTable.md";
+import CustomScrollbar from "./CustomScrollbar";
+import CustomScrollbarPropTable from "./CustomScrollbarPropTable.md";
 import README from "./README.md";
 
 export const actionsData = {
@@ -28,7 +28,7 @@ export const actionsData = {
 
 export const Default = () => {
   return (
-    <Label
+    <CustomScrollbar
       id={text("id", "")}
       name={text("name", "")}
       userTip={text("userTip", "")}
@@ -41,13 +41,12 @@ export const Default = () => {
     />
   );
 };
-
-storiesOf("Components/FormsHelpers/Label", module)
+storiesOf("Components/FormHelpers/CustomScrollbar", module)
   .addParameters({
     zeplinLink: "",
     readme: {
       codeTheme: "atom-dark",
-      sidebar: [README, LabelPropTable],
+      sidebar: [README, CustomScrollbarPropTable],
       StoryPreview: ({ children }) => {
         return <div>{children}</div>;
       }

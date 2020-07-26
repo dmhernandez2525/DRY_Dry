@@ -23,7 +23,7 @@ import {
 // };
 
 import Card from "./Card";
-import Input from "../../FormsHelpers/Input";
+import Input from "../../FormHelpers/Input";
 import CardPropTable from "./CardPropTable.md";
 import README from "./README.md";
 

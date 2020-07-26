@@ -16,8 +16,8 @@ import {
   button
 } from "@storybook/addon-knobs/react";
 
-import CustomScrollbar from "./CustomScrollbar";
-import CustomScrollbarPropTable from "./CustomScrollbarPropTable.md";
+import Slider from "./Slider";
+import SliderPropTable from "./SliderPropTable.md";
 import README from "./README.md";
 
 export const actionsData = {
@@ -28,7 +28,7 @@ export const actionsData = {
 
 export const Default = () => {
   return (
-    <CustomScrollbar
+    <Slider
       id={text("id", "")}
       name={text("name", "")}
       userTip={text("userTip", "")}
@@ -41,12 +41,13 @@ export const Default = () => {
     />
   );
 };
-storiesOf("Components/FormsHelpers/CustomScrollbar", module)
+
+storiesOf("Components/FormHelpers/Slider", module)
   .addParameters({
     zeplinLink: "",
     readme: {
       codeTheme: "atom-dark",
-      sidebar: [README, CustomScrollbarPropTable],
+      sidebar: [README, SliderPropTable],
       StoryPreview: ({ children }) => {
         return <div>{children}</div>;
       }

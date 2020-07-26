@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import {
@@ -16,8 +16,8 @@ import {
   button
 } from "@storybook/addon-knobs/react";
 
-import Switch from "./Switch";
-import SwitchPropTable from "./SwitchPropTable.md";
+import Checkbox from "./Checkbox";
+import CheckboxPropTable from "./CheckboxPropTable.md";
 import README from "./README.md";
 
 export const actionsData = {
@@ -27,33 +27,14 @@ export const actionsData = {
 };
 
 export const Default = () => {
-  const [toggled, setToggled] = useState(false);
   return (
-    <Switch
+    <Checkbox
       id={text("id", "")}
       name={text("name", "")}
-      active={toggled}
       userTip={text("userTip", "")}
       disable={boolean("disable", false)}
       className={text("className", "")}
       errorMes={text("errorMes", "")}
-      styles={object("styles", {})}
-      passProps={object("passProps", {})}
-      onClick={() => setToggled(prevValue => !prevValue)}
-    />
-  );
-};
-
-export const Active = () => {
-  return (
-    <Switch
-      id={text("id", "")}
-      name={text("name", "")}
-      userTip={text("userTip", "")}
-      active={boolean("active", true)}
-      disable={boolean("disable", false)}
-      className={text("className", "")}
-      errorMes={text("errorMes", "Someting")}
       styles={object("styles", {})}
       passProps={object("passProps", {})}
       {...actionsData}
@@ -61,17 +42,15 @@ export const Active = () => {
   );
 };
 
-storiesOf("components/FormsHelpers/Switch", module)
+storiesOf("Components/FormHelpers/Checkbox", module)
   .addParameters({
-    zeplinLink:
-      "https://app.zeplin.io/project/5ea6d579b0189824e6da8f37/screen/5eaf615494b35819006ce58e",
+    zeplinLink: "",
     readme: {
       codeTheme: "atom-dark",
-      sidebar: [README, SwitchPropTable],
+      sidebar: [README, CheckboxPropTable],
       StoryPreview: ({ children }) => {
         return <div>{children}</div>;
       }
     }
   })
   .add("Default", () => <Default />);
-// .add("Active", () => <Active />);

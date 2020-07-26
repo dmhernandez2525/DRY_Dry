@@ -203,7 +203,7 @@ const Types = {
     "EmptyInputValidation"
   ],
 
-  FormsHelpers: [
+  FormHelpers: [
     "Checkbox",
     "Label",
     "SelectionControl",

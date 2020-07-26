@@ -16,8 +16,8 @@ import {
   button
 } from "@storybook/addon-knobs/react";
 
-import Password from "./Password";
-import PasswordPropTable from "./PasswordPropTable.md";
+import RangeSliders from "./RangeSliders";
+import RangeSlidersPropTable from "./RangeSlidersPropTable.md";
 import README from "./README.md";
 
 export const actionsData = {
@@ -28,7 +28,7 @@ export const actionsData = {
 
 export const Default = () => {
   return (
-    <Password
+    <RangeSliders
       id={text("id", "")}
       name={text("name", "")}
       userTip={text("userTip", "")}
@@ -42,12 +42,12 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/FormsHelpers/Password", module)
+storiesOf("Components/FormHelpers/RangeSliders", module)
   .addParameters({
     zeplinLink: "",
     readme: {
       codeTheme: "atom-dark",
-      sidebar: [README, PasswordPropTable],
+      sidebar: [README, RangeSlidersPropTable],
       StoryPreview: ({ children }) => {
         return <div>{children}</div>;
       }

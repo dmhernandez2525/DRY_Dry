@@ -16,8 +16,8 @@ import {
   button
 } from "@storybook/addon-knobs/react";
 
-import Slider from "./Slider";
-import SliderPropTable from "./SliderPropTable.md";
+import ContactChips from "./ContactChips";
+import ContactChipsPropTable from "./ContactChipsPropTable.md";
 import README from "./README.md";
 
 export const actionsData = {
@@ -28,7 +28,7 @@ export const actionsData = {
 
 export const Default = () => {
   return (
-    <Slider
+    <ContactChips
       id={text("id", "")}
       name={text("name", "")}
       userTip={text("userTip", "")}
@@ -42,12 +42,12 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/FormsHelpers/Slider", module)
+storiesOf("Components/FormHelpers/ContactChips", module)
   .addParameters({
     zeplinLink: "",
     readme: {
       codeTheme: "atom-dark",
-      sidebar: [README, SliderPropTable],
+      sidebar: [README, ContactChipsPropTable],
       StoryPreview: ({ children }) => {
         return <div>{children}</div>;
       }

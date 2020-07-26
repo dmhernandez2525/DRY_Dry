@@ -16,8 +16,8 @@ import {
   button
 } from "@storybook/addon-knobs/react";
 
-import ClosableListItems from "./ClosableListItems";
-import ClosableListItemsPropTable from "./ClosableListItemsPropTable.md";
+import Label from "./Label";
+import LabelPropTable from "./LabelPropTable.md";
 import README from "./README.md";
 
 export const actionsData = {
@@ -28,7 +28,7 @@ export const actionsData = {
 
 export const Default = () => {
   return (
-    <ClosableListItems
+    <Label
       id={text("id", "")}
       name={text("name", "")}
       userTip={text("userTip", "")}
@@ -42,12 +42,12 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/FormsHelpers/ClosableListItems", module)
+storiesOf("Components/FormHelpers/Label", module)
   .addParameters({
     zeplinLink: "",
     readme: {
       codeTheme: "atom-dark",
-      sidebar: [README, ClosableListItemsPropTable],
+      sidebar: [README, LabelPropTable],
       StoryPreview: ({ children }) => {
         return <div>{children}</div>;
       }

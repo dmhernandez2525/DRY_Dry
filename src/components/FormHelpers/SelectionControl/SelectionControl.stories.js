@@ -16,8 +16,8 @@ import {
   button
 } from "@storybook/addon-knobs/react";
 
-import DatePicker from "./DatePicker";
-import DatePickerPropTable from "./DatePickerPropTable.md";
+import SelectionControl from "./SelectionControl";
+import SelectionControlPropTable from "./SelectionControlPropTable.md";
 import README from "./README.md";
 
 export const actionsData = {
@@ -28,7 +28,7 @@ export const actionsData = {
 
 export const Default = () => {
   return (
-    <DatePicker
+    <SelectionControl
       id={text("id", "")}
       name={text("name", "")}
       userTip={text("userTip", "")}
@@ -42,12 +42,12 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/FormsHelpers/DatePicker", module)
+storiesOf("Components/FormHelpers/SelectionControl", module)
   .addParameters({
     zeplinLink: "",
     readme: {
       codeTheme: "atom-dark",
-      sidebar: [README, DatePickerPropTable],
+      sidebar: [README, SelectionControlPropTable],
       StoryPreview: ({ children }) => {
         return <div>{children}</div>;
       }

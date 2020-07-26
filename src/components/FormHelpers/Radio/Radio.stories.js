@@ -16,8 +16,8 @@ import {
   button
 } from "@storybook/addon-knobs/react";
 
-import SelectionControl from "./SelectionControl";
-import SelectionControlPropTable from "./SelectionControlPropTable.md";
+import Radio from "./Radio";
+import RadioPropTable from "./RadioPropTable.md";
 import README from "./README.md";
 
 export const actionsData = {
@@ -28,7 +28,7 @@ export const actionsData = {
 
 export const Default = () => {
   return (
-    <SelectionControl
+    <Radio
       id={text("id", "")}
       name={text("name", "")}
       userTip={text("userTip", "")}
@@ -42,12 +42,12 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/FormsHelpers/SelectionControl", module)
+storiesOf("Components/FormHelpers/Radio", module)
   .addParameters({
     zeplinLink: "",
     readme: {
       codeTheme: "atom-dark",
-      sidebar: [README, SelectionControlPropTable],
+      sidebar: [README, RadioPropTable],
       StoryPreview: ({ children }) => {
         return <div>{children}</div>;
       }

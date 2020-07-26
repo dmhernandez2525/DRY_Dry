@@ -33,21 +33,19 @@
 - [Resources](#resources)
 - [Quick Start](src/docs/quick-start/README.md)
 - [Contrubuting](src/docs/contributing/setup.md)
-    - [Creating a component](src/docs/contributing/creating.md)
-    - [Styling](src/docs/contributing/styling.md)
-    - [Write a story](src/docs/contributing/storybook.md)
-    - [Writing tests](src/docs/contributing/testing.md)
-    - [Adding documentation](src/docs/contributing/documentation.md)
-    - [Submitting for review](src/docs/contributing/review.md)
-    - [Publishing a release](src/docs/contributing/release.md)
+  - [Creating a component](src/docs/contributing/creating.md)
+  - [Styling](src/docs/contributing/styling.md)
+  - [Write a story](src/docs/contributing/storybook.md)
+  - [Writing tests](src/docs/contributing/testing.md)
+  - [Adding documentation](src/docs/contributing/documentation.md)
+  - [Submitting for review](src/docs/contributing/review.md)
+  - [Publishing a release](src/docs/contributing/release.md)
 
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 
 ### Built With
 
@@ -75,7 +73,6 @@ Daniel Hernandez - [Gmail](danielhernandez@comfortorder.com) - email
 
 Project Link: [https://dev.azure.com/Comfort-Order/DRY](https://dev.azure.com/Comfort-Order/DRY)
 
-
 <!-- Resources -->
 
 ## Resources
@@ -99,7 +96,6 @@ Project Link: [https://dev.azure.com/Comfort-Order/DRY](https://dev.azure.com/Co
 - [Border Radius Generator](https://www.cssmatic.com/border-radius)
 
 [product-screenshot]: src/docs/images/DryDocs.png
-
 
 ## Types / Subtypes
 
@@ -326,7 +322,7 @@ Project Link: [https://dev.azure.com/Comfort-Order/DRY](https://dev.azure.com/Co
 - [File Upload Button](https://www.w3schools.com/howto/howto_html_file_upload_button.asp)
 - [Empty Input Validation](https://www.w3schools.com/howto/howto_js_validation_empty_input.asp)
 
-## FormsHelpers
+## FormHelpers
 
 - Checkbox
 - [Label](https://www.w3schools.com/howto/howto_css_labels.asp)

@@ -16,8 +16,8 @@ import {
   button
 } from "@storybook/addon-knobs/react";
 
-import Radio from "./Radio";
-import RadioPropTable from "./RadioPropTable.md";
+import Password from "./Password";
+import PasswordPropTable from "./PasswordPropTable.md";
 import README from "./README.md";
 
 export const actionsData = {
@@ -28,7 +28,7 @@ export const actionsData = {
 
 export const Default = () => {
   return (
-    <Radio
+    <Password
       id={text("id", "")}
       name={text("name", "")}
       userTip={text("userTip", "")}
@@ -42,12 +42,12 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/FormsHelpers/Radio", module)
+storiesOf("Components/FormHelpers/Password", module)
   .addParameters({
     zeplinLink: "",
     readme: {
       codeTheme: "atom-dark",
-      sidebar: [README, RadioPropTable],
+      sidebar: [README, PasswordPropTable],
       StoryPreview: ({ children }) => {
         return <div>{children}</div>;
       }

@@ -16,8 +16,8 @@ import {
   button
 } from "@storybook/addon-knobs/react";
 
-import RangeSliders from "./RangeSliders";
-import RangeSlidersPropTable from "./RangeSlidersPropTable.md";
+import DatePicker from "./DatePicker";
+import DatePickerPropTable from "./DatePickerPropTable.md";
 import README from "./README.md";
 
 export const actionsData = {
@@ -28,7 +28,7 @@ export const actionsData = {
 
 export const Default = () => {
   return (
-    <RangeSliders
+    <DatePicker
       id={text("id", "")}
       name={text("name", "")}
       userTip={text("userTip", "")}
@@ -42,12 +42,12 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/FormsHelpers/RangeSliders", module)
+storiesOf("Components/FormHelpers/DatePicker", module)
   .addParameters({
     zeplinLink: "",
     readme: {
       codeTheme: "atom-dark",
-      sidebar: [README, RangeSlidersPropTable],
+      sidebar: [README, DatePickerPropTable],
       StoryPreview: ({ children }) => {
         return <div>{children}</div>;
       }

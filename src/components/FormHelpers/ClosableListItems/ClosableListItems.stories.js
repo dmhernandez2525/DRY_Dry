@@ -16,8 +16,8 @@ import {
   button
 } from "@storybook/addon-knobs/react";
 
-import ContactChips from "./ContactChips";
-import ContactChipsPropTable from "./ContactChipsPropTable.md";
+import ClosableListItems from "./ClosableListItems";
+import ClosableListItemsPropTable from "./ClosableListItemsPropTable.md";
 import README from "./README.md";
 
 export const actionsData = {
@@ -28,7 +28,7 @@ export const actionsData = {
 
 export const Default = () => {
   return (
-    <ContactChips
+    <ClosableListItems
       id={text("id", "")}
       name={text("name", "")}
       userTip={text("userTip", "")}
@@ -42,12 +42,12 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/FormsHelpers/ContactChips", module)
+storiesOf("Components/FormHelpers/ClosableListItems", module)
   .addParameters({
     zeplinLink: "",
     readme: {
       codeTheme: "atom-dark",
-      sidebar: [README, ContactChipsPropTable],
+      sidebar: [README, ClosableListItemsPropTable],
       StoryPreview: ({ children }) => {
         return <div>{children}</div>;
       }

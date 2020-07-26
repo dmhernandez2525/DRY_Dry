@@ -16,8 +16,8 @@ import {
   button
 } from "@storybook/addon-knobs/react";
 
-import Checkbox from "./Checkbox";
-import CheckboxPropTable from "./CheckboxPropTable.md";
+import Chip from "./Chip";
+import ChipPropTable from "./ChipPropTable.md";
 import README from "./README.md";
 
 export const actionsData = {
@@ -28,7 +28,7 @@ export const actionsData = {
 
 export const Default = () => {
   return (
-    <Checkbox
+    <Chip
       id={text("id", "")}
       name={text("name", "")}
       userTip={text("userTip", "")}
@@ -42,12 +42,12 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/FormsHelpers/Checkbox", module)
+storiesOf("Components/FormHelpers/Chip", module)
   .addParameters({
     zeplinLink: "",
     readme: {
       codeTheme: "atom-dark",
-      sidebar: [README, CheckboxPropTable],
+      sidebar: [README, ChipPropTable],
       StoryPreview: ({ children }) => {
         return <div>{children}</div>;
       }
