@@ -49,7 +49,9 @@ const storyComponent = (
         
         storiesOf("Docs/Sticker Sheet", module).add("${component}", () => <Default />);
 
-        storiesOf("${directory}/${parent}/${component}", module)
+        storiesOf("${directory}/${
+    parent ? parent + "/" : ""
+  }${component}", module)
         .addParameters({
           zeplinLink:
             "",

@@ -38,7 +38,9 @@ const makeDirectory = async (
   styles,
   index
 ) => {
-  const path = `../src/${directory}/${parent}/${name}`;
+  const path = parent
+    ? `../src/${directory}/${parent}/${name}`
+    : `../src/${directory}/${name}`;
 
   await new Promise((resolve, reject) => {
     try {
@@ -149,12 +151,17 @@ if (
   parent !== undefined &&
   componentName !== undefined
 ) {
-  //  we doint need to do any thing bc the user passed in 3 args
-  if (directory === "A" || directory === "a") {
-    directory = "Animations";
-  } else {
-    directory = "components";
-  }
+  //  we do not need to do any thing bc the user passed in 3 args
+
+  directory = "Components";
+} else if (
+  (directory === "A" || directory === "a") &&
+  parent !== undefined &&
+  componentName === undefined
+) {
+  directory = "Animations";
+  componentName = parent;
+  parent = null;
 } else {
   componentName = directory;
   directory = "Components";
