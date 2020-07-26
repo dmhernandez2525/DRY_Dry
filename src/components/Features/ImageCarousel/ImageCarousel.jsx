@@ -107,7 +107,7 @@ const ImageCarousel = ({
               "gallery__right-icon--active": active === i
             })}
           >
-            =>
+            {`=>`}
           </div>
           <span className="gallery__title">{slide.title}</span>
           <span className="gallery__text">{slide.detail}</span>
