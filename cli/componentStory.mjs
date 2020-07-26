@@ -47,7 +47,7 @@ const storyComponent = (
             />;
         };
         
-        
+        storiesOf("Docs/Sticker Sheet", module).add("${component}", () => <Default />);
 
         storiesOf("${directory}/${parent}/${component}", module)
         .addParameters({
@@ -66,7 +66,6 @@ const storyComponent = (
           }
         })
         .add("Default", () => <Default />)
-      
         `;
 
   return displayStoryComponent;
