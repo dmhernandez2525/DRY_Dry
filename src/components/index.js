@@ -66,13 +66,13 @@ import { Icons } from "./Icons/Icon";
 
 // Features
 import About from "./Features/About";
-import ImageCarousel from "./FeaturesOld/ImageCarousel";
-import Team from "./FeaturesOld/Team";
-import Header1 from "./FeaturesOld/Header1";
-import Pricing from "./FeaturesOld/Pricing";
-import Hours from "./FeaturesOld/Hours";
-import SpotlightGallery from "./FeaturesOld/SpotlightGallery";
-import Menu from "./FeaturesOld/Menu";
+import ImageCarousel from "./Features/ImageCarousel";
+import Team from "./Features/Team";
+import Header1 from "./Features/Header1";
+import Pricing from "./Features/Pricing";
+import Hours from "./Features/Hours";
+import SpotlightGallery from "./Features/SpotlightGallery";
+import Menu from "./Features/Menu";
 const allFeatures = {
   About: About.exampleData,
   ImageCarousel: ImageCarousel.exampleData,
