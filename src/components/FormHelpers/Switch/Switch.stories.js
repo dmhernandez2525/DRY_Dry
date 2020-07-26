@@ -61,6 +61,8 @@ export const Active = () => {
   );
 };
 
+storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
+
 storiesOf("components/FormHelpers/Switch", module)
   .addParameters({
     zeplinLink:

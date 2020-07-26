@@ -49,6 +49,8 @@ export const WithChildren = () => {
   );
 };
 
+storiesOf("Docs/Sticker Sheet", module).add("Card", () => <Default />);
+
 storiesOf("components/Base/Card", module)
   .addDecorator(withKnobs)
   .addParameters({

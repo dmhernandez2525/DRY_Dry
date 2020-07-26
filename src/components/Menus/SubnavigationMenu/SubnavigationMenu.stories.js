@@ -42,7 +42,9 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/Menus/SubnavigationMenu", module)
+storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
+
+storiesOf("components/Menus/SubnavigationMenu", module)
   .addParameters({
     zeplinLink: "",
     readme: {

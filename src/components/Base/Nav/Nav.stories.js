@@ -40,7 +40,9 @@ export const Default = () => {
     />
   );
 };
-storiesOf("Components/Base/Nav", module)
+storiesOf("Docs/Sticker Sheet", module).add("Nav", () => <Default />);
+
+storiesOf("components/Base/Nav", module)
   .addParameters({
     zeplinLink: "",
     readme: {

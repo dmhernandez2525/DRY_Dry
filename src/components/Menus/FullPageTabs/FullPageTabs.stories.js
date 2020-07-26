@@ -42,7 +42,9 @@
         
         
 
-        storiesOf("Components/Menus/FullPageTabs", module)
+        storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
+
+storiesOf("components/Menus/FullPageTabs", module)
         .addParameters({
           zeplinLink:
             "",

@@ -42,7 +42,9 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/FormHelpers/Label", module)
+storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
+
+storiesOf("components/FormHelpers/Label", module)
   .addParameters({
     zeplinLink: "",
     readme: {

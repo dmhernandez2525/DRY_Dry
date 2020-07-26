@@ -42,7 +42,9 @@
         
         
 
-        storiesOf("Components/Menus/HoverTabs", module)
+        storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
+
+storiesOf("components/Menus/HoverTabs", module)
         .addParameters({
           zeplinLink:
             "",

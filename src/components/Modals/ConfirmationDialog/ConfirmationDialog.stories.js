@@ -13,7 +13,7 @@ import {
   date,
   select,
   files,
-  button,
+  button
 } from "@storybook/addon-knobs/react";
 
 import ConfirmationDialog from "./ConfirmationDialog";
@@ -23,7 +23,7 @@ import README from "./README.md";
 export const actionsData = {
   onClick: action("onClick"),
   onChange: action("onChange"),
-  onBlur: action("onBlur"),
+  onBlur: action("onBlur")
 };
 
 export const Default = () => {
@@ -42,7 +42,9 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/Modals/ConfirmationDialog", module)
+storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
+
+storiesOf("components/Modals/ConfirmationDialog", module)
   .addParameters({
     zeplinLink: "",
     readme: {
@@ -50,7 +52,7 @@ storiesOf("Components/Modals/ConfirmationDialog", module)
       sidebar: [README, ConfirmationDialogPropTable],
       StoryPreview: ({ children }) => {
         return <div>{children}</div>;
-      },
-    },
+      }
+    }
   })
   .add("Default", () => <Default />);

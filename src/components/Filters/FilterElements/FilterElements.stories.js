@@ -13,7 +13,7 @@ import {
   date,
   select,
   files,
-  button,
+  button
 } from "@storybook/addon-knobs/react";
 
 import FilterElements from "./FilterElements";
@@ -23,7 +23,7 @@ import README from "./README.md";
 export const actionsData = {
   onClick: action("onClick"),
   onChange: action("onChange"),
-  onBlur: action("onBlur"),
+  onBlur: action("onBlur")
 };
 
 export const Default = () => {
@@ -42,7 +42,9 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/Filters/FilterElements", module)
+storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
+
+storiesOf("components/Filters/FilterElements", module)
   .addParameters({
     zeplinLink: "",
     readme: {
@@ -50,7 +52,7 @@ storiesOf("Components/Filters/FilterElements", module)
       sidebar: [README, FilterElementsPropTable],
       StoryPreview: ({ children }) => {
         return <div>{children}</div>;
-      },
-    },
+      }
+    }
   })
   .add("Default", () => <Default />);

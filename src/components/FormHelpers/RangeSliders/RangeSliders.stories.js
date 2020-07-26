@@ -42,7 +42,9 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/FormHelpers/RangeSliders", module)
+storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
+
+storiesOf("components/FormHelpers/RangeSliders", module)
   .addParameters({
     zeplinLink: "",
     readme: {

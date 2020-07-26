@@ -42,7 +42,9 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/Video/FullscreenWindow", module)
+storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
+
+storiesOf("components/Video/FullscreenWindow", module)
   .addParameters({
     zeplinLink: "",
     readme: {

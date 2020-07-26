@@ -41,7 +41,9 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/Base/Footer", module)
+storiesOf("Docs/Sticker Sheet", module).add("Footer", () => <Default />);
+
+storiesOf("components/Base/Footer", module)
   .addParameters({
     zeplinLink: "",
     readme: {

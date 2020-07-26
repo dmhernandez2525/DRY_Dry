@@ -42,7 +42,9 @@
         
         
 
-        storiesOf("Components/Menus/MegaMenu", module)
+        storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
+
+storiesOf("components/Menus/MegaMenu", module)
         .addParameters({
           zeplinLink:
             "",

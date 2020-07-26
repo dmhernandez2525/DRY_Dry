@@ -42,7 +42,9 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/Icons/AnimateIcons", module)
+storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
+
+storiesOf("components/Icons/AnimateIcons", module)
   .addParameters({
     zeplinLink: "",
     readme: {

@@ -41,7 +41,9 @@ export const Default = () => {
     />
   );
 };
-storiesOf("Components/FormHelpers/CustomScrollbar", module)
+storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
+
+storiesOf("components/FormHelpers/CustomScrollbar", module)
   .addParameters({
     zeplinLink: "",
     readme: {

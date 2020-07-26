@@ -41,7 +41,9 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/Menus/AccordionSingle", module)
+storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
+
+storiesOf("components/Menus/AccordionSingle", module)
   .addParameters({
     zeplinLink: "",
     readme: {

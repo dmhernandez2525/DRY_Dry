@@ -42,7 +42,9 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/FormHelpers/Checkbox", module)
+storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
+
+storiesOf("components/FormHelpers/Checkbox", module)
   .addParameters({
     zeplinLink: "",
     readme: {

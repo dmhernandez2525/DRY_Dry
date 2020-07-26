@@ -25,7 +25,9 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/FormHelpers/FileUpload", module)
+storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
+
+storiesOf("components/FormHelpers/FileUpload", module)
   .addParameters({
     zeplinLink: "",
     readme: {

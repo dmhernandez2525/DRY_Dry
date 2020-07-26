@@ -42,7 +42,9 @@
         
         
 
-        storiesOf("Components/Menus/StickyNavbar", module)
+        storiesOf("Docs/Sticker Sheet", module).add("About", () => <Default />);
+
+storiesOf("components/Menus/StickyNavbar", module)
         .addParameters({
           zeplinLink:
             "",
