@@ -1,5 +1,9 @@
+.dry-spotlightGallery {
+  display: flex;
+  justify-content: space-around;
 
-  .dry-spotlightGallery{
-
+  &__image-wrapper {
+    width: 30%;
+    text-align: center;
   }
-  
+}

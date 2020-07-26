@@ -1,3 +1,2 @@
-
-import  SpotlightGallery from "./SpotlightGallery";
+import SpotlightGallery from "./SpotlightGallery";
 export default SpotlightGallery;

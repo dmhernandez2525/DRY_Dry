@@ -1,3 +1,2 @@
-
-import  Hours from "./Hours";
+import Hours from "./Hours";
 export default Hours;
