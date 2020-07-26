@@ -42,7 +42,7 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/FormHelper/Input", module)
+storiesOf("Components/FormHelpers/Input", module)
   .addParameters({
     zeplinLink: "",
     readme: {

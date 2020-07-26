@@ -25,7 +25,7 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/FormHelper/FileUpload", module)
+storiesOf("Components/FormHelpers/FileUpload", module)
   .addParameters({
     zeplinLink: "",
     readme: {

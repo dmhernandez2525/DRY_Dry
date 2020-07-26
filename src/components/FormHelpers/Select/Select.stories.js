@@ -44,7 +44,7 @@ export const Default = () => {
   );
 };
 
-storiesOf("Components/FormHelper/Select", module)
+storiesOf("Components/FormHelpers/Select", module)
   .addParameters({
     zeplinLink: "",
     readme: {
