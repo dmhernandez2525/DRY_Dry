@@ -63,6 +63,8 @@ export const Default = () => {
   );
 };
 
+storiesOf("Docs/Sticker Sheet", module).add("Change", () => <Default />);
+
 storiesOf("Features/ImageCarousel", module)
   .addParameters({
     zeplinLink: "",

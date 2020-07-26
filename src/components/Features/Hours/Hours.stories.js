@@ -49,6 +49,8 @@ export const Default = () => {
   );
 };
 
+storiesOf("Docs/Sticker Sheet", module).add("Change", () => <Default />);
+
 storiesOf("Features/Hours", module)
   .addParameters({
     zeplinLink: "",

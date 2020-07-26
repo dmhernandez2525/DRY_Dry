@@ -42,6 +42,8 @@ export const Default = () => {
   );
 };
 
+storiesOf("Docs/Sticker Sheet", module).add("Change", () => <Default />);
+
 storiesOf("Features/Coupon", module)
   .addParameters({
     zeplinLink: "",

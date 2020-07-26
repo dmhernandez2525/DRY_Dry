@@ -243,6 +243,8 @@ export const Default = () => {
   );
 };
 
+storiesOf("Docs/Sticker Sheet", module).add("Change", () => <Default />);
+
 storiesOf("Features/Menu", module)
   .addParameters({
     zeplinLink: "",

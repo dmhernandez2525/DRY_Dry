@@ -84,6 +84,8 @@ export const Default = () => {
     </div>
   );
 };
+storiesOf("Docs/Sticker Sheet", module).add("Change", () => <Default />);
+
 storiesOf("Features/Pricing", module)
   .addParameters({
     zeplinLink: "",
