@@ -30,6 +30,8 @@ export const Default = () => {
   return <Wobble children={object("children", <p>HI</p>)} {...actionsData} />;
 };
 
+storiesOf("Docs/Sticker Sheet", module).add("Wobble", () => <Default />);
+
 storiesOf("Animations/Wobble", module)
   .addParameters({
     zeplinLink: "",

@@ -30,6 +30,8 @@ export const Default = () => {
   return <Tumble children={object("children", <p>Hi</p>)} {...actionsData} />;
 };
 
+storiesOf("Docs/Sticker Sheet", module).add("Tumble", () => <Default />);
+
 storiesOf("Animations/Tumble", module)
   .addParameters({
     zeplinLink: "",
