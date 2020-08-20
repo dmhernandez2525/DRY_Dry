@@ -21,4 +21,4 @@ const testComponent = (input, lowerCaseInput) => {
   return displayTestComponent;
 };
 
-export default testComponent;
+module.exports = testComponent;

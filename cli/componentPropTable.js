@@ -32,4 +32,4 @@ _Built with [DryCli](link to dry cli)_
   return displayComponentTable;
 };
 
-export default componentPropTable;
+module.exports = componentPropTable;

@@ -6,4 +6,4 @@ const styles = lowerCaseInput => {
   `;
 };
 
-export default styles;
+module.exports = styles;

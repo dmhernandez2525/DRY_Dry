@@ -70,4 +70,4 @@ const component = (input, lowerCaseInput) => {
   return displayComponent;
 };
 
-export default component;
+module.exports = component;

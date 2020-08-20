@@ -73,4 +73,4 @@ const storyComponent = (
   return displayStoryComponent;
 };
 
-export default storyComponent;
+module.exports = storyComponent;

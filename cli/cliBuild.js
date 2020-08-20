@@ -1,12 +1,12 @@
-import fs from "fs";
-import format from "./format.js";
-import component from "./component.mjs";
-import componentPropTable from "./componentPropTable.mjs";
-import componentReadme from "./componentReadme.mjs";
-import componentTest from "./componentTest.mjs";
-import componentStory from "./componentStory.mjs";
-import styles from "./styles.mjs";
-// run node cliBuild.mjs  testing2
+const fs = require("fs");
+const format = require("./format.js");
+const component = require("./component.js");
+const componentPropTable = require("./componentPropTable.js");
+const componentReadme = require("./componentReadme.js");
+const componentTest = require("./componentTest.js");
+const componentStory = require("./componentStory.js");
+const styles = require("./styles.js");
+// run node cliBuild.js  testing2
 
 const handleError = err => {
   if (err) throw err;

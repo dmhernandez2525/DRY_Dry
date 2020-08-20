@@ -38,4 +38,4 @@ _Built with [DryCli](link to dry cli)_
   return displayComponentReadme;
 };
 
-export default componentReadme;
+module.exports = componentReadme;

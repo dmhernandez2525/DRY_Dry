@@ -315,4 +315,4 @@ const Types = {
   Chat: ["ChatMessages", "PopupChatWindow"]
 };
 
-export default Types;
+module.exports = Types;
