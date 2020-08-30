@@ -26,7 +26,7 @@ const Select = ({
   const [activeOption, setActiveOption] = useState(defaultValue);
   const [showChildren, setShowChildren] = useState(false);
   const [focus, setFocus] = useState(false);
-  const [labelfocus, setLabelFocus] = useState(false);
+  const [labelFocus, setLabelFocus] = useState(false);
 
   const styles = {};
   if (maxWidth !== "") {
@@ -90,7 +90,7 @@ const Select = ({
   return (
     <div
       style={styles}
-      onClick={() => onClick("DrySelect")}
+      // onClick={() => onClick("DrySelect")}
       className="dry-select"
     >
       <div onMouseLeave={handleBlur} className="select">
@@ -103,7 +103,7 @@ const Select = ({
           <label
             className={classnames({
               select__label: true,
-              "select__label--active": labelfocus
+              "select__label--active": labelFocus
             })}
           >
             {label}
