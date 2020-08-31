@@ -87,7 +87,9 @@ class SinglePage extends React.Component {
         {/* <a onClick={() => this.executeScroll(this.teleRefSocal)}>Socal</a> */}
       </li>
     );
-    nav.push(<li key={`addOn4`}> {/* <Link to="/login">Login</Link> */}</li>);
+    nav.push(
+    <li key={`addOn4`}> {/* <Link to="/login">Login</Link> */}</li>
+    );
     nav.push(
       <li key={`addOn5`}>{/* <Link to="/register">Register</Link> */}</li>
     );
@@ -165,7 +167,7 @@ class SinglePage extends React.Component {
                 href={`https://www.google.com/maps/dir//${this.props.businessData.address}?hl=en-US`}
               >
                 <Icon icon="directions-dry" />
-              </a>
+              </a> 
               <a href="tel:217-508-4048">
                 <Icon icon="phone2" />
               </a>
