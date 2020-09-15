@@ -1,0 +1,78 @@
+.tek-mate-footer {
+  display: flex;
+  justify-content: space-evenly;
+  background: #004a99;
+  padding: 60px 0 30px 0;
+  color: white;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  &__mission {
+    width: 25%;
+
+    h3 {
+      font-size: 34px;
+      margin: 0 0 20px 0;
+      padding: 2px 0 2px 0;
+      line-height: 1;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    p {
+      ont-size: 13px;
+      line-height: 24px;
+      margin-bottom: 0;
+      font-family: "Montserrat", sans-serif;
+      color: #ecf5ff;
+    }
+  }
+  &__links {
+    width: 10%;
+
+    li {
+      padding: 8px 0;
+    }
+  }
+  &__content {
+    width: 20%;
+  }
+
+  &__social-links {
+    a {
+      font-size: 18px;
+      display: inline-block;
+      background: #007bff;
+      color: #fff;
+      line-height: 1;
+      padding: 8px 0;
+      margin-right: 4px;
+      border-radius: 50%;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      transition: 0.3s;
+    }
+  }
+}
